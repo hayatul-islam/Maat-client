@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../../Shered/Header/Header';
 import About from '../About/About';
 import OurExpertise from '../OurExpertise/OurExpertise';
+import OurTeam from '../OurTeam/OurTeam';
 import TopBanner from '../TopBanner/TopBanner';
 
 const Home = () => {
@@ -11,6 +12,7 @@ const Home = () => {
             <TopBanner />
             <About />
             <OurExpertise />
+            <OurTeam />
         </div>
     );
 };
