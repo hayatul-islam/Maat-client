@@ -1,0 +1,26 @@
+.about-title .who{
+    margin-left: 25%;
+}
+.about-title .weAre{
+    margin-left: 50%;
+}
+.about-text{
+    max-width: 420px;
+    text-align: justify;
+}
+.text-color p{
+    color: #F0F0F0CC;
+    font-size: 18px;
+}
+
+/* key-figures */
+.key-figures{
+    transform:  rotate(-60deg);
+}
+.key-figures h1{
+    line-height: 85px;
+}
+.min-text h2{
+    font-size: 55px;
+    color: #F0F0F0;
+}

@@ -1,0 +1,12 @@
+.header-logo{
+    width: 100px;
+    height: 18px;
+}
+.header-menu a{
+    color: #f0f0f0;
+    margin-right: 50px;
+    font-size: 16px;
+}
+.header-menu:last-child {
+    margin-right: 0;
+}

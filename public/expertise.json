@@ -1,0 +1,50 @@
+[
+    {
+        "title": "Intellectual Property",
+        "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
+        "image": "https://uploads-ssl.webflow.com/6160407763f5cde3707c2415/6160407763f5cd77647c248e_lg-intellectual-property-p-500.jpeg",
+        "sub-title": "Sub-title description of the service"
+    },
+    {
+        "title": "Labor & Employment",
+        "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
+        "image": "https://uploads-ssl.webflow.com/6160407763f5cde3707c2415/6160407763f5cd023f7c2487_lg-cybersecurity-p-500.jpeg",
+        "sub-title": "Sub-title description of the service"
+    },
+    {
+        "title": "Business taxation",
+        "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
+        "image": "https://uploads-ssl.webflow.com/6160407763f5cde3707c2415/6160407763f5cdd1a77c248c_lg-business-tax-p-500.jpeg",
+        "sub-title": "Sub-title description of the service"
+    },
+    {
+        "title": "Dispute resolution",
+        "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
+        "image": "https://uploads-ssl.webflow.com/6160407763f5cde3707c2415/6160407763f5cdd2a47c248b_lg-dispute-p-500.jpeg",
+        "sub-title": "Sub-title description of the service"
+    },
+    {
+        "title": "Environmental Law",
+        "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
+        "image": "https://uploads-ssl.webflow.com/6160407763f5cde3707c2415/6160407763f5cd8cb07c248a_lg-environmental-p-500.jpeg",
+        "sub-title": "Sub-title description of the service"
+    },
+    {
+        "title": "Land Use and Planning",
+        "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
+        "image": "https://uploads-ssl.webflow.com/6160407763f5cde3707c2415/6160407763f5cd715b7c2489_lg-land-use-p-500.jpeg",
+        "sub-title": "Sub-title description of the service"
+    },
+    {
+        "title": "Permitting and Compliance",
+        "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
+        "image": "https://uploads-ssl.webflow.com/6160407763f5cde3707c2415/6160407763f5cd00877c2488_lg-permitting-compliance-p-500.jpeg",
+        "sub-title": "Sub-title description of the service"
+    },
+    {
+        "title": "Cybersecurity & Privacy",
+        "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
+        "image": "https://uploads-ssl.webflow.com/6160407763f5cde3707c2415/6160407763f5cd023f7c2487_lg-cybersecurity-p-500.jpeg",
+        "sub-title": "Sub-title description of the service"
+    }
+]
