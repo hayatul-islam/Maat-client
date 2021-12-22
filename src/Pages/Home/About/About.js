@@ -42,7 +42,7 @@ const About = () => {
 
                                     {
                                         figures.map(figure => <Col xs={6}>
-                                            <div className='text-color min-text mb-5 pb-5'>
+                                            <div className='text-color min-text pb-5'>
                                                 <h2>{figure?.title}</h2>
                                                 <p>{figure?.description}</p>
                                             </div>

@@ -1,0 +1,21 @@
+.expertise-title h1{
+    line-height: 85px;
+}
+.expertise-card{
+    background-color: #e2eef8;
+    box-shadow: 5px 4px  1px #f8f9fa;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+    margin: 25px 10px;
+    border-radius: 3px;
+}
+.expertise-card h1{
+    padding-bottom: 16px;
+    font-size: 50px;
+}
+.expertise-card p{
+    font-size: 18px;
+    text-align: justify;
+}
