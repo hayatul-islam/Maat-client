@@ -11,6 +11,7 @@ import {
 import Team from './Pages/Team/Teams';
 import Header from './Pages/Shered/Header/Header';
 import AllJobOffice from './Pages/Team/AllJobOffice/AllJobOffice';
+import FilterTeamMate from './Pages/Team/FilterTeamMate/FilterTeamMate';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="teams" element={<Team />} />
           <Route path="allJobOffice" element={<AllJobOffice />} />
+          <Route path="filterTeamMate/:city" element={<FilterTeamMate />} />
         </Routes>
       </BrowserRouter>
     </div>

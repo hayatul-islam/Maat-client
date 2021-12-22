@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Card, Col, Container, Row } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import './AllTeam.css';
 
 const AllTeam = () => {
 
     const [teams, setTeams] = useState([]);
+    const navigate = useNavigate();
+
     useEffect(() => {
         fetch('team.json')
             .then(res => res.json())
@@ -13,8 +16,8 @@ const AllTeam = () => {
             })
     }, []);
 
-    const handleCountry = country => {
-        console.log(country);
+    const handleCountry = city => {
+        navigate(`/filterTeamMate/${city}`)
     }
 
     return (
@@ -29,10 +32,10 @@ const AllTeam = () => {
                 <div className="pt-5">
                     <div className='py-5'>
                         <h1>Filter by city :</h1>
-                        <Button onClick={() => handleCountry('ci')} className='me-2' variant='outline-dark'>CHICAGO</Button>
-                        <Button className='me-2' variant='outline-dark'>LANDON</Button>
-                        <Button className='me-2' variant='outline-dark'>PARIS</Button>
-                        <Button className='me-2' variant='outline-dark'>NEW YORK</Button>
+                        <Button onClick={() => handleCountry('Chicago')} className='me-2' variant='outline-dark'>CHICAGO</Button>
+                        <Button onClick={() => handleCountry('Landon')} className='me-2' variant='outline-dark'>LANDON</Button>
+                        <Button onClick={() => handleCountry('Paris')} className='me-2' variant='outline-dark'>PARIS</Button>
+                        <Button onClick={() => handleCountry('New York')} className='me-2' variant='outline-dark'>NEW YORK</Button>
                     </div>
                     <Row>
                         {

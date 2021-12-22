@@ -22,7 +22,8 @@ const OurTeam = () => {
         <div className='py-5 mt-5'>
             <Container>
                 <div className='team-title text-light pb-5 mb-4'>
-                    <h1>OUR INTERNATIONAL TEAM</h1>
+                    <h1>OUR</h1>
+                    <h1>INTERNATIONAL TEAM</h1>
                 </div>
                 {
                     teams.map(team => <Row key={team?._id}>

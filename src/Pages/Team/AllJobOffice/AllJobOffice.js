@@ -1,16 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Container } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import Office from '../Office/Office';
 
 const AllJobOffice = () => {
 
     const [teams, setTeams] = useState([]);
+    const navigate = useNavigate();
 
     useEffect(() => {
         fetch('team.json')
             .then(res => res.json())
             .then(data => setTeams(data))
     }, []);
+
+    const handleCountry = city => {
+        navigate(`/filterTeamMate/${city}`)
+    }
 
 
     return (
@@ -25,10 +31,10 @@ const AllJobOffice = () => {
                 <Container>
                     <div className='py-5'>
                         <h1>Filter job offers by city :</h1>
-                        <Button className='me-2' variant='outline-dark'>CHICAGO</Button>
-                        <Button className='me-2' variant='outline-dark'>LANDON</Button>
-                        <Button className='me-2' variant='outline-dark'>PARIS</Button>
-                        <Button className='me-2' variant='outline-dark'>NEW YORK</Button>
+                        <Button onClick={() => handleCountry('Chicago')} className='me-2' variant='outline-dark'>CHICAGO</Button>
+                        <Button onClick={() => handleCountry('Landon')} className='me-2' variant='outline-dark'>LANDON</Button>
+                        <Button onClick={() => handleCountry('Paris')} className='me-2' variant='outline-dark'>PARIS</Button>
+                        <Button onClick={() => handleCountry('New York')} className='me-2' variant='outline-dark'>NEW YORK</Button>
                     </div>
                     {
                         teams.map(team => <Office key={team?._id} team={team}></Office>)
