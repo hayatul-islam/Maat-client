@@ -8,7 +8,6 @@ import TopBanner from '../TopBanner/TopBanner';
 const Home = () => {
     return (
         <div style={{ background: '#212426' }}>
-            <Header />
             <TopBanner />
             <About />
             <OurExpertise />

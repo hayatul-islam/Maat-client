@@ -1,16 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Col, Container, Row } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './OurTeam.css';
 
 const OurTeam = () => {
 
     const [teams, setTeams] = useState([]);
+    const navigate = useNavigate();
+
     useEffect(() => {
         fetch('team.json')
             .then(res => res.json())
             .then(data => setTeams(data.slice(0, 6)))
-    }, [])
+    }, []);
+
+    const handleAllTeam = () => {
+        navigate('/teams')
+    }
 
     return (
         <div className='py-5 mt-5'>
@@ -39,7 +45,8 @@ const OurTeam = () => {
                         </div>
                     </Row>)
                 }
-                <Button variant="outline-light" className='fs-5'>SEE ALL THE TEAM</Button>
+                <Button onClick={handleAllTeam} variant="outline-light" className='fs-5'>SEE ALL THE TEAM</Button>
+                {/* <Link className='allTeamBtn' to="/teams">SEE ALL THE TEAM</Link> */}
 
             </Container>
         </div>
