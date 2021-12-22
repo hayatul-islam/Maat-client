@@ -8,8 +8,14 @@ const AllTeam = () => {
     useEffect(() => {
         fetch('team.json')
             .then(res => res.json())
-            .then(data => setTeams(data))
-    }, [])
+            .then(data => {
+                setTeams(data)
+            })
+    }, []);
+
+    const handleCountry = country => {
+        console.log(country);
+    }
 
     return (
         <div>
@@ -23,7 +29,7 @@ const AllTeam = () => {
                 <div className="pt-5">
                     <div className='py-5'>
                         <h1>Filter by city :</h1>
-                        <Button className='me-2' variant='outline-dark'>CHICAGO</Button>
+                        <Button onClick={() => handleCountry('ci')} className='me-2' variant='outline-dark'>CHICAGO</Button>
                         <Button className='me-2' variant='outline-dark'>LANDON</Button>
                         <Button className='me-2' variant='outline-dark'>PARIS</Button>
                         <Button className='me-2' variant='outline-dark'>NEW YORK</Button>

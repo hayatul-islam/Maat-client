@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import Team from './Pages/Team/Teams';
 import Header from './Pages/Shered/Header/Header';
+import AllJobOffice from './Pages/Team/AllJobOffice/AllJobOffice';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="teams" element={<Team />} />
+          <Route path="allJobOffice" element={<AllJobOffice />} />
         </Routes>
       </BrowserRouter>
     </div>
