@@ -9,7 +9,7 @@ const OurTeam = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch('team.json')
+        fetch('https://pure-refuge-33072.herokuapp.com/teams')
             .then(res => res.json())
             .then(data => setTeams(data.slice(0, 6)))
     }, []);

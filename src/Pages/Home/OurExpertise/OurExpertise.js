@@ -8,7 +8,7 @@ const OurExpertise = () => {
     const [expertises, setExpertises] = useState([]);
     const navigate = useNavigate();
     useEffect(() => {
-        fetch('http://localhost:4040/expertise')
+        fetch('https://pure-refuge-33072.herokuapp.com/expertise')
             .then(res => res.json())
             .then(data => setExpertises(data))
     }, []);

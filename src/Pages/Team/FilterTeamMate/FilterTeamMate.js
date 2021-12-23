@@ -12,7 +12,7 @@ const FilterTeamMate = () => {
     const [findTeam, setFindTeam] = useState('offers');
 
     useEffect(() => {
-        fetch('http://localhost:4040/teams')
+        fetch('https://pure-refuge-33072.herokuapp.com/teams')
             .then(res => res.json())
             .then(data => {
                 setTeams(data)
