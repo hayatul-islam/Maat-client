@@ -4,7 +4,7 @@ import JobOffice from './JobOffice/JobOffice';
 
 const Team = () => {
     return (
-        <div style={{ background: '#f0f0f0' }}>
+        <div>
             <AllTeam />
             <JobOffice />
         </div>

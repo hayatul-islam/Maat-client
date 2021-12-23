@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Button, Col, Container, Row } from 'react-bootstrap';
+import { Button, Container } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import Office from '../Office/Office';
 import './JobOffice.css';
@@ -20,7 +20,7 @@ const JoinUs = () => {
     }
 
     return (
-        <div className='pb-5'>
+        <div className='pb-5 text-light'>
             <Container>
                 <div className='joinUs-title py-5'>
                     <h1>WANNA JOIN US ?</h1>
@@ -29,7 +29,7 @@ const JoinUs = () => {
                 {
                     teams.map(team => <Office key={team?._id} team={team}></Office>)
                 }
-                <Button onClick={handleAllJobOffice} variant="outline-dark" className='fs-5'>SEE ALL THE TEAM</Button>
+                <Button onClick={handleAllJobOffice} variant="outline-light" className='fs-5'>SEE ALL THE TEAM</Button>
             </Container>
 
         </div>

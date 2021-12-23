@@ -12,11 +12,12 @@ import Team from './Pages/Team/Teams';
 import Header from './Pages/Shered/Header/Header';
 import AllJobOffice from './Pages/Team/AllJobOffice/AllJobOffice';
 import FilterTeamMate from './Pages/Team/FilterTeamMate/FilterTeamMate';
+import AllTeam from './Pages/Team/AllTeam/AllTeam';
 
 
 function App() {
   return (
-    <div>
+    <div style={{ background: '#212426' }}>
 
       <BrowserRouter>
         <Header />

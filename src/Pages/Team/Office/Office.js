@@ -3,7 +3,7 @@ import { Col, Row } from 'react-bootstrap';
 
 const Office = ({ team }) => {
     return (
-        <div>
+        <div className='text-light'>
             <Row>
 
                 <Col xs={12} md={4}>

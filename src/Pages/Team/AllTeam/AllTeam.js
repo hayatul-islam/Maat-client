@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { Button, Card, Col, Container, Row } from 'react-bootstrap';
+import { Button, Container, Row } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import SingleTeam from '../SingleTeam/SingleTeam';
 import './AllTeam.css';
 
 const AllTeam = () => {
@@ -30,29 +31,16 @@ const AllTeam = () => {
             </div>
             <Container>
                 <div className="pt-5">
-                    <div className='py-5'>
-                        <h1>Filter by city :</h1>
-                        <Button onClick={() => handleCountry('Chicago')} className='me-2' variant='outline-dark'>CHICAGO</Button>
-                        <Button onClick={() => handleCountry('Landon')} className='me-2' variant='outline-dark'>LANDON</Button>
-                        <Button onClick={() => handleCountry('Paris')} className='me-2' variant='outline-dark'>PARIS</Button>
-                        <Button onClick={() => handleCountry('New York')} className='me-2' variant='outline-dark'>NEW YORK</Button>
+                    <div className='py-5 text-light'>
+                        <h1 className='pb-3'>Filter by city :</h1>
+                        <Button onClick={() => handleCountry('Chicago')} className='me-2 py-3 px-4' variant='outline-light'>CHICAGO</Button>
+                        <Button onClick={() => handleCountry('Landon')} className='me-2 py-3 px-4' variant='outline-light'>LANDON</Button>
+                        <Button onClick={() => handleCountry('Paris')} className='me-2 py-3 px-4' variant='outline-light'>PARIS</Button>
+                        <Button onClick={() => handleCountry('New York')} className='me-2 py-3 px-4' variant='outline-light'>NEW YORK</Button>
                     </div>
                     <Row>
                         {
-                            teams.map(team => <Col
-                                key={team?._id}
-                                xs={12} md={3}>
-                                <Card className='mb-5'>
-                                    <Card.Img className='team-img img-fluid' variant="top" src={team?.image} />
-                                    <Card.Body>
-                                        <span>{team?.location}</span>
-                                        <Card.Title>{team?.name}</Card.Title>
-                                        <Card.Text>
-                                            <h5 className='fw-normal'>{team?.job}</h5>
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
-                            </Col>)
+                            teams.map(team => <SingleTeam key={team?._id} team={team}></SingleTeam>)
                         }
 
                     </Row>

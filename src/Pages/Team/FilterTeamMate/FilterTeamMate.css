@@ -1,0 +1,18 @@
+.filterTeamTitle p{
+    max-width: 500px;
+    color: #f0f0f0;
+    font-size: 18px;
+    text-align: justify;
+}
+.backBtn{
+    text-decoration: none;
+    border: 1px solid white;
+    background-color: black;
+    padding: 15px 22px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+}
+.backBtn:hover{
+    color: white;
+}
