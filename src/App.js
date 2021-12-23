@@ -13,6 +13,7 @@ import Header from './Pages/Shered/Header/Header';
 import AllJobOffice from './Pages/Team/AllJobOffice/AllJobOffice';
 import FilterTeamMate from './Pages/Team/FilterTeamMate/FilterTeamMate';
 import AllTeam from './Pages/Team/AllTeam/AllTeam';
+import TeamMemberInfo from './Pages/Team/TeamMemberInfo/TeamMemberInfo';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route path="teams" element={<Team />} />
           <Route path="allJobOffice" element={<AllJobOffice />} />
           <Route path="filterTeamMate/:city" element={<FilterTeamMate />} />
+          <Route path="teamMemberInfo/:memberId" element={<TeamMemberInfo />} />
         </Routes>
       </BrowserRouter>
     </div>
