@@ -14,6 +14,7 @@ import AllJobOffice from './Pages/Team/AllJobOffice/AllJobOffice';
 import FilterTeamMate from './Pages/Team/FilterTeamMate/FilterTeamMate';
 import AllTeam from './Pages/Team/AllTeam/AllTeam';
 import TeamMemberInfo from './Pages/Team/TeamMemberInfo/TeamMemberInfo';
+import OffersInfo from './Pages/Team/OffersInfo/OffersInfo';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <Route path="allJobOffice" element={<AllJobOffice />} />
           <Route path="filterTeamMate/:city" element={<FilterTeamMate />} />
           <Route path="teamMemberInfo/:memberId" element={<TeamMemberInfo />} />
+          <Route path="offersInfo/:offersId" element={<OffersInfo />} />
         </Routes>
       </BrowserRouter>
     </div>

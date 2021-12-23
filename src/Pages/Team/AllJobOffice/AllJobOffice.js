@@ -9,7 +9,7 @@ const AllJobOffice = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch('team.json')
+        fetch('http://localhost:4040/teams')
             .then(res => res.json())
             .then(data => setTeams(data))
     }, []);
