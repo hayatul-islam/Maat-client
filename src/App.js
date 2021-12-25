@@ -15,6 +15,7 @@ import TeamMemberInfo from './Pages/Team/TeamMemberInfo/TeamMemberInfo';
 import OffersInfo from './Pages/Team/OffersInfo/OffersInfo';
 import ExpertiseDetails from './Pages/Home/ExpertiseDetails/ExpertiseDetails';
 import Expertises from './Pages/Expertises/Expertises/Expertises';
+import Blogs from './Pages/Blogs/Blogs/Blogs';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route path="expertises" element={<Expertises />} />
           <Route path="teams" element={<Team />} />
+          <Route path="blogs" element={<Blogs />} />
           <Route path="allJobOffice" element={<AllJobOffice />} />
           <Route path="filterTeamMate/:city" element={<FilterTeamMate />} />
           <Route path="teamMemberInfo/:memberId" element={<TeamMemberInfo />} />
