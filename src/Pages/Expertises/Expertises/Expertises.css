@@ -1,0 +1,27 @@
+.expertises{
+    display: flex;
+    align-items: center;
+}
+.expertise-title{
+    position: relative;
+    z-index: 1;
+}
+.expertiseImg{
+    width: 210px;
+    height: 230px;
+    position: absolute;
+    top: -50px;
+    left: 20%;
+    transform: rotate(-5deg);
+    z-index: -1;
+    display: none;
+}
+.expertiseBtn{
+    display: none;
+}
+.expertises:hover .expertiseImg{
+    display: block;
+}
+.expertises:hover .expertiseBtn{
+    display: block;
+}

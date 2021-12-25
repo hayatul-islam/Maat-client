@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import './Expertises.css';
 
 const Expertises = () => {
 
@@ -30,15 +31,16 @@ const Expertises = () => {
                         <a className='downBtn' href="#expertise"><i className="fas fa-arrow-down"></i></a>
                     </div>
                 </div>
-                <div id='expertise' className='mt-5'>
+                <div id='expertise' className='pt-5 mt-5'>
                     {
                         expertises?.map(expertise => <div
-                            className='pt-5 pb-4'
+                            className='py-5'
                             key={expertise?._id}>
-                            <Row>
+                            <Row className='expertises'>
                                 <Col xs={12} md={6}>
-                                    <div className='big-font'>
+                                    <div className='big-font expertise-title'>
                                         <h2>{expertise?.title}</h2>
+                                        <img className='expertiseImg' src={expertise?.image} alt="" />
                                     </div>
                                 </Col>
                                 <Col xs={12} md={4}>
@@ -47,14 +49,17 @@ const Expertises = () => {
                                     </div>
                                 </Col>
                                 <Col xs={12} md={2}>
-                                    <div onClick={() => handleExpertiseDetails(expertise?._id)} className="d-flex justify-content-end">
-                                        <a className='downBtn'><i className="fas fa-location-arrow"></i></a>
+                                    <div className="d-flex justify-content-end">
+                                        <div onClick={() => handleExpertiseDetails(expertise?._id)} className="expertiseBtn">
+                                            <a className='downBtn'><i className="fas fa-location-arrow"></i></a>
+                                        </div>
                                     </div>
                                 </Col>
-                                <div className="pt-4">
+                                <div className="mt-5">
                                     <hr />
                                 </div>
                             </Row>
+
                         </div>
                         )
                     }
