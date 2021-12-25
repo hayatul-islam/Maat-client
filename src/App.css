@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&family=Syne:wght@400;500;600&display=swap');
 h1,h2,h3,h4,h5,h6{
   color: #f0f0f0;
+  font-family: 'Syne', sans-serif;
 }
 .big-font h2{
   font-size: 65px;
@@ -7,4 +9,5 @@ h1,h2,h3,h4,h5,h6{
 p{
   font-size: 18px;
   color: #f0f0f0cc;
+  font-family: 'IBM Plex Sans', sans-serif;
 }

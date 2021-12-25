@@ -2,20 +2,20 @@
     line-height: 85px;
 }
 .expertise-card{
-    background-color: #e2eef8;
-    box-shadow: 5px 4px  1px #f8f9fa;
-    padding-top: 10px;
-    padding-left: 50px;
-    padding-right: 40px;
-    padding-bottom: 50px;
+    background-color: #f0f0f0;
+   padding: 30px 60px 60px;
     margin: 25px 10px;
     border-radius: 3px;
 }
 .expertise-card h1{
     padding-bottom: 16px;
-    font-size: 50px;
+    font-size: 65px;
+    color: #212426;
+    line-height: 60px;
 }
 .expertise-card p{
     font-size: 18px;
+    margin-top: 20px;
     text-align: justify;
+    color: #212426;
 }
