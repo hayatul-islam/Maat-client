@@ -6,3 +6,20 @@
     text-decoration: none;
     font-size: 16px;
 }
+.teamContainer{
+    position: relative;
+    z-index: 10;
+}
+.teamImg{
+    position: absolute;
+    display: none;
+    top: -100px;
+    z-index: 20;
+}
+.teamImg img{
+    width: 200px;
+    height: 300px;
+}
+.teamContainer:hover .teamImg{
+    display: block;
+}

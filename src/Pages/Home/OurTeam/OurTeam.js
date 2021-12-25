@@ -26,25 +26,29 @@ const OurTeam = () => {
                     <h1>INTERNATIONAL TEAM</h1>
                 </div>
                 {
-                    teams.map(team => <Row key={team?._id}>
-
-                        <Col xs={12} md={4}>
-                            <div className='text-light'>
-                                <h4>{team?.name}</h4>
+                    teams.map(team => <div key={team?._id}>
+                        <Row className='teamContainer'>
+                            <Col xs={12} md={4}>
+                                <div className='text-light'>
+                                    <h4>{team?.name}</h4>
+                                </div>
+                            </Col>
+                            <Col xs={12} md={4}>
+                                <div className='text-light'>
+                                    <h5 className='fw-normal'>{team?.job}</h5>
+                                </div>
+                            </Col>
+                            <Col xs={12} md={4}>
+                                <div className='teamImg'>
+                                    <img className='img-fluid' src={team?.image} alt="" />
+                                </div>
+                            </Col>
+                            <div className="pb-4">
+                                <hr className='bg-white' />
                             </div>
-                        </Col>
-                        <Col xs={12} md={4}>
-                            <div className='text-light'>
-                                <h5 className='fw-normal'>{team?.job}</h5>
-                            </div>
-                        </Col>
-                        <Col xs={12} md={4}>
+                        </Row>
 
-                        </Col>
-                        <div className="pb-4">
-                            <hr className='bg-white' />
-                        </div>
-                    </Row>)
+                    </div>)
                 }
                 <Button onClick={handleAllTeam} variant="outline-light" className='fs-5'>SEE ALL THE TEAM</Button>
                 {/* <Link className='allTeamBtn' to="/teams">SEE ALL THE TEAM</Link> */}
