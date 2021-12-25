@@ -12,7 +12,7 @@ const About = () => {
     }, [])
 
     return (
-        <div className='py-5'>
+        <div id='about' className='py-5'>
             <Container>
                 <div>
                     <div className='big-font about-title'>

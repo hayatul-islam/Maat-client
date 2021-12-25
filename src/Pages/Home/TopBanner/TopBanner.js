@@ -4,7 +4,7 @@ import './TopBanner.css';
 
 const TopBanner = () => {
     return (
-        <div className='banner-container py-5'>
+        <div className='banner-container py-3'>
             <Container>
                 <div className='big-font'>
                     <h1>MULTI-SKILLED</h1>
@@ -13,7 +13,9 @@ const TopBanner = () => {
                     <h1>WORLDWIDE</h1>
                     <h5 className='text-end text-light fw-light'>SINCE 1997</h5>
                 </div>
-                <hr className='bg-white mt-5' />
+                <div className="mt-4">
+                    <a className='downBtn' href="#about"><i className="fas fa-arrow-down"></i></a>
+                </div>
             </Container>
         </div>
     );
