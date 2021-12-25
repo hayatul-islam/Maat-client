@@ -60,6 +60,9 @@ const Expertises = () => {
                     }
                 </div>
             </Container>
+            <div className='bannerImg'>
+                <img src="https://i.ibb.co/fnp0FXw/6160407763f5cdc1447c2427-img-services.jpg" alt="" />
+            </div>
         </div>
     );
 };

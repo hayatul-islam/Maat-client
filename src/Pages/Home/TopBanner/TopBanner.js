@@ -17,6 +17,9 @@ const TopBanner = () => {
                     <a className='downBtn' href="#about"><i className="fas fa-arrow-down"></i></a>
                 </div>
             </Container>
+            <div className='bannerImg'>
+                <img src="https://i.ibb.co/bdL6qPm/top-banner.jpg" alt="" />
+            </div>
         </div>
     );
 };

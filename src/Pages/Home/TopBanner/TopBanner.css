@@ -1,3 +1,19 @@
+.banner-container{
+    position: relative;
+    z-index: 1;
+}
+.bannerImg{
+    position: absolute;
+    top: 0;
+    left: 40%;
+    z-index: -1;
+}
+.bannerImg img{
+    width: 350px;
+    height: 550px;
+    transform: rotate(5deg);
+    margin-top: 20px;
+}
 .big-font h1{
     font-size: 105px;
     color: #f0f0f0;
