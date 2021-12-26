@@ -2,8 +2,11 @@
     background-color: #f0f0f0;
     padding: 120px 0;
 }
-.contactUs h1, p{
-    color: #262421
+.contactUs p{
+    color: #262421;
+}
+.constUsTitle{
+    color: #262421 !important;
 }
 .contactUsBtn{
     width: 150px;
