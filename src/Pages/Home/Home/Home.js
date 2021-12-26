@@ -1,4 +1,5 @@
 import React from 'react';
+import BlogSlider from '../../Blogs/BlogSlider/BlogSlider';
 import About from '../About/About';
 import OurExpertise from '../OurExpertise/OurExpertise';
 import OurTeam from '../OurTeam/OurTeam';
@@ -11,6 +12,7 @@ const Home = () => {
             <About />
             <OurExpertise />
             <OurTeam />
+            <BlogSlider />
         </div>
     );
 };

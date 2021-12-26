@@ -8,7 +8,7 @@ const BlogDetails = () => {
     const { blogId } = useParams();
     const [blogs, setBlogs] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:4040/blogs')
+        fetch('https://pure-refuge-33072.herokuapp.com/blogs')
             .then(res => res.json())
             .then(data => setBlogs(data))
     }, []);
@@ -47,3 +47,5 @@ const BlogDetails = () => {
 };
 
 export default BlogDetails;
+
+

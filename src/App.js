@@ -17,6 +17,8 @@ import ExpertiseDetails from './Pages/Home/ExpertiseDetails/ExpertiseDetails';
 import Expertises from './Pages/Expertises/Expertises/Expertises';
 import Blogs from './Pages/Blogs/Blogs/Blogs';
 import BlogDetails from './Pages/Blogs/BlogDetails/BlogDetails';
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 
 
 function App() {
