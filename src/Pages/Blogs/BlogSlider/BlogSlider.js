@@ -20,7 +20,7 @@ const BlogSlider = () => {
         centerMode: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 2.,
+        slidesToShow: 2,
         slidesToScroll: 1,
         initialSlide: 0,
         responsive: [
@@ -49,22 +49,22 @@ const BlogSlider = () => {
     };
 
     const navigate = useNavigate();
-    const handleBlog = blogId => {
-        navigate(`/blogs/${blogId}`)
+    const handleBlog = () => {
+        navigate(`/blogs`);
     }
 
 
     return (
-        <div className='mt-5 pt-5'>
+        <div className='mt-5 py-5'>
             <Container>
                 <div className="big-font">
-                    <h2> LATEST BLOG POSTS </h2>
+                    <h1> LATEST BLOG POSTS </h1>
                 </div>
             </Container>
             <div className=''>
                 <Slider {...settings}>
                     {
-                        blogs.map(blog => <div>
+                        blogs.map(blog => <div key={blog?._id}>
                             <div className='blogContainer mx-3'>
                                 <div className='blogContent'>
                                     <div className="">
@@ -82,6 +82,11 @@ const BlogSlider = () => {
                         </div>)
                     }
                 </Slider>
+                <Container>
+                    <div className='pt-5'>
+                        <Button onClick={handleBlog} variant="outline-light" className='fs-5'>SEE OUR BLOG</Button>
+                    </div>
+                </Container>
             </div>
         </div>
     );

@@ -1,0 +1,20 @@
+.testimonials{
+    margin: 10px;
+    padding: 30px 20px;
+    background-color: #f0f0f0;
+    
+}
+.testimonials p{
+    margin-bottom: 30px;
+    color: #242621
+}
+.testimonials h6{
+    color: #242621;
+    font-size: 24px;
+}
+.testimonials i{
+    color: #64a2ec;
+    margin-right: 3px;
+    font-size: 20px;
+}
+
