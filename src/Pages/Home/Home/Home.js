@@ -1,6 +1,7 @@
 import React from 'react';
 import BlogSlider from '../../Blogs/BlogSlider/BlogSlider';
 import About from '../About/About';
+import ContactUs from '../ContactUs/ContactUs';
 import OurExpertise from '../OurExpertise/OurExpertise';
 import OurTeam from '../OurTeam/OurTeam';
 import Testimonial from '../Testimonial/Testimonial';
@@ -15,6 +16,7 @@ const Home = () => {
             <OurTeam />
             <Testimonial />
             <BlogSlider />
+            <ContactUs />
         </div>
     );
 };

@@ -1,0 +1,22 @@
+.contactUs{
+    background-color: #f0f0f0;
+    padding: 120px 0;
+}
+.contactUs h1, p{
+    color: #262421
+}
+.contactUsBtn{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactUsBtn a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+}
