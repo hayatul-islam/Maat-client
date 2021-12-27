@@ -8,6 +8,10 @@
 .constUsTitle{
     color: #262421 !important;
 }
+.contactUsBtnContainer{
+    display: flex;
+    justify-content: center;
+}
 .contactUsBtn{
     width: 150px;
     height: 150px;
@@ -23,3 +27,11 @@
     color: white;
     font-weight: 700;
 }
+
+@media (min-width: 0px) and (max-width: 749px){
+    .contactUsBtnContainer{
+        display: flex;
+        justify-content: left;
+        margin-top: 50px;
+    }
+  }

@@ -16,15 +16,36 @@ const Testimonial = () => {
     const settings = {
         arrows: false,
         focusOnSelect: true,
-        className: "center",
         centerMode: true,
         infinite: true,
-        centerPadding: "60px",
-        slidesToShow: 1.4,
+        slidesToShow: 1.3,
         slidesToScroll: 1,
         speed: 500,
         rows: 2,
-        slidesPerRow: 2
+        slidesPerRow: 2,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    infinite: true
+                }
+            },
+            {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 1,
+                    initialSlide: 0
+                }
+            },
+            {
+                breakpoint: 750,
+                settings: {
+                    slidesToShow: 0.5,
+                    initialSlide: 1
+                }
+            }
+        ]
     };
 
     return (

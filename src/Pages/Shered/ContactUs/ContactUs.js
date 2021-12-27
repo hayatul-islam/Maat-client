@@ -16,7 +16,7 @@ const ContactUs = () => {
                         </div>
                     </Col>
                     <Col xs={12} md={6}>
-                        <div className="d-flex justify-content-center">
+                        <div className="contactUsBtnContainer">
                             <div className="contactUsBtn">
                                 <Link className='' to='/contact'>Contact Us</Link>
                             </div>
