@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Col, Container, Image, NavLink, Row } from 'react-bootstrap';
+import { Col, Container, Image, NavDropdown, NavLink, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Footer.css';
 
@@ -50,7 +50,7 @@ const Footer = () => {
                     <div className='big-font pb-3'>
                         <h3>SITEMAP</h3>
                     </div>
-                    <Row>
+                    <Row className='d-flex align-items-center'>
                         <Col xs={3}>
                             <div className='footer-menu'>
                                 <Link to="/">Home</Link>
@@ -63,7 +63,47 @@ const Footer = () => {
                         </Col>
                         <Col xs={3}>
                             <div className='footer-menu'>
-                                <Link to="">Maat</Link>
+                                <NavDropdown title="Maat" >
+                                    <div className='dropdownItem'>
+                                        <Link to="/expertises">
+                                            <div className='d-flex justify-content-between align-items-center'>
+                                                <div>
+                                                    <span>01</span>
+                                                    <p>Our story</p>
+                                                </div>
+                                                <div>
+                                                    <img className='dropdownIcon' src="https://uploads-ssl.webflow.com/6160407763f5cd74b27c2405/6160407763f5cdf3b57c2428_icon-arrow-white-diag-lg.svg" alt="" />
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                    <div className='dropdownItem'>
+                                        <Link to="/teams">
+                                            <div className='d-flex justify-content-between align-items-center'>
+                                                <div>
+                                                    <span>02</span>
+                                                    <p>Team</p>
+                                                </div>
+                                                <div>
+                                                    <img className='dropdownIcon' src="https://uploads-ssl.webflow.com/6160407763f5cd74b27c2405/6160407763f5cdf3b57c2428_icon-arrow-white-diag-lg.svg" alt="" />
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                    <div className='dropdownItem'>
+                                        <Link to="/expertises">
+                                            <div className='d-flex justify-content-between align-items-center'>
+                                                <div>
+                                                    <span>03</span>
+                                                    <p>Careers</p>
+                                                </div>
+                                                <div>
+                                                    <img className='dropdownIcon' src="https://uploads-ssl.webflow.com/6160407763f5cd74b27c2405/6160407763f5cdf3b57c2428_icon-arrow-white-diag-lg.svg" alt="" />
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                </NavDropdown>
                             </div>
                         </Col>
                         <Col xs={3}>

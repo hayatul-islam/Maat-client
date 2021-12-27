@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Image, Nav, Navbar } from 'react-bootstrap';
+import { Container, Image, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import './Header.css';
 
@@ -14,7 +14,47 @@ const Header = () => {
                     <Nav className="ms-auto header-menu">
                         <NavLink to="/">Home</NavLink>
                         <NavLink to="/expertises">Expertise</NavLink>
-                        <NavLink to="/">Maat</NavLink>
+                        <NavDropdown title="Maat" >
+                            <div className='dropdownItem'>
+                                <NavLink to="/expertises">
+                                    <div className='d-flex justify-content-between align-items-center'>
+                                        <div>
+                                            <span>01</span>
+                                            <p>Our story</p>
+                                        </div>
+                                        <div>
+                                            <img className='dropdownIcon' src="https://uploads-ssl.webflow.com/6160407763f5cd74b27c2405/6160407763f5cdf3b57c2428_icon-arrow-white-diag-lg.svg" alt="" />
+                                        </div>
+                                    </div>
+                                </NavLink>
+                            </div>
+                            <div className='dropdownItem'>
+                                <NavLink to="/teams">
+                                    <div className='d-flex justify-content-between align-items-center'>
+                                        <div>
+                                            <span>02</span>
+                                            <p>Team</p>
+                                        </div>
+                                        <div>
+                                            <img className='dropdownIcon' src="https://uploads-ssl.webflow.com/6160407763f5cd74b27c2405/6160407763f5cdf3b57c2428_icon-arrow-white-diag-lg.svg" alt="" />
+                                        </div>
+                                    </div>
+                                </NavLink>
+                            </div>
+                            <div className='dropdownItem'>
+                                <NavLink to="/expertises">
+                                    <div className='d-flex justify-content-between align-items-center'>
+                                        <div>
+                                            <span>03</span>
+                                            <p>Careers</p>
+                                        </div>
+                                        <div>
+                                            <img className='dropdownIcon' src="https://uploads-ssl.webflow.com/6160407763f5cd74b27c2405/6160407763f5cdf3b57c2428_icon-arrow-white-diag-lg.svg" alt="" />
+                                        </div>
+                                    </div>
+                                </NavLink>
+                            </div>
+                        </NavDropdown>
                         <NavLink to="/blogs">Blog</NavLink>
                         <NavLink to="/contact">Contact</NavLink>
                     </Nav>
