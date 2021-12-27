@@ -21,11 +21,27 @@ const AllJobOffice = () => {
 
     return (
         <div className='text-light'>
-            <div className='py-5'>
+            <div className=''>
                 <Container>
-                    <div className='big-font'>
-                        <h1>WANNA JOIN </h1>
-                        <h1> THE MAAT TEAM ?</h1>
+                    <div className='banner-container py-3'>
+                        <div className='big-font'>
+                            <h1>WANNA JOIN</h1>
+                            <div className='storyInfo'>
+                                <div>
+                                    <h1>THE MAAT</h1>
+                                </div>
+                                <div className='rightInfo'>
+                                    <h1>TEAM ?</h1>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div className="mt-5">
+                            <a className='downBtn' href="#about"><i className="fas fa-arrow-down"></i></a>
+                        </div>
+                        <div className='bannerImg storyImg'>
+                            <img src="https://i.ibb.co/bdL6qPm/top-banner.jpg" alt="" />
+                        </div>
                     </div>
                 </Container>
             </div>

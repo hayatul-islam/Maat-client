@@ -42,7 +42,7 @@ const Header = () => {
                                 </NavLink>
                             </div>
                             <div className='dropdownItem'>
-                                <NavLink to="/expertises">
+                                <NavLink to="/allJobOffice">
                                     <div className='d-flex justify-content-between align-items-center'>
                                         <div>
                                             <span>03</span>
