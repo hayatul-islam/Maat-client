@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { useForm } from "react-hook-form";
 import './Contact.css';
 
 const Contact = () => {
+
+    const [offices, setOffices] = useState([]);
+    useEffect(() => {
+        fetch('offices.json')
+            .then(res => res.json())
+            .then(data => setOffices(data))
+    }, []);
 
     const { register, handleSubmit } = useForm();
     const onSubmit = data => console.log(data);
@@ -21,22 +28,13 @@ const Contact = () => {
                                 <h3>Or call us !</h3>
                             </div>
                             <div className="officeInfo">
-                                <div className='contactOffice'>
-                                    <h5>Chicago office</h5>
-                                    <p>217-300-0438</p>
-                                </div>
-                                <div className='contactOffice'>
-                                    <h5>Chicago office</h5>
-                                    <p>217-300-0438</p>
-                                </div>
-                                <div className='contactOffice'>
-                                    <h5>Chicago office</h5>
-                                    <p>217-300-0438</p>
-                                </div>
-                                <div className='contactOffice'>
-                                    <h5>Chicago office</h5>
-                                    <p>217-300-0438</p>
-                                </div>
+                                {
+                                    offices.map(office => <div key={office?._id} className='contactOffice'>
+                                        <h5>{office?.name} office</h5>
+                                        <p className='phone'>{office?.phone}</p>
+                                    </div>)
+                                }
+
                             </div>
                         </div>
                     </Col>
@@ -66,10 +64,13 @@ const Contact = () => {
                                         <div className='inputField'>
                                             <label htmlFor="">City</label> <br />
                                             <select {...register("city")}>
-                                                <option value="Paris">Paris</option>
-                                                <option value="New York">New York</option>
-                                                <option value="Chicago">Chicago</option>
-                                                <option value="Landon">Landon</option>
+                                                {
+                                                    offices.map(office => <option
+                                                        key={office?._id}
+                                                        value={office?.name}>
+                                                        {office?.name}
+                                                    </option>)
+                                                }
                                             </select>
                                         </div>
                                     </Col>

@@ -1,5 +1,6 @@
 import React from 'react';
 import BlogSlider from '../../Blogs/BlogSlider/BlogSlider';
+import Footer from '../../Shered/Footer/Footer';
 import About from '../About/About';
 import ContactUs from '../ContactUs/ContactUs';
 import OurExpertise from '../OurExpertise/OurExpertise';
@@ -17,6 +18,7 @@ const Home = () => {
             <Testimonial />
             <BlogSlider />
             <ContactUs />
+            <Footer />
         </div>
     );
 };

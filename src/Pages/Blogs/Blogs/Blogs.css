@@ -31,13 +31,11 @@
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
+    
 }
 .blogContainer:hover .blogBgImage{
     display: block;
-}
-.blogContainer:hover{
-    background-color: rgba(33, 36, 38, 0.6);
-    z-index: 999;
+    opacity: .6;
 }
 
   /* blog details  */

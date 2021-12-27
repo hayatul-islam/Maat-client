@@ -11,8 +11,11 @@
 }
 .contactOffice p{
     color: #f0f0f0cc;
+    font-size: 17px;
+    margin-bottom: 0;
+}
+.contactOffice .phone{
     text-decoration: underline;
-    font-size: 16px;
 }
 
 .inputField label{

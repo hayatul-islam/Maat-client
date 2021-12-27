@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Paris",
+        "location": "12 avenue de la Belle Etoile, 75012 Paris",
+        "phone": "217-300-0438"
+    },
+    {
+        "name": "Landon",
+        "location": "8288 Jackson 7 Grosvenor Gardens, London, SW1W 0BD",
+        "phone": "217-300-0439"
+    },
+    {
+        "name": "New York",
+        "location": "8288 Jackson Road - New York, NY 10016",
+        "phone": "217-300-0449"
+    },
+    {
+        "name": "Chicago",
+        "location": "6634 W 64th Pl - Chicago, Illinois(IL), 60638",
+        "phone": "217-300-0432"
+    }
+]
