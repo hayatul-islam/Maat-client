@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&family=Syne:wght@400;500;600&display=swap');
+
+/******************************
+ common 
+ *****************************/
 h1,h2,h3,h4,h5,h6{
   color: #f0f0f0;
   font-family: 'Syne', sans-serif;
 }
+
 .big-font h1{
-  font-size: 65px;
-  line-height: 6rem;
+  font-size: 105px;
+  color: #f0f0f0;
+  font-weight: normal;
 }
 .big-font h2{
   font-size: 45px;
@@ -20,4 +26,30 @@ p{
   font-size: 18px;
   color: #f0f0f0cc;
   font-family: 'IBM Plex Sans', sans-serif;
+}
+
+@media (min-width: 0px) and (max-width: 649px){
+  .big-font h1{
+    font-size: 3em;
+  }
+}
+@media (min-width: 650px) and (max-width: 800px){
+  .big-font h1{
+    font-size: 3.4em;
+  }
+}
+@media (min-width: 801px) and (max-width: 1000px){
+  .big-font h1{
+    font-size: 4.2em;
+  }
+}
+@media (min-width: 1001px) and (max-width: 1200px){
+  .big-font h1{
+    font-size: 5.6em;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1400px){
+  .big-font h1{
+    font-size: 6em;
+  }
 }
