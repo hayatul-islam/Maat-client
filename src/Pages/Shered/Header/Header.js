@@ -16,7 +16,7 @@ const Header = () => {
                         <NavLink to="/expertises">Expertise</NavLink>
                         <NavDropdown title="Maat" >
                             <div className='dropdownItem'>
-                                <NavLink to="/expertises">
+                                <NavLink to="/ourStory">
                                     <div className='d-flex justify-content-between align-items-center'>
                                         <div>
                                             <span>01</span>

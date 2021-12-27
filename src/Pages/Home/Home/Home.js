@@ -2,7 +2,7 @@ import React from 'react';
 import BlogSlider from '../../Blogs/BlogSlider/BlogSlider';
 import Footer from '../../Shered/Footer/Footer';
 import About from '../About/About';
-import ContactUs from '../ContactUs/ContactUs';
+import ContactUs from '../../Shered/ContactUs/ContactUs';
 import OurExpertise from '../OurExpertise/OurExpertise';
 import OurTeam from '../OurTeam/OurTeam';
 import Testimonial from '../Testimonial/Testimonial';

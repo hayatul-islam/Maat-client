@@ -20,6 +20,7 @@ import BlogDetails from './Pages/Blogs/BlogDetails/BlogDetails';
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import Contact from './Pages/Contact/Contact/Contact';
+import OurStory from './Pages/Maat/OurStory/OurStory';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route path="expertises" element={<Expertises />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="ourStory" element={<OurStory />} />
           <Route path="teams" element={<Team />} />
           <Route path="blogs" element={<Blogs />} />
           <Route path="blogs/:blogId" element={<BlogDetails />} />
