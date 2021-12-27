@@ -20,7 +20,7 @@ const OurExpertise = () => {
     return (
         <div>
             <Container>
-                <div className='big-font expertise-title pb-5'>
+                <div className='big-font pb-5'>
                     <h1>OUR</h1>
                     <h1>EXPERTISES</h1>
                 </div>
@@ -28,10 +28,10 @@ const OurExpertise = () => {
                     {
                         expertises.map((expertise, index) => <Col
                             key={expertise?._id}
-                            xs={12} md={6}
+                            xs={12} lg={6}
                         >
                             <div className='expertise-card'>
-                                <h1 className='text-end text-muted fw-normal'>0{index + 1}</h1>
+                                <h1 className='text-end text-muted fw-normal cardIndex'>0{index + 1}</h1>
                                 <h1>{expertise?.title}</h1>
                                 <p>{expertise?.description}</p>
                                 <button onClick={() => handleExpertiseDetails(expertise?._id)} className="fs-5 border-0 bg-light px-3 py-2 rounded mt-4">SEE MORE</button>

@@ -1,5 +1,5 @@
-.expertise-title h1{
-    line-height: 85px;
+.cardIndex{
+    font-family: none;
 }
 .expertise-card{
     background-color: #f0f0f0;
@@ -19,3 +19,31 @@
     text-align: justify;
     color: #212426;
 }
+
+
+@media (min-width: 0px) and (max-width: 449px){
+    .expertise-card{
+        background-color: #f0f0f0;
+       padding: 20px 35px 35px;
+        margin: 15px 5px;
+    }
+    .expertise-card h1{
+        font-size: 35px;
+        line-height: 35px;
+    }
+    .expertise-card p{
+        font-size: 15px;
+        margin-top: 0px;
+    }
+  }
+@media (min-width: 450px) and (max-width: 1200px){
+    .expertise-card{
+        background-color: #f0f0f0;
+       padding: 20px 35px 35px;
+        margin: 15px 5px;
+    }
+    .expertise-card h1{
+        font-size: 50px;
+        line-height: 45px;
+    }
+  }

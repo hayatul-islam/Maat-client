@@ -12,9 +12,10 @@ h1,h2,h3,h4,h5,h6{
   font-size: 105px;
   color: #f0f0f0;
   font-weight: normal;
+  line-height: 85px;
 }
 .big-font h2{
-  font-size: 45px;
+  font-size: 65px;
 }
 .big-font h3{
   font-size: 33px;

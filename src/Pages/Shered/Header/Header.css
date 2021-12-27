@@ -2,10 +2,10 @@
     width: 100px;
     height: 18px;
 }
-.header-menu{
+/* .header-menu{
     display: flex;
     align-items: center;
-}
+} */
 .header-menu a{
     color: #f0f0f0;
     margin-left: 50px;
