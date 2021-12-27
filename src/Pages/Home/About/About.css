@@ -24,3 +24,29 @@
     font-size: 55px;
     color: #F0F0F0;
 }
+
+@media (min-width: 0px) and (max-width: 768px){
+    .about-title .who{
+        margin-left: 0;
+    }
+    .about-title .weAre{
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .about-text{
+        max-width: 100%;
+        text-align: justify;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    #figuresDes{
+        order: 2;
+    }
+    #figureKey{
+        order: 1;
+    }
+    .key-figures{
+        transform:  rotate(0);
+    }
+  }

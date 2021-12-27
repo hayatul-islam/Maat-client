@@ -41,8 +41,8 @@ const About = () => {
                                 <Row>
 
                                     {
-                                        figures.map(figure => <Col xs={6}>
-                                            <div className='text-color min-text pb-5'>
+                                        figures.map(figure => <Col key={figure?._id} xs={6}>
+                                            <div className='pb-5'>
                                                 <h2>{figure?.title}</h2>
                                                 <p>{figure?.description}</p>
                                             </div>
