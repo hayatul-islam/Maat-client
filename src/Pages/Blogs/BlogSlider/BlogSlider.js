@@ -32,17 +32,17 @@ const BlogSlider = () => {
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 900,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 1.5,
                     initialSlide: 0
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 750,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 0
+                    initialSlide: 0
                 }
             }
         ]

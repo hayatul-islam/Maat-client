@@ -39,7 +39,7 @@
     }
     .bannerImg img{
         width: 280px;
-        height: 400px;
+        height: 350px;
     }
   }
 @media (min-width: 421px) and (max-width: 550px){
