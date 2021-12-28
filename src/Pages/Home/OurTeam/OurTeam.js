@@ -21,7 +21,7 @@ const OurTeam = () => {
     return (
         <div className='mainSection'>
             <Container>
-                <div className='big-font'>
+                <div data-aos="fade-up" data-aos-duration="1000" className='big-font'>
                     <h1 className='ourTeamTitle'>OUR INTERNATIONAL TEAM</h1>
                 </div>
                 <div className='teamsContainer'>
@@ -47,7 +47,7 @@ const OurTeam = () => {
                                     <img className='img-fluid' src={team?.image} alt="" />
                                 </div>
                                 <div className="pb-4">
-                                    <hr className='bg-white' />
+                                    <hr data-aos="fade-right" data-aos-duration="1000" className='bg-white' />
                                 </div>
                             </Row>
 

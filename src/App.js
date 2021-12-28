@@ -22,6 +22,10 @@ import 'slick-carousel/slick/slick-theme.css'
 import Contact from './Pages/Contact/Contact/Contact';
 import OurStory from './Pages/Maat/OurStory/OurStory';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
+
 
 function App() {
   return (

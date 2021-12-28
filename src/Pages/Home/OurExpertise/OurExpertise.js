@@ -20,7 +20,7 @@ const OurExpertise = () => {
     return (
         <div className='mainSection'>
             <Container>
-                <div className='big-font pb-5'>
+                <div data-aos="fade-up" data-aos-duration="1000" className='big-font pb-5'>
                     <h1>OUR</h1>
                     <h1>EXPERTISES</h1>
                 </div>
@@ -30,7 +30,7 @@ const OurExpertise = () => {
                             key={expertise?._id}
                             xs={12} lg={6}
                         >
-                            <div className='expertise-card'>
+                            <div data-aos="fade-up" data-aos-duration="1000" className='expertise-card'>
                                 <h1 className='text-end text-muted fw-normal cardIndex'>0{index + 1}</h1>
                                 <h1>{expertise?.title}</h1>
                                 <p>{expertise?.description}</p>

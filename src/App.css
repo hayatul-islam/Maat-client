@@ -30,6 +30,9 @@ p{
   color: #f0f0f0cc;
   font-family: 'IBM Plex Sans', sans-serif;
 }
+hr{
+  background: #f0f0f0 !important;
+}
 
 @media (min-width: 0px) and (max-width: 649px){
   .big-font h1{

@@ -14,7 +14,7 @@ const About = () => {
     return (
         <div id='about' className='mainSection'>
             <Container>
-                <div>
+                <div data-aos="fade-up" data-aos-duration="1000">
                     <div className='big-font about-title'>
                         <h1 className="who">WHO</h1>
                         <h1 className="weAre">WE ARE</h1>
@@ -33,39 +33,41 @@ const About = () => {
                             </Col>
 
                             <div className="aboutHr mb-5">
-                                <hr className='bg-white' />
+                                <hr data-aos="fade-right" data-aos-duration="1000" className='bg-white' />
                             </div>
 
                             {/* key figures */}
-                            <div className='keyFigure big-font'>
+                            <div data-aos="fade-up" data-aos-duration="1000" className='keyFigure big-font'>
                                 <h1>KEY</h1>
                                 <h1>FIGURES</h1>
                             </div>
                             <Col xs={12} md={6}>
-                                <Row>
+                                <div data-aos="fade-up" data-aos-duration="1000">
+                                    <Row>
+                                        {
+                                            figures.map(figure => <Col key={figure?._id} xs={6}>
+                                                <div className='pb-5 big-font'>
+                                                    <h2>{figure?.title}</h2>
+                                                    <p>{figure?.description}</p>
+                                                </div>
+                                            </Col>)
+                                        }
 
-
-                                    {
-                                        figures.map(figure => <Col key={figure?._id} xs={6}>
-                                            <div className='pb-5'>
-                                                <h2>{figure?.title}</h2>
-                                                <p>{figure?.description}</p>
-                                            </div>
-                                        </Col>)
-                                    }
-
-                                </Row>
+                                    </Row>
+                                </div>
 
                             </Col>
                             <Col xs={12} md={6}>
-                                <div className='key-figures big-font'>
-                                    <h1>KEY</h1>
-                                    <h1>FIGURES</h1>
+                                <div data-aos="fade-up" data-aos-duration="1000">
+                                    <div className='key-figures big-font'>
+                                        <h1>KEY</h1>
+                                        <h1>FIGURES</h1>
+                                    </div>
                                 </div>
                             </Col>
                         </Row>
                         <div className="">
-                            <hr className='bg-white' />
+                            <hr data-aos="fade-right" data-aos-duration="1000" className='bg-white' />
                         </div>
                     </div>
                 </div>

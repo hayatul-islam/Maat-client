@@ -16,10 +16,15 @@ const TopBanner = () => {
                     <h5 className='text-end sinceYear'>SINCE 1997</h5>
                 </div>
                 <div className="mt-4">
-                    <a className='downBtn' href="#about"><i className="fas fa-arrow-down"></i></a>
+                    <a className='downBtn' href="#about">
+                        <i className="fas fa-arrow-down "></i>
+                    </a>
                 </div>
             </Container>
-            <div className='bannerImg topBannerImg'>
+            <div data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-sine"
+                className='bannerImg topBannerImg'>
                 <img src="https://i.ibb.co/bdL6qPm/top-banner.jpg" alt="" />
             </div>
         </div>
