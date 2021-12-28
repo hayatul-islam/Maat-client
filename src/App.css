@@ -11,7 +11,6 @@ h1,h2,h3,h4,h5,h6{
 .big-font h1{
   font-size: 105px;
   color: #f0f0f0;
-  font-weight: normal;
   line-height: 85px;
 }
 .big-font h2{

@@ -2,23 +2,30 @@
     position: relative;
     z-index: 1;
 }
+.sinceYear{
+    color: #f0f0f0cc;
+    font-size: 18px;
+    font-weight: 200;
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin-top: 15px;
+}
 .bannerImg{
     position: absolute;
-    top: 0;
+    top: -20px;
     left: 40%;
     z-index: -1;
 }
 .bannerImg img{
     width: 350px;
-    height: 540px;
+    height: 530px;
     transform: rotate(4deg);
     margin-top: 20px;
 }
 
 .downBtn{
     font-size: 24px;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -26,8 +33,9 @@
     background: orange;
     color: white;
     text-decoration: none;
-   
+   margin-top: 30px;
 }
+
 .downBtn:hover{
     color: whitesmoke;
 }
@@ -40,6 +48,9 @@
     .bannerImg img{
         width: 280px;
         height: 350px;
+    }
+    .topBannerImg img{
+        height: 400px;
     }
   }
 @media (min-width: 421px) and (max-width: 550px){
