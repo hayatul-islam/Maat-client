@@ -13,7 +13,7 @@ const Footer = () => {
     }, []);
 
     return (
-        <div className='py-5'>
+        <div className='mainSection'>
             <Container>
                 <hr className='bg-white' />
                 <div className='py-3'>

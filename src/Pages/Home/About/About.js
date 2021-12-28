@@ -12,7 +12,7 @@ const About = () => {
     }, [])
 
     return (
-        <div id='about' className='py-5'>
+        <div id='about' className='mainSection'>
             <Container>
                 <div>
                     <div className='big-font about-title'>
@@ -32,13 +32,18 @@ const About = () => {
                                 </div>
                             </Col>
 
-                            <div className="pt-5">
-                                <hr className='bg-white my-5' />
+                            <div className="aboutHr mb-5">
+                                <hr className='bg-white' />
                             </div>
 
                             {/* key figures */}
+                            <div className='keyFigure big-font'>
+                                <h1>KEY</h1>
+                                <h1>FIGURES</h1>
+                            </div>
                             <Col xs={12} md={6}>
                                 <Row>
+
 
                                     {
                                         figures.map(figure => <Col key={figure?._id} xs={6}>
@@ -60,7 +65,7 @@ const About = () => {
                             </Col>
                         </Row>
                         <div className="">
-                            <hr className='bg-white mb-5' />
+                            <hr className='bg-white' />
                         </div>
                     </div>
                 </div>

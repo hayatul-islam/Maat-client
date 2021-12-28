@@ -12,8 +12,14 @@
     color: #F0F0F0CC;
     font-size: 18px;
 }
+.aboutHr{
+    margin-top: 100px;
+}
 
 /* key-figures */
+.keyFigure{
+    display: none;
+}
 .key-figures{
     transform:  rotate(-60deg);
 }
@@ -39,14 +45,11 @@
         margin: 0 !important;
         padding: 0 !important;
     }
-
-    #figuresDes{
-        order: 2;
-    }
-    #figureKey{
-        order: 1;
+    .keyFigure{
+        display: block;
+        margin-bottom: 20px;
     }
     .key-figures{
-        transform:  rotate(0);
+        display: none;
     }
   }

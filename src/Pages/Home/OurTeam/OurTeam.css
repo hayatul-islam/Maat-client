@@ -1,4 +1,6 @@
-
+.teamsContainer{
+    margin-top: 70px;
+}
 .allTeamBtn{
     text-decoration: none;
     font-size: 16px;
@@ -20,3 +22,9 @@
 .teamContainer:hover .teamImg{
     display: block;
 }
+
+@media (min-width: 0px) and (max-width: 649px){
+    .ourTeamTitle{
+        font-size: 40px !important;
+    }
+  }

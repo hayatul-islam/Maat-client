@@ -49,11 +49,11 @@ const Testimonial = () => {
     };
 
     return (
-        <div>
+        <div className='mainSection'>
             <Container>
-                <div className="big-font pt-5">
-                    <h1>OUR CLIENTS ARE </h1>
-                    <h1>OUR BEST AMBASSADORS</h1>
+                <div className="big-font">
+                    <h1 className='ourTeamTitle'>OUR CLIENTS ARE </h1>
+                    <h1 className='ourTeamTitle'>OUR BEST AMBASSADORS</h1>
                 </div>
             </Container>
             <Slider {...settings}>

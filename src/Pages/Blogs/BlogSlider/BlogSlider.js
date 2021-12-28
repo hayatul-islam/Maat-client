@@ -55,7 +55,7 @@ const BlogSlider = () => {
 
 
     return (
-        <div className='mt-5 py-5'>
+        <div className='mainSection'>
             <Container>
                 <div className="big-font">
                     <h1> LATEST BLOG POSTS </h1>

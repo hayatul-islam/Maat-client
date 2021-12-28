@@ -19,37 +19,38 @@ const OurTeam = () => {
     }
 
     return (
-        <div className='py-5 mt-5'>
+        <div className='mainSection'>
             <Container>
-                <div className='big-font text-light pb-5 mb-4'>
-                    <h1>OUR</h1>
-                    <h1>INTERNATIONAL TEAM</h1>
+                <div className='big-font'>
+                    <h1 className='ourTeamTitle'>OUR INTERNATIONAL TEAM</h1>
                 </div>
-                {
-                    teams.map(team => <div key={team?._id}>
-                        <Row className='teamContainer'>
-                            <Col xs={12} md={4}>
-                                <div className='text-light'>
-                                    <h4>{team?.name}</h4>
+                <div className='teamsContainer'>
+                    {
+                        teams.map(team => <div key={team?._id}>
+                            <Row className='teamContainer'>
+                                <Col xs={12} md={4}>
+                                    <div className='text-light'>
+                                        <h4>{team?.name}</h4>
+                                    </div>
+                                </Col>
+                                <Col xs={12} md={4}>
+                                    <div className='text-light'>
+                                        <h5 className='fw-normal'>{team?.job}</h5>
+                                    </div>
+                                </Col>
+                                <Col xs={12} md={4}>
+                                    <div className='teamImg'>
+                                        <img className='img-fluid' src={team?.image} alt="" />
+                                    </div>
+                                </Col>
+                                <div className="pb-4">
+                                    <hr className='bg-white' />
                                 </div>
-                            </Col>
-                            <Col xs={12} md={4}>
-                                <div className='text-light'>
-                                    <h5 className='fw-normal'>{team?.job}</h5>
-                                </div>
-                            </Col>
-                            <Col xs={12} md={4}>
-                                <div className='teamImg'>
-                                    <img className='img-fluid' src={team?.image} alt="" />
-                                </div>
-                            </Col>
-                            <div className="pb-4">
-                                <hr className='bg-white' />
-                            </div>
-                        </Row>
+                            </Row>
 
-                    </div>)
-                }
+                        </div>)
+                    }
+                </div>
                 <Button onClick={handleAllTeam} variant="outline-light" className='fs-5'>SEE ALL THE TEAM</Button>
                 {/* <Link className='allTeamBtn' to="/teams">SEE ALL THE TEAM</Link> */}
 

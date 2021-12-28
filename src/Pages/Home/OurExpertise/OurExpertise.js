@@ -18,7 +18,7 @@ const OurExpertise = () => {
     }
 
     return (
-        <div>
+        <div className='mainSection'>
             <Container>
                 <div className='big-font pb-5'>
                     <h1>OUR</h1>
