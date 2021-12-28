@@ -20,9 +20,9 @@ const JoinUs = () => {
     }
 
     return (
-        <div className='pb-5 text-light'>
+        <div className='mainSection text-light'>
             <Container>
-                <div className='joinUs-title py-5'>
+                <div className='joinUs-title pb-5'>
                     <h1>WANNA JOIN US ?</h1>
                     <p>Check our latest job offers !</p>
                 </div>

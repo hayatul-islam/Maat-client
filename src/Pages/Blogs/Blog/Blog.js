@@ -6,6 +6,7 @@ const Blog = ({ blog }) => {
 
     const navigate = useNavigate();
     const handleBlog = blogId => {
+        console.log(blogId);
         navigate(`/blogs/${blogId}`)
     }
     return (
@@ -17,7 +18,7 @@ const Blog = ({ blog }) => {
                         <p className=''>{blog?.publish} - <span className=''>{blog?.category}</span></p>
                     </div>
                     <div className="detailsBtn">
-                        <Button onClick={() => handleBlog(blog?._id)} className='px-3 py-2' variant='light'>READ ARTICLE</Button>
+                        <button onClick={() => handleBlog(blog?._id)} className='px-3 py-2'>READ ARTICLE</button>
                     </div>
                     <div className='blogBgImage'>
                         <img src={blog?.image} alt="" />

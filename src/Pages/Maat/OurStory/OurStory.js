@@ -32,7 +32,7 @@ const OurStory = () => {
                         <a className='downBtn' href="#about"><i className="fas fa-arrow-down"></i></a>
                     </div>
                     <div className='bannerImg storyImg'>
-                        <img src="https://i.ibb.co/bdL6qPm/top-banner.jpg" alt="" />
+                        <img src="https://i.ibb.co/fX1z144/story.jpg" alt="" />
                     </div>
                 </div>
                 <div className='py-5 mt-5'>

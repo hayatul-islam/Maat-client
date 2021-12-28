@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Container, Image, Row } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
+import ContactUs from '../../Shered/ContactUs/ContactUs';
+import Footer from '../../Shered/Footer/Footer';
 import './ExpertiseDetails.css';
 
 const ExpertiseDetails = () => {
@@ -16,7 +18,7 @@ const ExpertiseDetails = () => {
     const findExpertise = expertises.find(expertise => expertise?._id === expertiseId)
 
     return (
-        <div className='py-5'>
+        <div className='pt-5'>
             <Container>
                 <Row>
                     <Col xs={12} md={8}>
@@ -31,7 +33,7 @@ const ExpertiseDetails = () => {
                         </div>
                     </Col>
                 </Row>
-                <div className="py-5 mt-5">
+                <div className="mainSection">
                     <Row>
                         <Col xs={12} md={6}>
                             <div className='big-font expertiseInfo'>
@@ -48,6 +50,9 @@ const ExpertiseDetails = () => {
                     </Row>
                 </div>
             </Container>
+
+            <ContactUs />
+            <Footer />
         </div>
     );
 };

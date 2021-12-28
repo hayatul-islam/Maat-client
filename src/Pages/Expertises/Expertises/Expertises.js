@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import ContactUs from '../../Shered/ContactUs/ContactUs';
+import Footer from '../../Shered/Footer/Footer';
 import './Expertises.css';
 
 const Expertises = () => {
@@ -19,7 +21,7 @@ const Expertises = () => {
     }
 
     return (
-        <div className='banner-container py-5 text-light'>
+        <div className='banner-container pt-5'>
             <Container>
                 <div>
                     <div className='big-font'>
@@ -31,24 +33,24 @@ const Expertises = () => {
                         <a className='downBtn' href="#expertise"><i className="fas fa-arrow-down"></i></a>
                     </div>
                 </div>
-                <div id='expertise' className='pt-5 mt-5'>
+                <div id='expertise' className='mainSection'>
                     {
                         expertises?.map(expertise => <div
                             className='py-5'
                             key={expertise?._id}>
                             <Row className='expertises'>
-                                <Col xs={12} md={6}>
+                                <Col xs={12} lg={6}>
                                     <div className='big-font expertise-title'>
-                                        <h2>{expertise?.title}</h2>
+                                        <h2 className='expTitle'>{expertise?.title}</h2>
                                         <img className='expertiseImg' src={expertise?.image} alt="" />
                                     </div>
                                 </Col>
-                                <Col xs={12} md={4}>
+                                <Col xs={12} lg={4}>
                                     <div>
                                         <p>{expertise?.description}</p>
                                     </div>
                                 </Col>
-                                <Col xs={12} md={2}>
+                                <Col xs={12} lg={2}>
                                     <div className="d-flex justify-content-end">
                                         <div onClick={() => handleExpertiseDetails(expertise?._id)} className="expertiseBtn">
                                             <a className='downBtn'><i className="fas fa-location-arrow"></i></a>
@@ -56,7 +58,7 @@ const Expertises = () => {
                                     </div>
                                 </Col>
                                 <div className="mt-5">
-                                    <hr />
+                                    <hr className='bg-white' />
                                 </div>
                             </Row>
 
@@ -68,6 +70,9 @@ const Expertises = () => {
             <div className='bannerImg'>
                 <img src="https://i.ibb.co/fnp0FXw/6160407763f5cdc1447c2427-img-services.jpg" alt="" />
             </div>
+
+            <ContactUs />
+            <Footer />
         </div>
     );
 };
