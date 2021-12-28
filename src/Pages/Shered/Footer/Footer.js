@@ -7,7 +7,7 @@ const Footer = () => {
 
     const [offices, setOffices] = useState([]);
     useEffect(() => {
-        fetch('offices.json')
+        fetch('https://pure-refuge-33072.herokuapp.com/offices')
             .then(res => res.json())
             .then(data => setOffices(data))
     }, []);

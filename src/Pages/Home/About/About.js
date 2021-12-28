@@ -6,7 +6,7 @@ const About = () => {
 
     const [figures, setFigures] = useState([]);
     useEffect(() => {
-        fetch('figures.json')
+        fetch('https://pure-refuge-33072.herokuapp.com/figures')
             .then(res => res.json())
             .then(data => setFigures(data))
     }, [])

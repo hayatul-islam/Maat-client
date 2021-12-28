@@ -8,7 +8,7 @@ const OurStory = () => {
 
     const [story, setStory] = useState([]);
     useEffect(() => {
-        fetch('story.json')
+        fetch('https://pure-refuge-33072.herokuapp.com/story')
             .then(res => res.json())
             .then(data => setStory(data))
     }, [])

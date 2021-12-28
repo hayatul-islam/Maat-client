@@ -24,6 +24,7 @@ import OurStory from './Pages/Maat/OurStory/OurStory';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
 AOS.init();
 
 
@@ -47,6 +48,7 @@ function App() {
           <Route path="offersInfo/:offersId" element={<OffersInfo />} />
           <Route path="expertises/expertiseDetails/:expertiseId" element={<ExpertiseDetails />} />
           <Route path="expertiseDetails/:expertiseId" element={<ExpertiseDetails />} />
+          <Route path="dashboard" element={<Dashboard />} />
         </Routes>
       </BrowserRouter>
     </div>
