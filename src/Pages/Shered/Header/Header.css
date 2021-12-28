@@ -2,10 +2,10 @@
     width: 100px;
     height: 18px;
 }
-/* .header-menu{
+.header-menu{
     display: flex;
     align-items: center;
-} */
+}
 .header-menu a{
     color: #f0f0f0;
     margin-left: 50px;
@@ -56,3 +56,22 @@ nav .nav-link{
 .dropdownItem:hover .dropdownIcon{
     display: block;
 }
+
+@media (min-width: 0px) and (max-width: 767px){
+    .header-menu{
+        display: flex;
+        align-items: start;
+        justify-content: left;
+        margin-top: 30px;
+    }
+    .header-menu a{
+        margin-left: 0px;
+        margin-bottom: 5px;
+    }
+    .dropdown-menu{
+        width: 280px;
+    }
+    .dropdownItem{
+        padding: 0px 10px;
+    }
+  }
