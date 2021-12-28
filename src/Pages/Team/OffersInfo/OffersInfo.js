@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Link, useParams } from 'react-router-dom';
+import ContactUs from '../../Shered/ContactUs/ContactUs';
+import Footer from '../../Shered/Footer/Footer';
 import './OfferInfo.css';
 
 const OffersInfo = () => {
@@ -19,7 +21,7 @@ const OffersInfo = () => {
 
 
     return (
-        <div className='py-5 text-light'>
+        <div className='pt-5 text-light'>
             <Container>
                 <Row>
                     <Col xs={12} md={7}>
@@ -81,6 +83,9 @@ const OffersInfo = () => {
                 </Row>
 
             </Container>
+
+            <ContactUs />
+            <Footer />
         </div>
     );
 };

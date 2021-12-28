@@ -2,10 +2,13 @@
     background-color: #f0f0f0;
     color: #212426;
 }
+.apply h1{
+    color: #212426;
+}
 .apply p{
     font-size: 18px;
     margin-bottom: 3px;
-    
+    color: #212426;
 }
 .applyBtn{
     text-decoration: none;

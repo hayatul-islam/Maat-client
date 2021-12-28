@@ -25,6 +25,7 @@
 }
 .inputField input{
     height: auto;
+    width: 100%;
     margin-bottom: 0px;
     padding: 0.8em 1em 0.8em 0.2em;
     border-style: none none solid;

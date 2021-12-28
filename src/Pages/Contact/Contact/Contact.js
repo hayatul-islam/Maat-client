@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { useForm } from "react-hook-form";
+import Footer from '../../Shered/Footer/Footer';
 import './Contact.css';
 
 const Contact = () => {
@@ -22,7 +23,7 @@ const Contact = () => {
                     <h1>CONTACT US</h1>
                 </div>
                 <Row>
-                    <Col xs={12} md={6}>
+                    <Col xs={12} lg={6}>
                         <div>
                             <div className="big-font py-4">
                                 <h3>Or call us !</h3>
@@ -38,8 +39,8 @@ const Contact = () => {
                             </div>
                         </div>
                     </Col>
-                    <Col xs={12} md={6}>
-                        <div className='contactForm'>
+                    <Col xs={12} lg={6}>
+                        <div className='contactForm mt-5'>
                             <form onSubmit={handleSubmit(onSubmit)}>
                                 <Row>
                                     <Col xs={12} md={6}>
@@ -85,6 +86,7 @@ const Contact = () => {
                     </Col>
                 </Row>
             </Container>
+            <Footer />
         </div>
     );
 };
