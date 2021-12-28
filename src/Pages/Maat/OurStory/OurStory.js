@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Container, Image, Row } from 'react-bootstrap';
+import ContactUs from '../../Shered/ContactUs/ContactUs';
+import Footer from '../../Shered/Footer/Footer';
 import './OurStory.css';
 
 const OurStory = () => {
@@ -29,24 +31,24 @@ const OurStory = () => {
                         </div>
                     </div>
                     <div className="mt-5">
-                        <a className='downBtn' href="#about"><i className="fas fa-arrow-down"></i></a>
+                        <a className='downBtn' href="#ourStory"><i className="fas fa-arrow-down"></i></a>
                     </div>
                     <div className='bannerImg storyImg'>
                         <img src="https://i.ibb.co/fX1z144/story.jpg" alt="" />
                     </div>
                 </div>
-                <div className='py-5 mt-5'>
+                <div id='ourStory' className='mainSection'>
                     {
                         story.map(story => <div key={story?._id}>
                             <div className='py-5'>
                                 <Row>
-                                    <Col xs={12} md={6}>
+                                    <Col xs={12} lg={6}>
                                         <div className="big-font">
                                             <h1 className='storyYear'>{story?.year}</h1>
                                             <h1>{story?.title}</h1>
                                         </div>
                                     </Col>
-                                    <Col xs={12} md={6}>
+                                    <Col xs={12} lg={6}>
                                         <div>
                                             <div className="big-font">
                                                 <h2>{story?.sub_title}</h2>
@@ -83,6 +85,9 @@ const OurStory = () => {
 
                 </Container>
             </div>
+
+            <ContactUs />
+            <Footer />
         </div>
     );
 };

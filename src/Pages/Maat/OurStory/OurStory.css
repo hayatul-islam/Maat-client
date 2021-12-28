@@ -40,3 +40,9 @@
     transition: background-color 300ms ease;
     text-decoration: none;
 }
+
+@media (min-width: 0px) and (max-width: 991px){
+    .navStoryContainer{
+        display: none;
+    }
+  }
