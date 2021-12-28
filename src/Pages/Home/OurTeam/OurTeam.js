@@ -39,10 +39,13 @@ const OurTeam = () => {
                                     </div>
                                 </Col>
                                 <Col xs={12} md={4}>
-                                    <div className='teamImg'>
+                                    {/* <div className='teamImg'>
                                         <img className='img-fluid' src={team?.image} alt="" />
-                                    </div>
+                                    </div> */}
                                 </Col>
+                                <div className='teamImg'>
+                                    <img className='img-fluid' src={team?.image} alt="" />
+                                </div>
                                 <div className="pb-4">
                                     <hr className='bg-white' />
                                 </div>

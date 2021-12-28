@@ -14,6 +14,8 @@
     display: none;
     top: -100px;
     z-index: 20;
+
+    right: -65%;
 }
 .teamImg img{
     width: 200px;
@@ -26,5 +28,13 @@
 @media (min-width: 0px) and (max-width: 649px){
     .ourTeamTitle{
         font-size: 40px !important;
+    }
+    .teamImg{
+        right: -40%;
+    }
+  }
+@media (min-width: 0px) and (max-width: 767px){
+    .teamImg{
+        right: -40%;
     }
   }
