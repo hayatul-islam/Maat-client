@@ -11,7 +11,7 @@ const SingleTeam = ({ team }) => {
 
     return (
         <Col xs={12} md={3}>
-            <Card onClick={() => handleTeamMemberInfo(team?._id)} className='mb-5 bg-dark text-light border-0'>
+            <Card data-aos="fade-up" data-aos-duration="1000" onClick={() => handleTeamMemberInfo(team?._id)} className='mb-5 bg-dark text-light border-0'>
                 <Card.Img className='team-img img-fluid' variant="top" src={team?.image} />
                 <Card.Body>
                     <span>{team?.location}</span>

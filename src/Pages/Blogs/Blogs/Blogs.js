@@ -34,7 +34,7 @@ const Blogs = () => {
                     </div>
                 </div>
 
-                <div id='blogs' className="mainSection">
+                <div data-aos="fade-up" data-aos-duration="1000" id='blogs' className="mainSection">
                     <div className='text-light'>
                         <h1 className='pb-3'>Filter by categories :</h1>
                         <Button onClick={() => handleCategory('')} className='me-2 py-3 px-4 mb-4' variant='outline-light'>All</Button>

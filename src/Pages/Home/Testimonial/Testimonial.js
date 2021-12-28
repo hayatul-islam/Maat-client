@@ -49,7 +49,7 @@ const Testimonial = () => {
     };
 
     return (
-        <div className='mainSection'>
+        <div data-aos="fade-up" data-aos-duration="1000" className='mainSection'>
             <Container>
                 <div className="big-font">
                     <h1 className='ourTeamTitle'>OUR CLIENTS ARE </h1>

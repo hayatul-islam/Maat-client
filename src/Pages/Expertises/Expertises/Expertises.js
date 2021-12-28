@@ -38,7 +38,7 @@ const Expertises = () => {
                         expertises?.map(expertise => <div
                             className='py-5'
                             key={expertise?._id}>
-                            <Row className='expertises'>
+                            <Row data-aos="fade-up" data-aos-duration="1000" className='expertises'>
                                 <Col xs={12} lg={6}>
                                     <div className='big-font expertise-title'>
                                         <h2 className='expTitle'>{expertise?.title}</h2>
@@ -58,7 +58,7 @@ const Expertises = () => {
                                     </div>
                                 </Col>
                                 <div className="mt-5">
-                                    <hr className='bg-white' />
+                                    <hr data-aos="fade-right" data-aos-duration="1000" className='bg-white' />
                                 </div>
                             </Row>
 
@@ -67,7 +67,9 @@ const Expertises = () => {
                     }
                 </div>
             </Container>
-            <div className='bannerImg'>
+            <div data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-sine" className='bannerImg'>
                 <img src="https://i.ibb.co/fnp0FXw/6160407763f5cdc1447c2427-img-services.jpg" alt="" />
             </div>
 

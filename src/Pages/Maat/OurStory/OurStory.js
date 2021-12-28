@@ -33,7 +33,10 @@ const OurStory = () => {
                     <div className="mt-5">
                         <a className='downBtn' href="#ourStory"><i className="fas fa-arrow-down"></i></a>
                     </div>
-                    <div className='bannerImg storyImg'>
+                    <div data-aos="fade-right"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-sine"
+                        className='bannerImg storyImg'>
                         <img src="https://i.ibb.co/fX1z144/story.jpg" alt="" />
                     </div>
                 </div>

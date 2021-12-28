@@ -11,7 +11,7 @@ const Office = ({ team }) => {
 
 
     return (
-        <div onClick={() => handleOffersInfo(team?._id)} className='text-light'>
+        <div data-aos="fade-up" data-aos-duration="1000" onClick={() => handleOffersInfo(team?._id)} className='text-light'>
             <Row>
                 <Col xs={12} md={4}>
                     <div className=''>
@@ -29,7 +29,7 @@ const Office = ({ team }) => {
                     </div>
                 </Col>
                 <div className="pb-4">
-                    <hr className='' />
+                    <hr data-aos="fade-right" data-aos-duration="1000" className='bg-white' />
                 </div>
             </Row>
         </div>

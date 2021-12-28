@@ -31,7 +31,7 @@ const AllTeam = () => {
             </div>
             <Container>
                 <div className="mainSection">
-                    <div className='py-5 text-light'>
+                    <div data-aos="fade-up" data-aos-duration="1000" className='py-5 text-light'>
                         <h1 className='pb-3'>Filter by city :</h1>
                         <Button onClick={() => handleCountry('Chicago')} className='me-2 py-3 px-4 mb-3' variant='outline-light'>CHICAGO</Button>
                         <Button onClick={() => handleCountry('Landon')} className='me-2 py-3 px-4 mb-3' variant='outline-light'>LANDON</Button>

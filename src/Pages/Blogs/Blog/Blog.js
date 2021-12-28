@@ -11,7 +11,7 @@ const Blog = ({ blog }) => {
     }
     return (
         <Col xs={12} md={6}>
-            <div className='blogContainer'>
+            <div data-aos="fade-up" data-aos-duration="1000" className='blogContainer'>
                 <div className='blogContent'>
                     <div className="">
                         <h3>{blog?.title}</h3>

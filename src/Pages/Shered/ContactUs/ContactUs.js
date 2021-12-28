@@ -9,7 +9,7 @@ const ContactUs = () => {
             <Container>
                 <Row className='d-flex align-items-center'>
                     <Col xs={12} md={6}>
-                        <div className="big-font">
+                        <div data-aos="fade-up" data-aos-duration="1000" className="big-font">
                             <h1 className='constUsTitle'>LET'S WORK </h1>
                             <h1 className='constUsTitle'>TOGETHER</h1>
                             <p>AND MAKE SOMETHING BIG</p>
@@ -17,7 +17,7 @@ const ContactUs = () => {
                     </Col>
                     <Col xs={12} md={6}>
                         <div className="contactUsBtnContainer">
-                            <div className="contactUsBtn">
+                            <div data-aos="zoom-in-left" data-aos-duration="1000" className="contactUsBtn">
                                 <Link className='' to='/contact'>Contact Us</Link>
                             </div>
                         </div>

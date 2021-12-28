@@ -19,12 +19,12 @@ const Contact = () => {
     return (
         <div>
             <Container>
-                <div className="big-font py-4">
+                <div data-aos="fade-up" data-aos-duration="1000" className="big-font py-4">
                     <h1>CONTACT US</h1>
                 </div>
                 <Row>
                     <Col xs={12} lg={6}>
-                        <div>
+                        <div data-aos="fade-up" data-aos-duration="1000">
                             <div className="big-font py-4">
                                 <h3>Or call us !</h3>
                             </div>
@@ -40,7 +40,7 @@ const Contact = () => {
                         </div>
                     </Col>
                     <Col xs={12} lg={6}>
-                        <div className='contactForm mt-5'>
+                        <div data-aos="fade-up" data-aos-duration="1000" className='contactForm mt-5'>
                             <form onSubmit={handleSubmit(onSubmit)}>
                                 <Row>
                                     <Col xs={12} md={6}>

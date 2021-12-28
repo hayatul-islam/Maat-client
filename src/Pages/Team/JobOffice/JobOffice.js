@@ -22,7 +22,7 @@ const JoinUs = () => {
     return (
         <div className='mainSection text-light'>
             <Container>
-                <div className='joinUs-title pb-5'>
+                <div data-aos="fade-up" data-aos-duration="1000" className='joinUs-title pb-5'>
                     <h1>WANNA JOIN US ?</h1>
                     <p>Check our latest job offers !</p>
                 </div>
