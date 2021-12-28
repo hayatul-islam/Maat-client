@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import AddBlog from '../AddBlog/AddBlog';
 import AddExpertise from '../AddExpertise/AddExpertise';
+import AddFigures from '../AddFigures/AddFigures';
+import AddStory from '../AddStory/AddStory';
+import AddOffice from '../AddOffice/AddOffice';
+import AddTeam from '../AddTeam/AddTeam';
 
 const Dashboard = () => {
 
-    const [addItems, setAddItems] = useState([]);
     const [selectItems, setSelectItems] = useState('');
 
     const handleSelectItem = item => {
@@ -32,7 +36,22 @@ const Dashboard = () => {
                         <Col xs={12} md={9}>
                             <div>
                                 {
+                                    selectItems === 'team' ? <AddTeam /> : ''
+                                }
+                                {
                                     selectItems === 'expertise' ? <AddExpertise /> : ''
+                                }
+                                {
+                                    selectItems === 'blog' ? <AddBlog /> : ''
+                                }
+                                {
+                                    selectItems === 'story' ? <AddStory /> : ''
+                                }
+                                {
+                                    selectItems === 'figure' ? <AddFigures /> : ''
+                                }
+                                {
+                                    selectItems === 'office' ? <AddOffice /> : ''
                                 }
                             </div>
                         </Col>
