@@ -59,6 +59,10 @@ hr{
     font-size: 3em;
     line-height: 50px;
   }
+  .linkBtn{
+    font-size: 18px;
+  }
+  
 }
 @media (min-width: 650px) and (max-width: 800px){
   .big-font h1{
