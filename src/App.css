@@ -49,6 +49,9 @@ hr{
 .linkBtn:hover{
   color: #f0f0f0cc;
 }
+.downLinkImage{
+  width: 40px;
+}
 
 
 @media (min-width: 0px) and (max-width: 649px){

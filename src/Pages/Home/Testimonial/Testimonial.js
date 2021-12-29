@@ -51,7 +51,7 @@ const Testimonial = () => {
     return (
         <div data-aos="fade-up" data-aos-duration="1000" className='mainSection'>
             <Container>
-                <div className="big-font">
+                <div className="big-font testimonialTitle">
                     <h1 className='ourTeamTitle'>OUR CLIENTS ARE </h1>
                     <h1 className='ourTeamTitle'>OUR BEST AMBASSADORS</h1>
                 </div>

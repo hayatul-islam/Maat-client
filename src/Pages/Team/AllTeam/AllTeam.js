@@ -23,10 +23,12 @@ const AllTeam = () => {
 
     return (
         <div>
-            <div className='allTeamTitle pt-5 text-light'>
+            <div className=' pt-5 text-light'>
                 <Container>
-                    <h1>DISCOVER THE</h1>
-                    <h1>TALENTS BEHIND MAAT</h1>
+                    <div className="big-font">
+                        <h1>DISCOVER THE</h1>
+                        <h1 className='pt-3'>TALENTS BEHIND MAAT</h1>
+                    </div>
                 </Container>
             </div>
             <Container>
