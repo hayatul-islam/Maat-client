@@ -22,9 +22,9 @@ const AddOffice = () => {
             </div>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div className='inputField addInput'>
-                    <input {...register("name")} placeholder='Office Name' type='text' />
-                    <input {...register("location")} placeholder='Location' type='text' />
-                    <input {...register("phone")} placeholder='Phone' type='number' />
+                    <input {...register("name")} placeholder='Office Name' type='text' required />
+                    <input {...register("location")} placeholder='Location' type='text' required />
+                    <input {...register("phone")} placeholder='Phone' type='number' required />
 
                 </div>
                 <div className='pt-4'>

@@ -22,20 +22,20 @@ const AddTeam = () => {
             </div>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div className='inputField addInput'>
-                    <input {...register("name")} placeholder='Name' type='text' />
-                    <input {...register("job")} placeholder='Enter Job' type='text' />
-                    <select {...register("job_status")} name="" id="">
+                    <input {...register("name")} placeholder='Name' type='text' required />
+                    <input {...register("job")} placeholder='Enter Job' type='text' required />
+                    <select {...register("job_status")} name="" id="" required>
                         <option value="Permanent Contact">Permanent Contact</option>
                         <option value="Part-time Contact">Part-time Contact</option>
                         <option value="Internship">Internship</option>
                     </select>
-                    <input {...register("location")} placeholder='Enter City name' type='text' />
+                    <input {...register("location")} placeholder='Enter City name' type='text' required />
                     <input {...register("image")} placeholder='Image url' />
                     <input {...register("published")} value={new Date().toDateString()} />
-                    <textarea {...register("about")} name="" id="" cols="30" rows="3" placeholder='About'></textarea>
-                    <textarea {...register("mission")} name="" id="" cols="30" rows="3" placeholder='Mission'></textarea>
-                    <textarea {...register("requirements")} name="" id="" cols="30" rows="3" placeholder='Requirements'></textarea>
-                    <textarea {...register("benefit")} name="" id="" cols="30" rows="3" placeholder='Benefit'></textarea>
+                    <textarea {...register("about")} name="" id="" cols="30" rows="3" placeholder='About' required></textarea>
+                    <textarea {...register("mission")} name="" id="" cols="30" rows="3" placeholder='Mission' required></textarea>
+                    <textarea {...register("requirements")} name="" id="" cols="30" rows="3" placeholder='Requirements' required></textarea>
+                    <textarea {...register("benefit")} name="" id="" cols="30" rows="3" placeholder='Benefit' required></textarea>
                 </div>
                 <div className='pt-4'>
                     <input className='px-5 py-3 fs-5' type="submit" value='Add Team' />

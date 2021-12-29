@@ -22,13 +22,13 @@ const AddBlog = () => {
             </div>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div className='inputField addInput'>
-                    <input {...register("title")} placeholder='Title' type='text' />
-                    <input {...register("sub_title")} placeholder='Sub title' type='text' />
-                    <input {...register("image")} placeholder='Image url' />
-                    <input {...register("category")} placeholder='Category' />
-                    <input {...register("publish")} value={new Date().toDateString()} />
-                    <textarea {...register("description")} name="" id="" cols="30" rows="3" placeholder='Description'></textarea>
-                    <textarea {...register("sub_description")} name="" id="" cols="30" rows="3" placeholder='Sub Description'></textarea>
+                    <input {...register("title")} placeholder='Title' type='text' required />
+                    <input {...register("sub_title")} placeholder='Sub title' type='text' required />
+                    <input {...register("image")} placeholder='Image url' required />
+                    <input {...register("category")} placeholder='Category' required />
+                    <input {...register("publish")} value={new Date().toDateString()} required />
+                    <textarea {...register("description")} name="" id="" cols="30" rows="3" placeholder='Description' required></textarea>
+                    <textarea {...register("sub_description")} name="" id="" cols="30" rows="3" placeholder='Sub Description' required></textarea>
 
                 </div>
                 <div className='pt-4'>

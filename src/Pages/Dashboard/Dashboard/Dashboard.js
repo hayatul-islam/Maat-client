@@ -9,7 +9,7 @@ import AddTeam from '../AddTeam/AddTeam';
 
 const Dashboard = () => {
 
-    const [selectItems, setSelectItems] = useState('');
+    const [selectItems, setSelectItems] = useState('team');
 
     const handleSelectItem = item => {
         setSelectItems(item)
@@ -25,12 +25,12 @@ const Dashboard = () => {
                     <Row>
                         <Col xs={12} md={3}>
                             <div>
-                                <h4 onClick={() => handleSelectItem('team')}>Add Team member</h4>
-                                <h4 onClick={() => handleSelectItem('expertise')}>Add Expertise</h4>
-                                <h4 onClick={() => handleSelectItem('story')}>Add Story</h4>
-                                <h4 onClick={() => handleSelectItem('blog')}>Add Blog</h4>
-                                <h4 onClick={() => handleSelectItem('figure')}>Add Figures</h4>
-                                <h4 onClick={() => handleSelectItem('office')}>Add Office</h4>
+                                <h5 onClick={() => handleSelectItem('team')}>Add Team member</h5>
+                                <h5 onClick={() => handleSelectItem('expertise')}>Add Expertise</h5>
+                                <h5 onClick={() => handleSelectItem('story')}>Add Story</h5>
+                                <h5 onClick={() => handleSelectItem('blog')}>Add Blog</h5>
+                                <h5 onClick={() => handleSelectItem('figure')}>Add Figures</h5>
+                                <h5 onClick={() => handleSelectItem('office')}>Add Office</h5>
                             </div>
                         </Col>
                         <Col xs={12} md={9}>

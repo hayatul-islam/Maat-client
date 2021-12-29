@@ -22,8 +22,8 @@ const AddFigures = () => {
             </div>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div className='inputField addInput'>
-                    <input {...register("title")} placeholder='Title' type='text' />
-                    <textarea {...register("description")} name="" id="" cols="30" rows="3" placeholder='Description'></textarea>
+                    <input {...register("title")} placeholder='Title' type='text' required />
+                    <textarea {...register("description")} name="" id="" cols="30" rows="3" placeholder='Description' required></textarea>
 
                 </div>
                 <div className='pt-4'>
