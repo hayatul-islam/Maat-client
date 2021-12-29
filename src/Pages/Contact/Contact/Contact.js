@@ -1,20 +1,38 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import { useForm } from "react-hook-form";
 import Footer from '../../Shered/Footer/Footer';
 import './Contact.css';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
 
+    const form = useRef();
     const [offices, setOffices] = useState([]);
+    const [message, setMessage] = useState('');
+
     useEffect(() => {
         fetch('https://pure-refuge-33072.herokuapp.com/offices')
             .then(res => res.json())
             .then(data => setOffices(data))
     }, []);
 
-    const { register, handleSubmit } = useForm();
-    const onSubmit = data => console.log(data);
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_w7y4b1m', 'template_hx8r6uk', e.target, 'user_wCHYWdyeFu9Hugp30xAHD')
+            .then((result) => {
+                if (result.text) {
+                    setMessage('Thank you! Your message has been sent!')
+                }
+            }, (error) => {
+                console.log(error.text);
+            });
+
+        e.target = ''
+    };
+
+    console.log(message);
 
     return (
         <div>
@@ -41,47 +59,51 @@ const Contact = () => {
                     </Col>
                     <Col xs={12} lg={6}>
                         <div data-aos="fade-up" data-aos-duration="1000" className='contactForm mt-5'>
-                            <form onSubmit={handleSubmit(onSubmit)}>
-                                <Row>
-                                    <Col xs={12} md={6}>
-                                        <div className='inputField'>
-                                            <label htmlFor="">First Name</label> <br />
-                                            <input {...register("firstName", { required: true, maxLength: 20 })} placeholder='Lucy' />
-                                        </div>
-                                    </Col>
-                                    <Col xs={12} md={6}>
-                                        <div className='inputField'>
-                                            <label htmlFor="">Last Name</label> <br />
-                                            <input {...register("lastName", { pattern: /^[A-Za-z]+$/i })} placeholder='Jefferrin' />
-                                        </div>
-                                    </Col>
-                                    <Col xs={12} md={6}>
-                                        <div className='inputField'>
-                                            <label htmlFor="">E-mail adress</label> <br />
-                                            <input {...register("email")} type="email" placeholder="example@gmail.com" />
-                                        </div>
-                                    </Col>
-                                    <Col xs={12} md={6}>
-                                        <div className='inputField'>
-                                            <label htmlFor="">City</label> <br />
-                                            <select {...register("city")}>
-                                                {
-                                                    offices.map(office => <option
-                                                        key={office?._id}
-                                                        value={office?.name}>
-                                                        {office?.name}
-                                                    </option>)
-                                                }
-                                            </select>
-                                        </div>
-                                    </Col>
-                                    <div className="inputField">
-                                        <label htmlFor="">Message</label> <br />
-                                        <textarea {...register("message")} name="" id="" cols="30" rows="3" placeholder='Type your message here'></textarea>
-                                    </div>
-                                    <input className='submitBtn' type="submit" value="send" />
-                                </Row>
-                            </form>
+
+                            {
+                                message !== '' ? <p>{message}</p> :
+                                    <form ref={form} onSubmit={sendEmail}>
+                                        <Row>
+                                            <Col xs={12} md={6}>
+                                                <div className='inputField'>
+                                                    <label htmlFor="">First Name</label> <br />
+                                                    <input name="first_name" placeholder='Lucy' required />
+                                                </div>
+                                            </Col>
+                                            <Col xs={12} md={6}>
+                                                <div className='inputField'>
+                                                    <label htmlFor="">Last Name</label> <br />
+                                                    <input name="last_name" placeholder='Jefferrin' required />
+                                                </div>
+                                            </Col>
+                                            <Col xs={12} md={6}>
+                                                <div className='inputField'>
+                                                    <label htmlFor="">E-mail adress</label> <br />
+                                                    <input name="user_email" type="email" placeholder="example@gmail.com" required />
+                                                </div>
+                                            </Col>
+                                            <Col xs={12} md={6}>
+                                                <div className='inputField'>
+                                                    <label htmlFor="">City</label> <br />
+                                                    <select name="city" required>
+                                                        {
+                                                            offices.map(office => <option
+                                                                key={office?._id}
+                                                                value={office?.name}>
+                                                                {office?.name}
+                                                            </option>)
+                                                        }
+                                                    </select>
+                                                </div>
+                                            </Col>
+                                            <div className="inputField">
+                                                <label htmlFor="">Message</label> <br />
+                                                <textarea name="message" id="" cols="30" rows="3" placeholder='Type your message here' required></textarea>
+                                            </div>
+                                            <input className='submitBtn' type="submit" value="send" />
+                                        </Row>
+                                    </form>
+                            }
                         </div>
                     </Col>
                 </Row>

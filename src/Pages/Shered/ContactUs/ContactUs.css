@@ -27,6 +27,12 @@
     color: white;
     font-weight: 700;
 }
+#contactUsContainer{
+    cursor: grab;
+}
+#cursor{
+    position:absolute;
+}
 
 @media (min-width: 0px) and (max-width: 749px){
     .contactUsBtnContainer{

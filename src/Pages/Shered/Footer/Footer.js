@@ -158,7 +158,6 @@ const Footer = () => {
                 </div>
                 <hr className='bg-white' />
                 <div className='contactInfo'>
-                    <p>Powered by Pedesys</p>
                 </div>
 
             </Container>

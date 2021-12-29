@@ -38,10 +38,8 @@ const OurExpertise = () => {
                                     <a onClick={() => handleExpertiseDetails(expertise?._id)} className='linkBtn text-dark' >SEE MORE <Image src="https://uploads-ssl.webflow.com/6160407763f5cd74b27c2405/6160407763f5cd15737c241e_icon-arrow-black-diag.svg" /></a>
                                 </div>
                             </div>
-
                         </Col>)
                     }
-
                 </Row>
             </Container>
         </div>
