@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Button, Col, Container, Row } from 'react-bootstrap';
+import { Button, Col, Container, Image, Row } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import './OurTeam.css';
 
@@ -54,8 +54,7 @@ const OurTeam = () => {
                         </div>)
                     }
                 </div>
-                <Button onClick={handleAllTeam} variant="outline-light" className='fs-5'>SEE ALL THE TEAM</Button>
-                {/* <Link className='allTeamBtn' to="/teams">SEE ALL THE TEAM</Link> */}
+                <a onClick={handleAllTeam} className='linkBtn' >SEE ALL THE TEAM <Image src="https://uploads-ssl.webflow.com/6160407763f5cd74b27c2405/6160407763f5cd70b77c241f_icon-arrow-white-diag.svg" /></a>
 
             </Container>
         </div>

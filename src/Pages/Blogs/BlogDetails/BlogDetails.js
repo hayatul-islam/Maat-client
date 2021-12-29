@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
+import ContactUs from '../../Shered/ContactUs/ContactUs';
+import Footer from '../../Shered/Footer/Footer';
 import Blog from '../Blog/Blog';
 
 const BlogDetails = () => {
@@ -33,15 +35,19 @@ const BlogDetails = () => {
                         </div>
                     </Col>
                 </Row>
-                <Row>
-                    <div className='big-font pt-5 mt-5'>
-                        <h2>Other blog posts</h2>
-                    </div>
-                    {
-                        blogFilter.slice(0, 4).map(blog => <Blog key={blog?._id} blog={blog}></Blog>)
-                    }
-                </Row>
+                <div className='pb-5'>
+                    <Row>
+                        <div className='big-font pt-5 mt-5'>
+                            <h2>Other blog posts</h2>
+                        </div>
+                        {
+                            blogFilter.slice(0, 4).map(blog => <Blog key={blog?._id} blog={blog}></Blog>)
+                        }
+                    </Row>
+                </div>
             </Container>
+            <ContactUs />
+            <Footer />
         </div>
     );
 };

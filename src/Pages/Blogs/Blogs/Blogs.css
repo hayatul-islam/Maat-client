@@ -1,6 +1,4 @@
 
-
-
 /* blog */
 .blogContainer{
     padding: 40px 30px;
@@ -31,11 +29,11 @@
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
+    opacity: .6;
     
 }
 .blogContainer:hover .blogBgImage{
     display: block;
-    opacity: .6;
 }
 
   /* blog details  */

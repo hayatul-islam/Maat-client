@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Button, Container } from 'react-bootstrap';
+import { Button, Container, Image } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import Office from '../Office/Office';
 import './JobOffice.css';
@@ -29,7 +29,7 @@ const JoinUs = () => {
                 {
                     teams.map(team => <Office key={team?._id} team={team}></Office>)
                 }
-                <Button onClick={handleAllJobOffice} variant="outline-light" className='fs-5'>SEE ALL THE TEAM</Button>
+                <a onClick={handleAllJobOffice} className='linkBtn d-flex align-items-center' >SEE ALL THE TEAM <Image src="https://uploads-ssl.webflow.com/6160407763f5cd74b27c2405/6160407763f5cd70b77c241f_icon-arrow-white-diag.svg" /></a>
             </Container>
 
         </div>

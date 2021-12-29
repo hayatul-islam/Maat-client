@@ -1,6 +1,6 @@
 import React from 'react';
-import { Button, Col } from 'react-bootstrap';
-import { useNavigate } from 'react-router-dom';
+import { Button, Col, Image } from 'react-bootstrap';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Blog = ({ blog }) => {
 
@@ -18,11 +18,11 @@ const Blog = ({ blog }) => {
                         <p className=''>{blog?.publish} - <span className=''>{blog?.category}</span></p>
                     </div>
                     <div className="detailsBtn">
-                        <button onClick={() => handleBlog(blog?._id)} className='px-3 py-2'>READ ARTICLE</button>
+                        <a onClick={() => handleBlog(blog?._id)} className='linkBtn d-flex align-items-center' >READ ARTICLE <Image src="https://uploads-ssl.webflow.com/6160407763f5cd74b27c2405/6160407763f5cd70b77c241f_icon-arrow-white-diag.svg" /></a>
                     </div>
-                    <div className='blogBgImage'>
-                        <img src={blog?.image} alt="" />
-                    </div>
+                </div>
+                <div className='blogBgImage'>
+                    <img src={blog?.image} alt="" />
                 </div>
             </div>
         </Col>

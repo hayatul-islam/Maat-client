@@ -34,6 +34,23 @@ hr{
   background: #f0f0f0 !important;
 }
 
+.linkBtn{
+  font-family: Syne, sans-serif;
+    font-size: 23px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f0f0f0;
+}
+.linkBtn img{
+  height: 24px;
+}
+.linkBtn:hover{
+  color: #f0f0f0cc;
+}
+
+
 @media (min-width: 0px) and (max-width: 649px){
   .big-font h1{
     font-size: 3em;

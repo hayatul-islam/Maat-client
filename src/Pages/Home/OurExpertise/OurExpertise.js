@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Image, Row } from 'react-bootstrap';
 import './OurExpertise.css';
 import { useNavigate } from 'react-router-dom';
 
@@ -34,7 +34,9 @@ const OurExpertise = () => {
                                 <h1 className='text-end text-muted fw-normal cardIndex'>0{index + 1}</h1>
                                 <h1>{expertise?.title}</h1>
                                 <p>{expertise?.description}</p>
-                                <button onClick={() => handleExpertiseDetails(expertise?._id)} className="fs-5 border-0 bg-light px-3 py-2 rounded mt-4">SEE MORE</button>
+                                <div className="pt-5 my-4">
+                                    <a onClick={() => handleExpertiseDetails(expertise?._id)} className='linkBtn text-dark' >SEE MORE <Image src="https://uploads-ssl.webflow.com/6160407763f5cd74b27c2405/6160407763f5cd15737c241e_icon-arrow-black-diag.svg" /></a>
+                                </div>
                             </div>
 
                         </Col>)

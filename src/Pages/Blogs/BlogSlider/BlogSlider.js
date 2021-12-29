@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Button, Container } from 'react-bootstrap';
+import { Button, Container, Image } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 
 import Slider from "react-slick";
@@ -49,8 +49,12 @@ const BlogSlider = () => {
     };
 
     const navigate = useNavigate();
-    const handleBlog = () => {
-        navigate(`/blogs`);
+    const handleBlog = blogId => {
+        navigate(`/blogs/${blogId}`)
+    }
+
+    const handleAllBlog = () => {
+        navigate('/blogs')
     }
 
 
@@ -72,7 +76,7 @@ const BlogSlider = () => {
                                         <p className=''>{blog?.publish} - <span className=''>{blog?.category}</span></p>
                                     </div>
                                     <div className="detailsBtn">
-                                        <Button onClick={() => handleBlog(blog?._id)} className='px-3 py-2' variant='light'>READ ARTICLE</Button>
+                                        <a onClick={() => handleBlog(blog?._id)} className='linkBtn d-flex align-items-center' >READ ARTICLE <Image src="https://uploads-ssl.webflow.com/6160407763f5cd74b27c2405/6160407763f5cd70b77c241f_icon-arrow-white-diag.svg" /></a>
                                     </div>
                                     <div className='blogBgImage'>
                                         <img src={blog?.image} alt="" />
@@ -84,7 +88,7 @@ const BlogSlider = () => {
                 </Slider>
                 <Container>
                     <div className='pt-5'>
-                        <Button onClick={handleBlog} variant="outline-light" className='fs-5'>SEE OUR BLOG</Button>
+                        <a onClick={handleAllBlog} className='linkBtn' >SEE OUR BLOG <Image src="https://uploads-ssl.webflow.com/6160407763f5cd74b27c2405/6160407763f5cd70b77c241f_icon-arrow-white-diag.svg" /></a>
                     </div>
                 </Container>
             </div>

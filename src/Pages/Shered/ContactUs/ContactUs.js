@@ -4,8 +4,10 @@ import { Link } from 'react-router-dom';
 import './ContactUs.css';
 
 const ContactUs = () => {
+
     return (
         <div className='contactUs'>
+
             <Container>
                 <Row className='d-flex align-items-center'>
                     <Col xs={12} md={6}>
