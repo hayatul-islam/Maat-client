@@ -8,3 +8,11 @@
 .expertiseImg{
     height: 500px;
 }
+@media (min-width: 0px) and (max-width: 649px){
+    .expertiseInfo h1{
+        font-size: 40px;
+    }
+    .expertiseInfo h2{
+        font-size: 32px;
+    }
+}

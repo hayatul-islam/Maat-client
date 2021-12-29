@@ -25,7 +25,7 @@ const TeamMemberInfo = () => {
                         <div>
                             <div className='big-font member-info'>
                                 <p className='location'>{findMember?.location.toUpperCase()}</p>
-                                <h1>{findMember?.name.toUpperCase()}</h1>
+                                <h1 className='infoTitle'>{findMember?.name.toUpperCase()}</h1>
                                 <p className='job'>{findMember?.job}</p>
                             </div>
                             <div className='py-5 socialLink'>

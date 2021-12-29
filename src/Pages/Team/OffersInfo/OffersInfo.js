@@ -28,7 +28,7 @@ const OffersInfo = () => {
                         <div>
                             <div className='big-font member-info'>
                                 <p className='location'>{findMember?.published}</p>
-                                <h1>{findMember?.job.toUpperCase()}</h1>
+                                <h1 className='infoTitle'>{findMember?.job.toUpperCase()}</h1>
                                 <p className='job'>{findMember?.location}- {findMember?.job_status}</p>
                             </div>
                             <div className='py-5 mt-5 bio'>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Button, Container, Image } from 'react-bootstrap';
+import { Container, Image } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import Office from '../Office/Office';
 import './JobOffice.css';

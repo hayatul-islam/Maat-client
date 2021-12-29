@@ -50,8 +50,8 @@ const ExpertiseDetails = () => {
                             </div>
                         </Col>
                         <Col xs={12} md={6}>
-                            <div className='text-light expertiseInfo'>
-                                <h1>{findExpertise?.sub_title}</h1>
+                            <div className='text-light big-font expertiseInfo'>
+                                <h2>{findExpertise?.sub_title}</h2>
                                 <p>{findExpertise?.description}</p>
                                 <Image className='w-100 mt-5' src={findExpertise?.image} />
                             </div>
