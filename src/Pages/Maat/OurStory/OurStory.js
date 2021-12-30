@@ -93,11 +93,10 @@ const OurStory = () => {
                         </Row>
                     </Container>
                 </div>
+
+                <ContactUs />
+                <Footer />
             </div>
-
-
-            <ContactUs />
-            <Footer />
         </div >
     );
 };

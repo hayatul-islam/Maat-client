@@ -1,8 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import './TopBanner.css';
-// import AOS from 'aos'
-// import 'aos/dist/aos.css';
 
 const TopBanner = () => {
     return (
@@ -15,7 +13,7 @@ const TopBanner = () => {
                     <h1>WORLDWIDE</h1>
                     <h5 className='text-end sinceYear'>SINCE 1997</h5>
                 </div>
-                <div className="mt-4">
+                <div className="mt-5 pt-5">
                     <a className='downBtn' href="#about">
                         <i className="fas fa-arrow-down "></i>
                     </a>
