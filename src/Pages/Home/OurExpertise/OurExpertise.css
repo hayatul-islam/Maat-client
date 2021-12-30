@@ -1,9 +1,10 @@
+
 .cardIndex{
     font-family: none;
 }
 .expertise-card{
     background-color: #f0f0f0;
-   padding: 30px 60px 60px;
+    padding: 30px 60px 60px;
     margin: 25px 10px;
     border-radius: 3px;
 }
@@ -45,5 +46,14 @@
     .expertise-card h1{
         font-size: 50px;
         line-height: 45px;
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1800px){
+    #cardIndex2, #cardIndex4, #cardIndex6, #cardIndex8, #cardIndex10, #cardIndex12, #cardIndex14{
+        margin-top: 3rem;
+    }
+    .expertise-card{
+        margin: 0px 10px;
     }
   }

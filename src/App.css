@@ -42,6 +42,7 @@ hr{
     text-decoration: none;
     text-transform: uppercase;
     color: #f0f0f0;
+    cursor: pointer;
 }
 .linkBtn img{
   height: 24px;
