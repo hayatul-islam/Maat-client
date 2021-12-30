@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './ContactUs.css';
 
 const ContactUs = () => {
+
+    const [cursorX, setCursorX] = useState();
+    const [cursorY, setCursorY] = useState();
+
+    window.addEventListener('mousemove', e => {
+        setCursorX(e.pageX)
+        setCursorY(e.pageY)
+    })
 
     return (
         <div className='contactUs'>
@@ -18,7 +26,8 @@ const ContactUs = () => {
                     </Col>
                     <Col xs={12} md={6}>
                         <div className="contactUsBtnContainer">
-                            <div data-aos="zoom-in-left" data-aos-duration="1000" className="contactUsBtn">
+                            <div data-aos="zoom-in-left" data-aos-duration="1000"
+                                className="contactUsBtn">
                                 <Link className='' to='/contact'>Contact Us</Link>
                             </div>
                         </div>
@@ -26,6 +35,7 @@ const ContactUs = () => {
                 </Row>
 
             </Container>
+
         </div >
     );
 };

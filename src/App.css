@@ -33,6 +33,9 @@ p{
 hr{
   background: #f0f0f0 !important;
 }
+.backBtn{
+  z-index: 10000000000000000;
+}
 
 .linkBtn{
   font-family: Syne, sans-serif;

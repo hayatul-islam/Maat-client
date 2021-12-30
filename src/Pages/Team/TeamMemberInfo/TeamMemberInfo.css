@@ -1,3 +1,7 @@
+.singleImage1{
+    display: none;
+    margin-bottom: 30px;
+}
 .member-info p{
     font-size: 20px;
     margin: 0;
@@ -30,4 +34,23 @@
 }
 .memberImg{
     height: 500px;
+    z-index: -1;
+}
+
+@media (min-width: 0) and (max-width: 767px){
+    .singleImage1{
+        display: block;
+    }
+    .singleImage2{
+        display: none;
+    }
+}
+@media (min-width: 0) and (max-width: 991px){
+    .memberImg{
+        height: 350px;
+    }
+    .member-info h1{
+        line-height: 60px;
+    }
+    
 }
