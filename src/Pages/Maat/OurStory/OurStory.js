@@ -16,7 +16,7 @@ const OurStory = () => {
     return (
         <div className="pb-5">
             <Container>
-                <div className='banner-container py-3'>
+                <div className='banner-container storyBanner py-3'>
                     <div className='big-font'>
                         <h1>IT ALL STARTED</h1>
                         <div className='storyInfo'>
@@ -40,58 +40,65 @@ const OurStory = () => {
                         <img src="https://i.ibb.co/fX1z144/story.jpg" alt="" />
                     </div>
                 </div>
-                <div id='ourStory' className='mainSection'>
-                    {
-                        story.map(story => <div key={story?._id}>
-                            <div className='py-5'>
-                                <Row>
-                                    <Col xs={12} lg={6}>
-                                        <div className="big-font">
-                                            <h1 className='storyYear'>{story?.year}</h1>
-                                            <h1>{story?.title}</h1>
-                                        </div>
-                                    </Col>
-                                    <Col xs={12} lg={6}>
-                                        <div>
-                                            <div className="big-font">
-                                                <h2>{story?.sub_title}</h2>
-                                                <p>{story?.description}</p>
-                                                <Image className='w-100' src={story?.image} />
-                                            </div>
-                                        </div>
-                                    </Col>
-                                </Row>
-                            </div>
-                            <div className='mt-5 pt-5'>
-                                <hr className='bg-white' />
-                            </div>
-                        </div>)
-                    }
-
-                </div>
             </Container>
-            <div className='navStoryContainer'>
+
+            <div className="ourStory">
                 <Container>
-                    <Row className='navStory'>
-
+                    <div id='ourStory' className='mainSection'>
                         {
-                            story.map(story => <div
-
-                                key={story?._id}>
-                                <div className='big-font navStoryItem'>
-                                    <h5>{story?.year}</h5>
-                                    <p>{story?.title}</p>
+                            story.map(story => <div key={story?._id}>
+                                <div id={story?._id} className='py-5'>
+                                    <Row>
+                                        <Col xs={12} lg={6}>
+                                            <div className="big-font singleStory">
+                                                <h1 className='storyYear'>{story?.year}</h1>
+                                                <h1>{story?.title}</h1>
+                                            </div>
+                                        </Col>
+                                        <Col xs={12} lg={6}>
+                                            <div>
+                                                <div className="big-font">
+                                                    <h2>{story?.sub_title}</h2>
+                                                    <p>{story?.description}</p>
+                                                    <Image className='w-100' src={story?.image} />
+                                                </div>
+                                            </div>
+                                        </Col>
+                                    </Row>
+                                </div>
+                                <div className='mt-5 pt-5'>
+                                    <hr className='bg-white' />
                                 </div>
                             </div>)
                         }
-                    </Row>
 
+                    </div>
                 </Container>
+                <div className='navStoryContainer'>
+                    <Container>
+                        <Row className='navStory'>
+
+                            {
+                                story.map(story => <div
+                                    className='navStoryItem'
+                                    key={story?._id}>
+                                    <a href={`#${story?._id}`}>
+                                        <div className='big-font'>
+                                            <h5>{story?.year}</h5>
+                                            <p>{story?.title}</p>
+                                        </div>
+                                    </a>
+                                </div>)
+                            }
+                        </Row>
+                    </Container>
+                </div>
             </div>
+
 
             <ContactUs />
             <Footer />
-        </div>
+        </div >
     );
 };
 

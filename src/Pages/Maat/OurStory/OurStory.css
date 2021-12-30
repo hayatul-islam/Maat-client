@@ -5,6 +5,11 @@
     margin-top: 50px;
 }
 
+.singleStory{
+    position: sticky;
+    top: 0;
+}
+
 .storyInfo .rightInfo{
     text-align: end;
 }
@@ -40,9 +45,23 @@
     transition: background-color 300ms ease;
     text-decoration: none;
 }
+.navStoryItem a{
+    text-decoration: none;
+}
+.navStoryItem h5{
+    font-family: none;
+}
 
 @media (min-width: 0px) and (max-width: 991px){
     .navStoryContainer{
         display: none;
+    }
+  }
+@media (min-width: 991px) and (max-width: 20000px){
+    .navStoryContainer{
+        display: none;
+    }
+    .ourStory:hover .navStoryContainer{
+        display: block;
     }
   }
