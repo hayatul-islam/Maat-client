@@ -13,8 +13,13 @@
     position: absolute;
     display: none;
     top: -100px;
-    z-index: 20;
-    right: -65%;
+    z-index: 999999999999999999999999999999999999999999999 !important;
+    right: -55%;
+}
+.teamImg p{
+    max-width: 250px;
+    padding: 0 10px;
+    z-index: 1;
 }
 .teamImg img{
     width: 200px;
@@ -22,19 +27,29 @@
 }
 .teamContainer:hover .teamImg{
     display: block;
-    
+}
+.teamHr{
+    z-index: -1;
 }
 
-@media (min-width: 0px) and (max-width: 649px){
+
+@media (min-width: 0px) and (max-width: 600px){
     .ourTeamTitle{
         font-size: 40px !important;
     }
     .teamImg{
-        right: -40%;
+        right: -42%;
+    }
+    .teamImg p{
+        display: none;
     }
   }
-@media (min-width: 0px) and (max-width: 767px){
+@media (min-width: 601px) and (max-width: 991px){
     .teamImg{
-        right: -40%;
+        right: -30%;
+    }
+    .teamImg img{
+        width: 180px;
+        height: 250px;
     }
   }

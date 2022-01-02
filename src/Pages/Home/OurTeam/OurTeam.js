@@ -28,26 +28,31 @@ const OurTeam = () => {
                     {
                         teams.map(team => <div key={team?._id}>
                             <Row className='teamContainer'>
-                                <Col xs={12} md={4}>
+                                <Col xs={12} lg={4}>
                                     <div className='text-light'>
                                         <h4>{team?.name}</h4>
                                     </div>
                                 </Col>
-                                <Col xs={12} md={4}>
+                                <Col xs={12} lg={4}>
                                     <div className='text-light'>
                                         <h5 className='fw-normal'>{team?.job}</h5>
                                     </div>
                                 </Col>
-                                <Col xs={12} md={4}>
+                                <Col xs={12} lg={4}>
                                     {/* <div className='teamImg'>
                                         <img className='img-fluid' src={team?.image} alt="" />
                                     </div> */}
                                 </Col>
+
                                 <div className='teamImg'>
-                                    <img className='img-fluid' src={team?.image} alt="" />
+                                    <div className='d-flex align-items-center'>
+                                        <img className='img-fluid' src={team?.image} alt="" />
+                                        <p>{team?.about.slice(0, 100)}</p>
+                                    </div>
                                 </div>
+
                                 <div className="pb-4">
-                                    <hr data-aos="fade-right" data-aos-duration="1000" className='bg-white' />
+                                    <hr data-aos="fade-right" data-aos-duration="1000" className='teamHr' />
                                 </div>
                             </Row>
 

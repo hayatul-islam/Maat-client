@@ -23,11 +23,7 @@ const TopBanner = () => {
                         <i className="fas fa-arrow-down "></i>
                     </a>
                 </div>
-                <div data-aos="fade-right"
-                    data-aos-duration="1000"
-                    data-aos-offset="500"
-                    data-aos-easing="ease-in-sine"
-                    className='bannerImg topBannerImg'>
+                <div className='bannerImg topBannerImg'>
                     <img src="https://i.ibb.co/bdL6qPm/top-banner.jpg" alt="" />
                 </div>
             </Container>
