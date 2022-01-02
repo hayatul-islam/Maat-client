@@ -1,6 +1,7 @@
 .banner-container{
     position: relative;
     z-index: 1;
+
 }
 .sinceYear{
     color: #f0f0f0cc;
@@ -14,6 +15,10 @@
     top: -20px;
     left: 40%;
     z-index: -1;
+
+    animation-duration: 1.4s;
+  animation-name: bannerSlideIn;
+  animation-iteration-count: 1;
 }
 .bannerImg img{
     width: 350px;
@@ -39,6 +44,18 @@
 .downBtn:hover{
     color: whitesmoke;
 }
+
+@keyframes bannerSlideIn {
+    0% {
+      margin-left: -100%;
+      width: 300%;
+    }
+  
+   100% {
+      margin-right: 0%;
+      width: 100%;
+    }
+  }
 
 
 @media (min-width: 0px) and (max-width: 420px){
