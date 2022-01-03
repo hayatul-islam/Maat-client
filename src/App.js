@@ -25,13 +25,13 @@ import OurStory from './Pages/Maat/OurStory/OurStory';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
-import Login from './Pages/Shered/Login/Login';
 AOS.init();
 
 
 function App() {
+
   return (
-    <div style={{ background: '#212426' }}>
+    <div className='appContainer' style={{ background: '#212426' }}>
 
       <BrowserRouter>
         <Header />

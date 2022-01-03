@@ -10,7 +10,7 @@ import TopBanner from '../TopBanner/TopBanner';
 
 const Home = () => {
     return (
-        <div>
+        <div className='homeContainer'>
             <TopBanner />
             <About />
             <OurExpertise />

@@ -17,8 +17,8 @@
     z-index: -1;
 
     animation-duration: 1.4s;
-  animation-name: bannerSlideIn;
-  animation-iteration-count: 1;
+    animation-name: bannerSlideIn;
+    animation-iteration-count: 1;
 }
 .bannerImg img{
     width: 350px;
@@ -48,7 +48,7 @@
 @keyframes bannerSlideIn {
     0% {
       margin-left: -100%;
-      width: 300%;
+      width: 200%;
     }
   
    100% {

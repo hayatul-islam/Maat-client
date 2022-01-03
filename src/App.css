@@ -3,6 +3,10 @@
 /******************************
  common 
  *****************************/
+ *{
+   margin: 0;
+   padding: 0;;
+ }
 h1,h2,h3,h4,h5,h6{
   color: #f0f0f0;
   font-family: 'Syne', sans-serif;
@@ -56,6 +60,62 @@ hr{
 .downLinkImage{
   width: 40px;
 }
+
+
+
+
+.appContainer{
+  animation-duration: 2.4s;
+  animation-name: homeContent;
+  animation-iteration-count: 1;
+}
+
+.appContainer nav,h1,h2,h3,h4,h5,button,hr,.downBtn{
+  
+  animation-duration: 2s;
+  animation-name: contentHidden;
+  animation-iteration-count: 1;
+}
+
+
+
+@keyframes homeContent {
+  0% {
+    opacity: .001;
+    background: #fff !important;
+  }
+  50%{
+    opacity: .2;
+    background: #fff !important;
+  }
+  90%{
+    opacity: .3;
+  }
+
+ 100% {
+    opacity: 1;
+  }
+}
+@keyframes contentHidden {
+  0% {
+    visibility: hidden;
+  }
+  50%{
+    visibility: hidden;
+  }
+  90%{
+    visibility: hidden;
+  }
+
+ 100% {
+    visibility: visible;
+  }
+}
+
+
+
+
+
 
 
 @media (min-width: 0px) and (max-width: 649px){
