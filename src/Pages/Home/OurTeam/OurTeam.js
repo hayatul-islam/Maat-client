@@ -26,7 +26,7 @@ const OurTeam = () => {
                 </div>
                 <div className='teamsContainer'>
                     {
-                        teams.map(team => <div key={team?._id}>
+                        teams.map(team => <div data-aos="fade-up" data-aos-duration="1000" key={team?._id}>
                             <Row className='teamContainer'>
                                 <Col xs={12} lg={4}>
                                     <div className='text-light'>
@@ -52,14 +52,15 @@ const OurTeam = () => {
                                 </div>
 
                                 <div className="pb-4">
-                                    <hr data-aos="fade-right" data-aos-duration="1000" className='teamHr' />
+                                    <hr className='teamHr' />
                                 </div>
                             </Row>
 
                         </div>)
                     }
                 </div>
-                <a onClick={handleAllTeam} className='linkBtn' >SEE ALL THE TEAM <Image src="https://uploads-ssl.webflow.com/6160407763f5cd74b27c2405/6160407763f5cd70b77c241f_icon-arrow-white-diag.svg" /></a>
+                <a data-aos="fade-up" data-aos-duration="1000"
+                    onClick={handleAllTeam} className='linkBtn' >SEE ALL THE TEAM <Image src="https://uploads-ssl.webflow.com/6160407763f5cd74b27c2405/6160407763f5cd70b77c241f_icon-arrow-white-diag.svg" /></a>
 
             </Container>
         </div>
