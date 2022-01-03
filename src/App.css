@@ -61,37 +61,35 @@ hr{
   width: 40px;
 }
 
-
-
-
+/* banner image animation  */
 .appContainer{
   animation-duration: 2.4s;
   animation-name: homeContent;
   animation-iteration-count: 1;
 }
-
 .appContainer nav,h1,h2,h3,h4,h5,button,hr,.downBtn{
-  
   animation-duration: 2s;
   animation-name: contentHidden;
   animation-iteration-count: 1;
 }
 
 
-
+/* banner image animation  */
 @keyframes homeContent {
   0% {
     opacity: .001;
-    background: #fff !important;
+    background: #fff ;
   }
   50%{
-    opacity: .2;
-    background: #fff !important;
+    opacity: .18;
+    background: #fff;
   }
   90%{
     opacity: .3;
   }
-
+  95%{
+    opacity: .6;
+  }
  100% {
     opacity: 1;
   }
@@ -112,12 +110,7 @@ hr{
   }
 }
 
-
-
-
-
-
-
+/* responsive  */
 @media (min-width: 0px) and (max-width: 649px){
   .big-font h1{
     font-size: 3em;

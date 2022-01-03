@@ -4,7 +4,6 @@
     justify-content: space-between;
     margin-top: 50px;
 }
-
 .singleStory{
     position: sticky;
     top: 0;
@@ -41,8 +40,6 @@
 .navStoryItem{
     padding: 1em 1.5em;
     border-right: 1px solid #f0f0f0;
-    -webkit-transition: background-color 300ms ease;
-    transition: background-color 300ms ease;
     text-decoration: none;
 }
 .navStoryItem a{
@@ -54,6 +51,17 @@
 .navStoryItem p{
     font-size: 16px;
 }
+
+#myProgress {
+    width: 100%;
+    background-color: grey;
+  }
+  
+  #myBar {
+    width: 1%;
+    height: 30px;
+    background-color: green;
+  }
 
 @media (min-width: 0px) and (max-width: 991px){
     .navStoryContainer{

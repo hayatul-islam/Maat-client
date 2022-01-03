@@ -30,6 +30,9 @@
 .header-menu:last-child {
     margin-right: 0;
 }
+.active{
+    font-weight: 400;
+}
 
 nav .nav-link{
     color: #f0f0f0 !important;

@@ -11,7 +11,8 @@ const OurStory = () => {
         fetch('https://pure-refuge-33072.herokuapp.com/story')
             .then(res => res.json())
             .then(data => setStory(data))
-    }, [])
+    }, []);
+
 
     return (
         <div className="pb-5">
@@ -33,10 +34,7 @@ const OurStory = () => {
                     <div className="mt-5">
                         <a className='downBtn' href="#ourStory"><i className="fas fa-arrow-down"></i></a>
                     </div>
-                    <div data-aos="fade-right"
-                        data-aos-duration="1000"
-                        data-aos-easing="ease-in-sine"
-                        className='bannerImg storyImg'>
+                    <div className='bannerImg storyImg'>
                         <img src="https://i.ibb.co/fX1z144/story.jpg" alt="" />
                     </div>
                 </div>
@@ -44,9 +42,10 @@ const OurStory = () => {
 
             <div className="ourStory">
                 <Container>
+
                     <div id='ourStory' className='mainSection'>
                         {
-                            story.map(story => <div key={story?._id}>
+                            story.map((story) => <div key={story?._id}>
                                 <div id={story?._id} className='py-5'>
                                     <Row>
                                         <Col xs={12} lg={6}>
@@ -79,7 +78,7 @@ const OurStory = () => {
                         <Row className='navStory'>
 
                             {
-                                story.map(story => <div
+                                story.map((story, index) => <div
                                     className='navStoryItem'
                                     key={story?._id}>
                                     <a href={`#${story?._id}`}>
@@ -97,6 +96,7 @@ const OurStory = () => {
                 <ContactUs />
                 <Footer />
             </div>
+
         </div >
     );
 };
