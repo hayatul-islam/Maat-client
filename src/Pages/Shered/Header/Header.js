@@ -27,20 +27,20 @@ const Header = () => {
                 <Navbar id='navbar' className='sticky-top' variant="dark" expand="md">
                     <Container>
                         <Navbar.Brand href="#home">
-                            <Image onClick={handleHome} className='header-logo' src='https://uploads-ssl.webflow.com/6160407763f5cd74b27c2405/6160407763f5cd04d07c241b_logo-white.png' />
+                            <Image onClick={handleHome} className='header-logo' src='https://i.ibb.co/gFKx1Z4/Clarex-final-White.png' />
                         </Navbar.Brand>
                         <Navbar.Toggle aria-controls="navbarScroll" />
                         <Navbar.Collapse id="navbarScroll">
                             <Nav className="ms-auto header-menu">
                                 <NavLink to="/">Home</NavLink>
                                 <NavLink to="/expertises">Expertise</NavLink>
-                                <NavDropdown title="Maat" >
+                                <NavDropdown id='dropdownMenu' title="Clarex" >
                                     <div className='dropdownItem'>
                                         <NavLink to="/ourStory">
                                             <div className='d-flex justify-content-between align-items-center'>
                                                 <div>
                                                     <span>01</span>
-                                                    <p>Our story</p>
+                                                    <p>About Us</p>
                                                 </div>
                                                 <div>
                                                     <img className='dropdownIcon' src="https://uploads-ssl.webflow.com/6160407763f5cd74b27c2405/6160407763f5cdf3b57c2428_icon-arrow-white-diag-lg.svg" alt="" />
@@ -53,7 +53,7 @@ const Header = () => {
                                             <div className='d-flex justify-content-between align-items-center'>
                                                 <div>
                                                     <span>02</span>
-                                                    <p>Team</p>
+                                                    <p>Our Team</p>
                                                 </div>
                                                 <div>
                                                     <img className='dropdownIcon' src="https://uploads-ssl.webflow.com/6160407763f5cd74b27c2405/6160407763f5cdf3b57c2428_icon-arrow-white-diag-lg.svg" alt="" />
@@ -66,7 +66,7 @@ const Header = () => {
                                             <div className='d-flex justify-content-between align-items-center'>
                                                 <div>
                                                     <span>03</span>
-                                                    <p>Careers</p>
+                                                    <p>Our Partner</p>
                                                 </div>
                                                 <div>
                                                     <img className='dropdownIcon' src="https://uploads-ssl.webflow.com/6160407763f5cd74b27c2405/6160407763f5cdf3b57c2428_icon-arrow-white-diag-lg.svg" alt="" />
