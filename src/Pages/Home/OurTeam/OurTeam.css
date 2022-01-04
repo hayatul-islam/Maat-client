@@ -13,7 +13,7 @@
     position: absolute;
     display: none;
     top: -100px;
-    z-index: 999999999999999999999999999999999999999999999 !important;
+    z-index: 99 !important;
     right: -55%;
 }
 
@@ -49,10 +49,15 @@
         font-size: 40px !important;
     }
     .teamImg{
-        right: -42%;
+        right: -30%;
     }
-    .teamImg p{
-        display: none;
+    .teamImg img{
+        width: 150px;
+        height: 200px;
+    }
+    .contactInfo p,a{
+        font-size: 14px;
+        margin-bottom: 0;
     }
   }
 @media (min-width: 601px) and (max-width: 991px){
