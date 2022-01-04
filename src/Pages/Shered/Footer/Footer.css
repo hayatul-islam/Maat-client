@@ -11,3 +11,9 @@
 .footer-menu a:hover{
     color: #f0f0f0;
 }
+.clarexDropdown {
+    padding: 0;
+}
+.clarexDropdown a{
+    padding: 0;
+}

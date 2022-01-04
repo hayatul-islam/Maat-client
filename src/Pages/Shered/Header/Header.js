@@ -34,7 +34,7 @@ const Header = () => {
                             <Nav className="ms-auto header-menu">
                                 <NavLink to="/">Home</NavLink>
                                 <NavLink to="/expertises">Expertise</NavLink>
-                                <NavDropdown id='dropdownMenu' title="Clarex" >
+                                <NavDropdown className='clarexDropdown' id='dropdownMenu' title="Clarex" >
                                     <div className='dropdownItem'>
                                         <NavLink to="/ourStory">
                                             <div className='d-flex justify-content-between align-items-center'>

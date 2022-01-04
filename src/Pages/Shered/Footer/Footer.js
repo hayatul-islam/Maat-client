@@ -18,7 +18,7 @@ const Footer = () => {
                 <hr className='bg-white' />
                 <div className='py-3'>
                     <Image className='footer-logo mb-3' src='https://i.ibb.co/gFKx1Z4/Clarex-final-White.png' />
-                    <p>Multi-skilled law firm, operating worldwide</p>
+                    <p>Delivering distinction, leading change</p>
                 </div>
 
                 <hr className='bg-white' />
@@ -63,13 +63,13 @@ const Footer = () => {
                         </Col>
                         <Col xs={3}>
                             <div className='footer-menu'>
-                                <NavDropdown title="Maat" >
+                                <NavDropdown className='clarexDropdown' title="Clarex" >
                                     <div className='dropdownItem'>
                                         <Link to="/expertises">
                                             <div className='d-flex justify-content-between align-items-center'>
                                                 <div>
                                                     <span>01</span>
-                                                    <p>Our story</p>
+                                                    <p>About Us</p>
                                                 </div>
                                                 <div>
                                                     <img className='dropdownIcon' src="https://uploads-ssl.webflow.com/6160407763f5cd74b27c2405/6160407763f5cdf3b57c2428_icon-arrow-white-diag-lg.svg" alt="" />
@@ -82,7 +82,7 @@ const Footer = () => {
                                             <div className='d-flex justify-content-between align-items-center'>
                                                 <div>
                                                     <span>02</span>
-                                                    <p>Team</p>
+                                                    <p>Our Team</p>
                                                 </div>
                                                 <div>
                                                     <img className='dropdownIcon' src="https://uploads-ssl.webflow.com/6160407763f5cd74b27c2405/6160407763f5cdf3b57c2428_icon-arrow-white-diag-lg.svg" alt="" />
@@ -95,7 +95,7 @@ const Footer = () => {
                                             <div className='d-flex justify-content-between align-items-center'>
                                                 <div>
                                                     <span>03</span>
-                                                    <p>Careers</p>
+                                                    <p>Our Partner</p>
                                                 </div>
                                                 <div>
                                                     <img className='dropdownIcon' src="https://uploads-ssl.webflow.com/6160407763f5cd74b27c2405/6160407763f5cdf3b57c2428_icon-arrow-white-diag-lg.svg" alt="" />
@@ -146,12 +146,12 @@ const Footer = () => {
                         </Col>
                         <Col xs={3}>
                             <div className='footer-menu'>
-                                <Link to="#">Instagram</Link>
+                                <Link to="#">Twitter</Link>
                             </div>
                         </Col>
                         <Col xs={3}>
                             <div className='footer-menu'>
-                                <Link to="#">Twitter</Link>
+                                <Link to="#">You Tube</Link>
                             </div>
                         </Col>
                     </Row>
