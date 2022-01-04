@@ -16,14 +16,25 @@
     z-index: 999999999999999999999999999999999999999999999 !important;
     right: -55%;
 }
-.teamImg p{
-    max-width: 250px;
-    padding: 0 10px;
-    z-index: 1;
-}
+
 .teamImg img{
     width: 200px;
     height: 300px;
+}
+.contactInfo{
+    margin-left: 10px;
+    z-index: 999;
+}
+.contactInfo h6{
+    font-size: 22px;
+}
+.contactInfo p,a{
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.contactInfo a{
+    color: #f0f0f0;
+    font-weight: bold;
 }
 .teamContainer:hover .teamImg{
     display: block;

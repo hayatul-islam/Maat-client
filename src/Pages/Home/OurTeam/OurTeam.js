@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Button, Col, Container, Image, Row } from 'react-bootstrap';
+import { Col, Container, Image, Row } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import './OurTeam.css';
 
@@ -11,7 +11,7 @@ const OurTeam = () => {
     useEffect(() => {
         fetch('https://pure-refuge-33072.herokuapp.com/teams')
             .then(res => res.json())
-            .then(data => setTeams(data.slice(0, 6)))
+            .then(data => setTeams(data.slice(0, 5)))
     }, []);
 
     const handleAllTeam = () => {
@@ -47,7 +47,12 @@ const OurTeam = () => {
                                 <div className='teamImg'>
                                     <div className='d-flex align-items-center'>
                                         <img className='img-fluid' src={team?.image} alt="" />
-                                        <p>{team?.about.slice(0, 100)}</p>
+                                        <div className='contactInfo'>
+                                            <h6>{team?.name}</h6>
+                                            <p>{team?.job}</p>
+                                            <p>Email: {team?.email}</p>
+                                            <a target="_blank" href={team?.linkedin}>Linkedin</a>
+                                        </div>
                                     </div>
                                 </div>
 
