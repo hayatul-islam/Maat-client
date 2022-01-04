@@ -37,6 +37,9 @@
 nav .nav-link{
     color: #f0f0f0 !important;
 }
+.clarexDropdown a{
+    padding: 0 !important;
+}
 .dropdown-menu {
     position: absolute;
     width: 350px;

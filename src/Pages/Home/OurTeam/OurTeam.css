@@ -7,7 +7,6 @@
 }
 .teamContainer{
     position: relative;
-    z-index: 10;
 }
 .teamImg{
     position: absolute;
