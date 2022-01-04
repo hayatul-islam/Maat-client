@@ -13,7 +13,7 @@ const ClarexBanner = () => {
                                 data-aos-duration="1000">Your Growth</h1>
                             <h1 data-aos="fade-up"
                                 data-aos-duration="1000">Our Priority </h1>
-                            <h4 className='clarexDescription'>Commanding the goals of future</h4>
+                            <h4 className='clarexDescription'>Commanding the goals of future!</h4>
                         </div>
                         {/* <div className="mt-5 pt-5">
                             <a className='downBtn' href="#about">

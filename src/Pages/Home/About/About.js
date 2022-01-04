@@ -23,12 +23,12 @@ const About = () => {
                         <Row>
                             <Col xs={12} md={6}>
                                 <div className="text-color about-text mt-4">
-                                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                                    <p>A world of sustenance that opens the doorway to create impact. Being faced with problems that exceed one's capabilities is often intimidating. This leads to decisions that can deliver blows to the tide of change. But with us beside you, focus on the crucial matters and leave the change to us. </p>
                                 </div>
                             </Col>
                             <Col xs={12} md={6}>
                                 <div className="text-color about-text mt-5 pt-5">
-                                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                                    <p>While you focus on the business process, we take care of your foundation. In this competitive and volatile market, precision and data readiness matter the most. Lack of this often leaves scars on the market cap of a business. That's why we become your disrupters to provide intelligent, data-driven solutions and strategies.</p>
                                 </div>
                             </Col>
 
