@@ -56,11 +56,7 @@ const Footer = () => {
                                 <Link to="/">Home</Link>
                             </div>
                         </Col>
-                        <Col xs={3}>
-                            <div className='footer-menu'>
-                                <Link to="/expertises">Expertise</Link>
-                            </div>
-                        </Col>
+
                         <Col xs={3}>
                             <div className='footer-menu'>
                                 <NavDropdown className='clarexDropdown' title="Clarex" >
@@ -108,22 +104,22 @@ const Footer = () => {
                         </Col>
                         <Col xs={3}>
                             <div className='footer-menu'>
+                                <Link to="/expertises">Expertise</Link>
+                            </div>
+                        </Col>
+                        <Col xs={3}>
+                            <div className='footer-menu'>
+                                <Link to="/sustainibility">Sustainibility</Link>
+                            </div>
+                        </Col>
+                        <Col xs={3}>
+                            <div className='footer-menu'>
                                 <Link to="/blogs">Blog</Link>
                             </div>
                         </Col>
                         <Col xs={3}>
                             <div className='footer-menu'>
                                 <Link to="/contact">Contact</Link>
-                            </div>
-                        </Col>
-                        <Col xs={3}>
-                            <div className='footer-menu'>
-                                <Link to="#">Changelog</Link>
-                            </div>
-                        </Col>
-                        <Col xs={3}>
-                            <div className='footer-menu'>
-                                <Link to="#">Licensing</Link>
                             </div>
                         </Col>
                     </Row>

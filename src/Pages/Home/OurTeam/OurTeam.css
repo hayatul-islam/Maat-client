@@ -26,6 +26,11 @@
 }
 .contactInfo h6{
     font-size: 22px;
+    margin-bottom: 0;
+}
+.contactInfo span{
+    color: #f0f0f0;
+    margin-bottom: 10px;
 }
 .contactInfo p,a{
     font-size: 16px;

@@ -49,7 +49,7 @@ const OurTeam = () => {
                                         <img className='img-fluid' src={team?.image} alt="" />
                                         <div className='contactInfo'>
                                             <h6>{team?.name}</h6>
-                                            <p>{team?.job}</p>
+                                            <span>{team?.job}</span>
                                             <p>Email: {team?.email}</p>
                                             <a target="_blank" href={team?.linkedin}>Linkedin</a>
                                         </div>
