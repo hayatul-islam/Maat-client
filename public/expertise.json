@@ -1,50 +1,60 @@
 [
     {
-        "title": "Intellectual Property",
-        "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
-        "image": "https://uploads-ssl.webflow.com/6160407763f5cde3707c2415/6160407763f5cd77647c248e_lg-intellectual-property-p-500.jpeg",
-        "sub_title": "Sub-title description of the service"
-    },
-    {
-        "title": "Labor & Employment",
-        "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
+        "title": "BPO",
+        "description": "Business Process Outsourcing offers both front office and Back office services. These services require effective communication, adequate expertise ranging from administrative work to supporting activities. They can be intimidating to perform without a skilled workforce. ClareX understands that and provides services that boost your efficiency. Our services include.",
         "image": "https://uploads-ssl.webflow.com/6160407763f5cde3707c2415/6160407763f5cd023f7c2487_lg-cybersecurity-p-500.jpeg",
-        "sub_title": "Sub-title description of the service"
+        "sub_title": "Sub-title description of the service",
+        "service": [
+            "Data Entry",
+            "Record Maintenance",
+            "HR management",
+            "Virtual Assistance",
+            "Order Processing",
+            "Medical Billing",
+            "Drop-Shipping"
+        ]
     },
     {
-        "title": "Business taxation",
-        "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
+        "title": "ITES",
+        "description": "Outsourcing IT-enabled service processes covering diverse areas like automation, digital infrastructure, software, and many more can be complex. Without data-powered solutions and IT expertise, a wrong step in the infrastructure can cause severe delay. We recognized this complexity, so we came up with work processes that exactly cover those areas. Our services include-",
         "image": "https://uploads-ssl.webflow.com/6160407763f5cde3707c2415/6160407763f5cdd1a77c248c_lg-business-tax-p-500.jpeg",
-        "sub_title": "Sub-title description of the service"
+        "sub_title": "Sub-title description of the service",
+        "service": [
+            "App and Software Development",
+            "IT Business Development",
+            "IT Support",
+            "Digital Business Infrastructure",
+            "Office Automation"
+        ]
     },
     {
-        "title": "Dispute resolution",
-        "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
+        "title": "Digital Marketing",
+        "description": "Digitalization has allowed businesses plenty of new tools to reach and engage customers. Using the right digital marketing tools, you can land a diverse customer range, increase conversions, and boost sales. But because of rapid change, a void for skilled personnel and appropriate resources has emerged. We understand that void and provide you with both the resource and the personnel. Our services-",
+        "image": "https://uploads-ssl.webflow.com/6160407763f5cde3707c2415/6160407763f5cd77647c248e_lg-intellectual-property-p-500.jpeg",
+        "sub_title": "Sub-title description of the service",
+        "service": [
+            "Social Media Marketing",
+            "Media Management",
+            "Content Writing",
+            "Professional Copywriting",
+            "SEO",
+            "E-Com Solutions",
+            "Digital Ad solutions",
+            "Digital Lead Funnel"
+        ]
+    },
+    {
+        "title": "Finance and Accounting",
+        "description": "Finance and accounting services can often be tricky. They need to follow federal, state, or local laws strictly. Not only that, the proper consultation and accurate solutions can improve business performance and other business needs. Unfortunately, there is a lack of workforce to produce this service. We understand this gap and provide suitable alternatives. Our services include-",
         "image": "https://uploads-ssl.webflow.com/6160407763f5cde3707c2415/6160407763f5cdd2a47c248b_lg-dispute-p-500.jpeg",
-        "sub_title": "Sub-title description of the service"
-    },
-    {
-        "title": "Environmental Law",
-        "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
-        "image": "https://uploads-ssl.webflow.com/6160407763f5cde3707c2415/6160407763f5cd8cb07c248a_lg-environmental-p-500.jpeg",
-        "sub_title": "Sub-title description of the service"
-    },
-    {
-        "title": "Land Use and Planning",
-        "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
-        "image": "https://uploads-ssl.webflow.com/6160407763f5cde3707c2415/6160407763f5cd715b7c2489_lg-land-use-p-500.jpeg",
-        "sub_title": "Sub-title description of the service"
-    },
-    {
-        "title": "Permitting and Compliance",
-        "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
-        "image": "https://uploads-ssl.webflow.com/6160407763f5cde3707c2415/6160407763f5cd00877c2488_lg-permitting-compliance-p-500.jpeg",
-        "sub_title": "Sub-title description of the service"
-    },
-    {
-        "title": "Cybersecurity & Privacy",
-        "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
-        "image": "https://uploads-ssl.webflow.com/6160407763f5cde3707c2415/6160407763f5cd023f7c2487_lg-cybersecurity-p-500.jpeg",
-        "sub_title": "Sub-title description of the service"
+        "sub_title": "Sub-title description of the service",
+        "service": [
+            "Feasibility study",
+            "Cost Analysis",
+            "Project Estimations",
+            "Business Model",
+            "Trade Finance Solutions",
+            "Finance Architecture"
+        ]
     }
 ]

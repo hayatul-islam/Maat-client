@@ -15,7 +15,7 @@ const ExpertiseDetails = () => {
             .then(data => setExpertises(data))
     }, []);
 
-    const findExpertise = expertises.find(expertise => expertise?._id === expertiseId)
+    const findExpertise = expertises.find(expertise => expertise?._id === expertiseId);
 
     return (
         <div className='pb-5'>
@@ -25,15 +25,15 @@ const ExpertiseDetails = () => {
                 </div>
                 <Row>
 
-                    <Col xs={12} md={8}>
+                    <Col xs={12} md={12}>
                         <div className='big-font expertiseInfo'>
                             <h1>{findExpertise?.title.toUpperCase()}</h1>
                             <p>{findExpertise?.description}</p>
                         </div>
                     </Col>
-                    <Col xs={12} md={4}>
+                    <Col xs={12} md={12}>
                         <div>
-                            <Image className='img-fluid expertiseImg' src={findExpertise?.image} />
+                            {/* <Image className='img-fluid expertiseImg' src={findExpertise?.image} /> */}
                         </div>
                     </Col>
                     <div className='py-5'>
@@ -53,6 +53,9 @@ const ExpertiseDetails = () => {
                             <div className='text-light big-font expertiseInfo'>
                                 <h2>{findExpertise?.sub_title}</h2>
                                 <p>{findExpertise?.description}</p>
+                                {
+                                    findExpertise?.service.map(item => <li>{item}</li>)
+                                }
                                 <Image className='w-100 mt-5' src={findExpertise?.image} />
                             </div>
                         </Col>
