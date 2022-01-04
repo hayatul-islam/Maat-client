@@ -26,14 +26,14 @@ const Header = () => {
             <div className='navbarMenu' style={{ background: '#212426' }}>
                 <Navbar id='navbar' className='sticky-top' variant="dark" expand="md">
                     <Container>
-                        <Navbar.Brand href="#home">
+                        <Navbar.Brand className='logoContainer' href="">
                             <Image onClick={handleHome} className='header-logo' src='https://i.ibb.co/gFKx1Z4/Clarex-final-White.png' />
+                            <span className='betaLive'>Beta live</span>
                         </Navbar.Brand>
                         <Navbar.Toggle aria-controls="navbarScroll" />
                         <Navbar.Collapse id="navbarScroll">
                             <Nav className="ms-auto header-menu">
                                 <NavLink to="/">Home</NavLink>
-                                <NavLink to="/expertises">Expertise</NavLink>
                                 <NavDropdown className='clarexDropdown' id='dropdownMenu' title="Clarex" >
                                     <div className='dropdownItem'>
                                         <NavLink to="/ourStory">
@@ -75,6 +75,8 @@ const Header = () => {
                                         </NavLink>
                                     </div>
                                 </NavDropdown>
+                                <NavLink to="/expertises">Expertise</NavLink>
+                                <NavLink to="/Sustainibility">Sustainibility</NavLink>
                                 <NavLink to="/blogs">Blog</NavLink>
                                 <NavLink to="/contact">Contact</NavLink>
                             </Nav>
