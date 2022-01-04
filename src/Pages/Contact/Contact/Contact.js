@@ -82,25 +82,13 @@ const Contact = () => {
                                                     <input name="user_email" type="email" placeholder="example@gmail.com" required />
                                                 </div>
                                             </Col>
-                                            <Col xs={12} md={6}>
-                                                <div className='inputField'>
-                                                    <label htmlFor="">City</label> <br />
-                                                    <select name="city" required>
-                                                        {
-                                                            offices.map(office => <option
-                                                                key={office?._id}
-                                                                value={office?.name}>
-                                                                {office?.name}
-                                                            </option>)
-                                                        }
-                                                    </select>
-                                                </div>
-                                            </Col>
                                             <div className="inputField">
                                                 <label htmlFor="">Message</label> <br />
                                                 <textarea name="message" id="" cols="30" rows="3" placeholder='Type your message here' required></textarea>
                                             </div>
-                                            <input className='submitBtn' type="submit" value="send" />
+                                            <div className='text-end'>
+                                                <input className='submitBtn' type="submit" value="send" />
+                                            </div>
                                         </Row>
                                     </form>
                             }
