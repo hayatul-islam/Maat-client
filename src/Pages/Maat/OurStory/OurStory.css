@@ -9,6 +9,7 @@
     top: 0;
 }
 
+
 .storyInfo .rightInfo{
     text-align: end;
 }
@@ -73,5 +74,11 @@
     }
     .ourStory:hover .navStoryContainer{
         display: block;
+    }
+    .singleStory h1{
+        font-size: 70px;
+    }
+    .singleStory h2{
+        font-size: 45px;
     }
   }

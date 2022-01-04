@@ -67,7 +67,7 @@ hr{
   animation-name: homeContent;
   animation-iteration-count: 1;
 }
-.appContainer nav,h1,h2,h3,h4,h5,button,hr,.downBtn{
+.appContainer nav,h1,h2,h3,h4,hr{
   animation-duration: 2s;
   animation-name: contentHidden;
   animation-iteration-count: 1;
@@ -140,6 +140,9 @@ hr{
 @media (min-width: 801px) and (max-width: 1000px){
   .big-font h1{
     font-size: 4.2em;
+  }
+  .big-font h2{
+    font-size: 3.2rem;
   }
 }
 @media (min-width: 1001px) and (max-width: 1200px){

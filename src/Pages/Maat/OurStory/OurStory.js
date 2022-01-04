@@ -50,13 +50,13 @@ const OurStory = () => {
                                     <Row>
                                         <Col xs={12} lg={6}>
                                             <div className="big-font singleStory">
-                                                <h2 className='storyAbout'>{story?.about}</h2>
+                                                <h3 className='storyAbout'>{story?.about}</h3>
                                                 <h1>{story?.title}</h1>
                                             </div>
                                         </Col>
                                         <Col xs={12} lg={6}>
                                             <div>
-                                                <div className="big-font">
+                                                <div className="big-font singleStory">
                                                     <h2>{story?.sub_title}</h2>
                                                     <p>{story?.description}</p>
                                                     <Image className='w-100' src={story?.image} />
