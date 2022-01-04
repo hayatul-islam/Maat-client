@@ -50,7 +50,7 @@ const OurStory = () => {
                                     <Row>
                                         <Col xs={12} lg={6}>
                                             <div className="big-font singleStory">
-                                                <h1 className='storyYear'>{story?.year}</h1>
+                                                <h2 className='storyAbout'>{story?.about}</h2>
                                                 <h1>{story?.title}</h1>
                                             </div>
                                         </Col>
@@ -83,7 +83,7 @@ const OurStory = () => {
                                     key={story?._id}>
                                     <a href={`#${story?._id}`}>
                                         <div className='big-font'>
-                                            <h5>{story?.year}</h5>
+                                            <h5>{story?.about}</h5>
                                             <p>{story?.title}</p>
                                         </div>
                                     </a>

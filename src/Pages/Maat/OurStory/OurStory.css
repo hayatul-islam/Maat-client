@@ -15,10 +15,9 @@
 .storyImg img{
     height: 450px;
 }
-.storyYear{
+.storyAbout{
     color: #f0f0f07a !important;
     margin-bottom: 20px;
-    font-family: none;
 }
 .navStoryContainer{
     position: fixed;
