@@ -7,11 +7,13 @@ import OurExpertise from '../OurExpertise/OurExpertise';
 import OurTeam from '../OurTeam/OurTeam';
 import Testimonial from '../Testimonial/Testimonial';
 import TopBanner from '../TopBanner/TopBanner';
+import ClarexBanner from '../ClarexBanner/ClarexBanner';
 
 const Home = () => {
     return (
         <div className='homeContainer'>
-            <TopBanner />
+            {/* <TopBanner /> */}
+            <ClarexBanner />
             <About />
             <OurExpertise />
             <OurTeam />
