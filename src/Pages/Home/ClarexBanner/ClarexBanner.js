@@ -23,7 +23,7 @@ const ClarexBanner = () => {
 
                     </Col>
                     <Col xs={12} lg={4}>
-                        <div className='clarexImg'>
+                        <div data-aos="fade-right" data-aos-duration="1000" className='clarexImg'>
                             {/* <img src="https://i.ibb.co/tzbYQ10/success-concept-ladder-with-glowing-light-bulb-1017-32076-removebg-preview.png" alt="" /> */}
                             {/* <img src="https://i.ibb.co/b1qMpnq/success-concept-ladder-with-glowing-light-bulb-1017-32076-2-removebg-preview.png" alt="" /> */}
                             <img src="https://i.ibb.co/b1qMpnq/success-concept-ladder-with-glowing-light-bulb-1017-32076-2-removebg-preview.png" alt="" />
@@ -31,7 +31,7 @@ const ClarexBanner = () => {
                     </Col>
                 </Row>
                 <div className=" pt-5">
-                    <a className='downBtn' href="#about">
+                    <a className='downBtn downLinkBtn' href="#about">
                         <i className="fas fa-arrow-down "></i>
                     </a>
                 </div>

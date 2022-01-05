@@ -30,12 +30,12 @@ const Blogs = () => {
                         <h1 className='text-end pt-4'>LATEST ARTICLES</h1>
                     </div>
                     <div className="mt-4">
-                        <a className='downBtn' href="#blogs"><i className="fas fa-arrow-down"></i></a>
+                        <a className='downBtn downLinkBtn' href="#blogs"><i className="fas fa-arrow-down"></i></a>
                     </div>
                 </div>
 
                 <div data-aos="fade-up" data-aos-duration="1000" id='blogs' className="mainSection">
-                    <div className='text-light'>
+                    <div className='text-light downLinkBtn'>
                         <h1 className='pb-3'>Filter by categories :</h1>
                         <Button onClick={() => handleCategory('')} className='me-2 py-3 px-4 mb-4' variant='outline-light'>All</Button>
                         <Button onClick={() => handleCategory('Others')} className='me-2 py-3 px-4 mb-4' variant='outline-light'>Others</Button>
