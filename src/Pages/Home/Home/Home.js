@@ -8,19 +8,35 @@ import OurTeam from '../OurTeam/OurTeam';
 import Testimonial from '../Testimonial/Testimonial';
 import TopBanner from '../TopBanner/TopBanner';
 import ClarexBanner from '../ClarexBanner/ClarexBanner';
+import './Home.css';
+import { Container } from 'react-bootstrap';
 
 const Home = () => {
+
+
     return (
-        <div className='homeContainer'>
+        <div id='home' className='homeContainer'>
             {/* <TopBanner /> */}
             <ClarexBanner />
             <About />
             <OurExpertise />
-            <OurTeam />
-            <Testimonial />
-            <BlogSlider />
-            <ContactUs />
-            <Footer />
+            <div className='bottomTopTopShow'>
+                <OurTeam />
+                <Testimonial />
+                <BlogSlider />
+                <ContactUs />
+                <Footer />
+                <div className='bottomToTop'>
+                    <Container>
+                        <div className="toTopContainer">
+                            <a className='toTopBtn' href="#home">
+                                <i className="fas fa-chevron-up"></i>
+                            </a>
+                        </div>
+                    </Container>
+                </div>
+            </div>
+
         </div>
     );
 };
