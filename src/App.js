@@ -37,19 +37,19 @@ function App() {
         <Header />
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route path="expertises" element={<Expertises />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="ourStory" element={<OurStory />} />
-          <Route path="teams" element={<Team />} />
-          <Route path="blogs" element={<Blogs />} />
-          <Route path="blogs/:blogId" element={<BlogDetails />} />
-          <Route path="allJobOffice" element={<AllJobOffice />} />
-          <Route path="filterTeamMate/:city" element={<FilterTeamMate />} />
-          <Route path="teamMemberInfo/:memberId" element={<TeamMemberInfo />} />
-          <Route path="offersInfo/:offersId" element={<OffersInfo />} />
-          <Route path="expertises/expertiseDetails/:expertiseId" element={<ExpertiseDetails />} />
-          <Route path="expertiseDetails/:expertiseId" element={<ExpertiseDetails />} />
-          <Route path="dashboard" element={<Dashboard />} />
+          <Route path="/expertises" element={<Expertises />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/ourStory" element={<OurStory />} />
+          <Route path="/teams" element={<Team />} />
+          <Route path="/blogs" element={<Blogs />} />
+          <Route path="/blogs/:blogId" element={<BlogDetails />} />
+          <Route path="/allJobOffice" element={<AllJobOffice />} />
+          <Route path="/filterTeamMate/:city" element={<FilterTeamMate />} />
+          <Route path="/teamMemberInfo/:memberId" element={<TeamMemberInfo />} />
+          <Route path="/offersInfo/:offersId" element={<OffersInfo />} />
+          <Route path="/expertises/expertiseDetails/:expertiseId" element={<ExpertiseDetails />} />
+          <Route path="/expertiseDetails/:expertiseId" element={<ExpertiseDetails />} />
+          <Route path="/dashboard" element={<Dashboard />} />
           {/* <Route path="login" element={<Login />} /> */}
         </Routes>
       </BrowserRouter>
