@@ -21,38 +21,63 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import Contact from './Pages/Contact/Contact/Contact';
 import OurStory from './Pages/Maat/OurStory/OurStory';
-
+import HashLoader from "react-spinners/HashLoader";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
+import { useEffect, useState } from 'react';
 AOS.init();
+
 
 
 function App() {
 
-  return (
-    <div className='appContainer' style={{ background: '#212426' }}>
+  const [loading, setLoading] = useState(false);
 
-      <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/expertises" element={<Expertises />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/ourStory" element={<OurStory />} />
-          <Route path="/teams" element={<Team />} />
-          <Route path="/blogs" element={<Blogs />} />
-          <Route path="/blogs/:blogId" element={<BlogDetails />} />
-          <Route path="/allJobOffice" element={<AllJobOffice />} />
-          <Route path="/filterTeamMate/:city" element={<FilterTeamMate />} />
-          <Route path="/teamMemberInfo/:memberId" element={<TeamMemberInfo />} />
-          <Route path="/offersInfo/:offersId" element={<OffersInfo />} />
-          <Route path="/expertises/expertiseDetails/:expertiseId" element={<ExpertiseDetails />} />
-          <Route path="/expertiseDetails/:expertiseId" element={<ExpertiseDetails />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          {/* <Route path="login" element={<Login />} /> */}
-        </Routes>
-      </BrowserRouter>
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false)
+    }, 3000)
+  }, [])
+
+
+
+
+  return (
+    <div>
+
+      {
+        loading ?
+          <div style={{ height: '100vh' }} className="d-flex align-items-center justify-content-center">
+            <HashLoader size={60} color={"aqua"} loading={loading} />
+          </div>
+
+          :
+
+          <div style={{ background: '#212426' }}>
+            <BrowserRouter>
+              <Header />
+              <Routes>
+                <Route exact path="/" element={<Home />} />
+                <Route path="/expertises" element={<Expertises />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/ourStory" element={<OurStory />} />
+                <Route path="/teams" element={<Team />} />
+                <Route path="/blogs" element={<Blogs />} />
+                <Route path="/blogs/:blogId" element={<BlogDetails />} />
+                <Route path="/allJobOffice" element={<AllJobOffice />} />
+                <Route path="/filterTeamMate/:city" element={<FilterTeamMate />} />
+                <Route path="/teamMemberInfo/:memberId" element={<TeamMemberInfo />} />
+                <Route path="/offersInfo/:offersId" element={<OffersInfo />} />
+                <Route path="/expertises/expertiseDetails/:expertiseId" element={<ExpertiseDetails />} />
+                <Route path="/expertiseDetails/:expertiseId" element={<ExpertiseDetails />} />
+                <Route path="/dashboard" element={<Dashboard />} />
+                {/* <Route path="login" element={<Login />} /> */}
+              </Routes>
+            </BrowserRouter>
+          </div>
+      }
     </div>
   );
 }
