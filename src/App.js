@@ -22,6 +22,7 @@ import 'slick-carousel/slick/slick-theme.css'
 import Contact from './Pages/Contact/Contact/Contact';
 import OurStory from './Pages/Maat/OurStory/OurStory';
 import HashLoader from "react-spinners/HashLoader";
+import SyncLoader from "react-spinners/SyncLoader";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
@@ -50,7 +51,7 @@ function App() {
       {
         loading ?
           <div style={{ height: '100vh' }} className="d-flex align-items-center justify-content-center">
-            <HashLoader size={60} color={"aqua"} loading={loading} />
+            <HashLoader size={60} color={"orange"} loading={loading} />
           </div>
 
           :

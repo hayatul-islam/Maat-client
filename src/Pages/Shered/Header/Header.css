@@ -38,11 +38,15 @@
     font-size: 16px;
     text-decoration: none;
 }
+.header-menu a:hover{
+    color: #e65711;
+}
 .header-menu:last-child {
     margin-right: 0;
 }
 .active{
     font-weight: 400;
+    color: #e65711 !important;
 }
 
 nav .nav-link{
@@ -68,8 +72,9 @@ nav .nav-link{
     border-radius: 0.25rem;
 }
 .dropdownItem{
-    padding: 10px 30px;
+    padding: 0px 30px;
 }
+
 .dropdownItem span{
     display: block;
     color: #f0f0f0cc;
@@ -87,6 +92,11 @@ nav .nav-link{
 }
 .dropdownItem:hover .dropdownIcon{
     display: block;
+}
+
+/* bootstrap clarex .dropdown-item */
+.dropdown-item {
+    display: inline;
 }
 
 @media (min-width: 0px) and (max-width: 767px){
