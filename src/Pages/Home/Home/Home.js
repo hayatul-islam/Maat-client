@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import BlogSlider from '../../Blogs/BlogSlider/BlogSlider';
 import Footer from '../../Shered/Footer/Footer';
 import About from '../About/About';
@@ -10,7 +10,9 @@ import ClarexBanner from '../ClarexBanner/ClarexBanner';
 import './Home.css';
 import { Container } from 'react-bootstrap';
 
+
 const Home = () => {
+
 
 
     return (
@@ -18,22 +20,24 @@ const Home = () => {
             <ClarexBanner />
             <About />
             <OurExpertise />
-            <div className='bottomTopTopShow'>
-                <OurTeam />
-                <Testimonial />
-                <BlogSlider />
-                <ContactUs />
-                <Footer />
-                <div className='bottomToTop'>
+            <OurTeam />
+            <Testimonial />
+            <BlogSlider />
+            <ContactUs />
+            <Footer />
+
+
+            {/*<div className='bottomTopTopShow'>
+                 <div className='bottomToTop'>
                     <Container>
                         <div className="toTopContainer">
-                            <a className='toTopBtn' href="#home">
+                            <a className='toTopBtn' href=''>
                                 <i className="fas fa-chevron-up"></i>
                             </a>
                         </div>
                     </Container>
-                </div>
-            </div>
+                </div> 
+            </div>*/}
 
         </div>
     );

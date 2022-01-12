@@ -26,6 +26,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
 import { useEffect, useState } from 'react';
+import ScrollToTop from "react-scroll-to-top";
 AOS.init();
 
 
@@ -41,9 +42,6 @@ function App() {
     }, 2000)
   }, [])
 
-
-
-
   return (
     <div>
       {
@@ -56,6 +54,7 @@ function App() {
           :
           <div className='rootFileAnimation' style={{ background: '#212426' }}>
             <BrowserRouter>
+              <ScrollToTop smooth />
               <Header />
               <Routes>
                 <Route exact path="/" element={<Home />} />
