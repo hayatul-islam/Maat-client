@@ -99,6 +99,30 @@ nav .nav-link{
     display: inline;
 }
 
+
+#navbarMenu{
+    animation: navbarMenu .2s ease-in-out 1;
+}
+@keyframes navbarMenu {
+    0% {
+      visibility: hidden;
+    }
+    25%{
+      visibility: hidden;
+    }
+    50%{
+    visibility: hidden;
+    }
+    75%{
+     visibility: hidden;
+    }
+    98%{
+        visibility: hidden;
+    }
+    100% {
+    }
+  }
+
 @media (min-width: 0px) and (max-width: 767px){
     .header-menu{
         display: flex;

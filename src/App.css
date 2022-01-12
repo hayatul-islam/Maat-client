@@ -61,6 +61,54 @@ hr{
   width: 40px;
 }
 
+/* loading animation  */
+.rootFileAnimation{
+  animation: rootFileAnimation .2s ease-in-out 1;
+}
+.loadingPicture{
+  width: 250px;
+  height: 350px;
+  background: #e8e8e8;
+  border-radius: 3px;
+
+  animation: loadingPage 3s ease-in-out 1;
+}
+
+@keyframes rootFileAnimation {
+  0% {
+    margin-top: 500%;
+  }
+  25%{
+    margin-top: 400%;
+  }
+  50%{
+    margin-top: 100%;
+  }
+  75%{
+    margin-top: 50%;
+  }
+  90%{
+    margin-top: 25%;
+  }
+  100% {
+  }
+}
+@keyframes loadingPage {
+  0% {
+    width: -200%;
+    margin-left: -200%;
+  }
+  50%{
+    width: -100%;
+    transform: rotate(7deg);
+  }
+  100% {
+    transform: rotate(3deg);
+  }
+}
+
+
+
 
 
 /* responsive  */
@@ -78,6 +126,10 @@ hr{
   .linkBtn{
     font-size: 18px;
   }
+.loadingPicture{
+  width: 130px;
+  height: 200px;
+}
   
 }
 @media (min-width: 650px) and (max-width: 800px){
@@ -87,6 +139,10 @@ hr{
   }
   .big-font h2{
     font-size: 2.8rem;
+  }
+  .loadingPicture{
+    width: 160px;
+    height: 240px;
   }
   
 }

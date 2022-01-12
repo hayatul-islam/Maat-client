@@ -39,10 +39,8 @@ const OurStory = () => {
                     </div>
                 </div>
             </Container>
-
             <div className="ourStory">
                 <Container>
-
                     <div id='ourStory' className='mainSection'>
                         {
                             story.map((story) => <div key={story?._id}>
@@ -70,7 +68,6 @@ const OurStory = () => {
                                 </div>
                             </div>)
                         }
-
                     </div>
                 </Container>
                 <div className='navStoryContainer'>

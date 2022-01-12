@@ -6,7 +6,6 @@ import ContactUs from '../../Shered/ContactUs/ContactUs';
 import OurExpertise from '../OurExpertise/OurExpertise';
 import OurTeam from '../OurTeam/OurTeam';
 import Testimonial from '../Testimonial/Testimonial';
-import TopBanner from '../TopBanner/TopBanner';
 import ClarexBanner from '../ClarexBanner/ClarexBanner';
 import './Home.css';
 import { Container } from 'react-bootstrap';
@@ -16,7 +15,6 @@ const Home = () => {
 
     return (
         <div id='home' className='homeContainer'>
-            {/* <TopBanner /> */}
             <ClarexBanner />
             <About />
             <OurExpertise />

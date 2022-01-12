@@ -23,7 +23,7 @@ const Header = () => {
 
     return (
         <>
-            <div className='navbarMenu' style={{ background: '#212426' }}>
+            <div id='navbarMenu' className='navbarMenu' style={{ background: '#212426' }}>
                 <Navbar id='navbar' className='sticky-top' variant="dark" expand="md">
                     <Container>
                         <Navbar.Brand className='logoContainer' href="">

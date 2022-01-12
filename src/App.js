@@ -21,8 +21,7 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import Contact from './Pages/Contact/Contact/Contact';
 import OurStory from './Pages/Maat/OurStory/OurStory';
-import HashLoader from "react-spinners/HashLoader";
-import SyncLoader from "react-spinners/SyncLoader";
+import TopBanner from './Pages/Home/TopBanner/TopBanner'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
@@ -47,16 +46,15 @@ function App() {
 
   return (
     <div>
-
       {
         loading ?
           <div style={{ height: '100vh' }} className="d-flex align-items-center justify-content-center">
-            <HashLoader size={60} color={"orange"} loading={loading} />
+            <div className='loadingPicture'>
+
+            </div>
           </div>
-
           :
-
-          <div style={{ background: '#212426' }}>
+          <div className='rootFileAnimation' style={{ background: '#212426' }}>
             <BrowserRouter>
               <Header />
               <Routes>

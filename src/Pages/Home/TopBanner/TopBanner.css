@@ -15,10 +15,6 @@
     top: -20px;
     left: 40%;
     z-index: -1;
-
-    animation-duration: 1.4s;
-    animation-name: bannerSlideIn;
-    animation-iteration-count: 1;
 }
 .bannerImg img{
     width: 350px;

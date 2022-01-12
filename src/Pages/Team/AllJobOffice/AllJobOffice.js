@@ -41,11 +41,7 @@ const AllJobOffice = () => {
                         <div className="mt-5">
                             <a className='downBtn' href="#allJobOffers"><i className="fas fa-arrow-down"></i></a>
                         </div>
-                        <div
-                            data-aos="fade-right"
-                            data-aos-duration="1000"
-                            data-aos-easing="ease-in-sine"
-                            className='bannerImg storyImg'>
+                        <div className='bannerImg storyImg'>
                             <img src="https://i.ibb.co/fX1z144/story.jpg" alt="" />
                         </div>
                     </div>
