@@ -3,20 +3,16 @@
 /******************************
  common 
  *****************************/
-
  *{
    margin: 0;
    padding: 0;;
  }
-
  .styles_scroll-to-top__2A70v {
   background-color: #b49292;
   border-radius: 50%;
   width: 55px;
   height: 55px;
 }
-
-
 h1,h2,h3,h4,h5,h6{
   color: #f0f0f0;
   font-family: 'Syne', sans-serif;
@@ -121,8 +117,13 @@ h1,h2,h3,h4,h5,img,a{
     visibility: hidden;
   }
 }
-
-
+.bottomToTopBtn button{
+  background: #e65711;
+  border-radius: 50%;
+}
+.bottomToTopBtn svg{
+  fill: white;
+} 
 
 
 

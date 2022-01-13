@@ -54,7 +54,9 @@ function App() {
           :
           <div className='rootFileAnimation' style={{ background: '#212426' }}>
             <BrowserRouter>
-              <ScrollToTop smooth />
+              <div className='bottomToTopBtn'>
+                <ScrollToTop smooth />
+              </div>
               <Header />
               <Routes>
                 <Route exact path="/" element={<Home />} />
