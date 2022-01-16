@@ -14,6 +14,17 @@ const OurStory = () => {
     }, []);
 
 
+    window.onscroll = function () { myFunction() };
+
+
+
+    function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+    }
+
     return (
         <div className="pb-5">
             <Container>
@@ -40,10 +51,15 @@ const OurStory = () => {
                 </div>
             </Container>
             <div className="ourStory">
+                <div class="scrollHeader">
+                    <div class="progress-container">
+                        <div class="progress-bar" id="myBar"></div>
+                    </div>
+                </div>
                 <Container>
                     <div id='ourStory' className='mainSection'>
                         {
-                            story.map((story) => <div key={story?._id}>
+                            story.map((story, index) => <div key={story?._id}>
                                 <div id={story?._id} className='py-5'>
                                     <Row>
                                         <Col xs={12} lg={6}>
@@ -71,7 +87,7 @@ const OurStory = () => {
                     </div>
                 </Container>
                 <div className='navStoryContainer'>
-                    <Container>
+                    <Container >
                         <Row className='navStory'>
 
                             {
