@@ -69,7 +69,13 @@ const OurStory = () => {
                                                 <div className="big-font singleStory">
                                                     <h2>{story?.sub_title}</h2>
                                                     <p>{story?.description}</p>
-                                                    <Image className='w-100' src={story?.image} />
+                                                    {
+                                                        story?.image.slice(0, 4) === 'http' ?
+                                                            <Image className='w-100' src={story?.image} />
+                                                            :
+                                                            <Image className='w-100' src={`data:image/png;base64,${story?.image}`} alt="" />
+                                                    }
+
                                                 </div>
                                             </div>
                                         </Col>
@@ -87,7 +93,7 @@ const OurStory = () => {
                         <Row className='navStory'>
 
                             {
-                                story.map((story, index) => <div
+                                story.slice(0, 5).map((story, index) => <div
                                     className='navStoryItem'
                                     key={story?._id}>
                                     <a href={`#${story?._id}`}>

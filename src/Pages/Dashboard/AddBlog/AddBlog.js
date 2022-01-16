@@ -4,17 +4,6 @@ import axios from 'axios';
 
 const AddBlog = () => {
 
-    // const { register, handleSubmit, reset } = useForm();
-    // const onSubmit = data => {
-    //     axios.post('https://pure-refuge-33072.herokuapp.com/addblog', data)
-    //         .then(result => {
-    //             console.log(result);
-    //             if (result.data.insertedId) {
-    //                 reset()
-    //             }
-    //         })
-    // };
-
     const {
         register,
         handleSubmit,
