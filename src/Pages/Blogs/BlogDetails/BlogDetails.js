@@ -25,7 +25,13 @@ const BlogDetails = () => {
                     <Col xs={12} md={3}></Col>
                     <Col xs={12} md={6}>
                         <div className='blogDetails'>
-                            <img className='w-100' src={blogFind?.image} alt="" />
+                            {
+                                blogFind?.image.slice(0, 4) === 'http' ?
+                                    <img className='w-100' src={blogFind?.image} alt="" />
+                                    :
+                                    <img className='w-100' src={`data:image/png;base64,${blogFind?.image}`} alt="" />
+                            }
+
                             <div className="big-font">
                                 <h2>{blogFind?.title}</h2>
                                 <p>{blogFind?.description}</p>

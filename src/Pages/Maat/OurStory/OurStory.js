@@ -5,7 +5,6 @@ import Footer from '../../Shered/Footer/Footer';
 import './OurStory.css';
 
 const OurStory = () => {
-
     const [story, setStory] = useState([]);
     useEffect(() => {
         fetch('https://pure-refuge-33072.herokuapp.com/story')
@@ -13,18 +12,15 @@ const OurStory = () => {
             .then(data => setStory(data))
     }, []);
 
-
+    // window.onscroll = function () { myFunction() };
     window.onscroll = function () { myFunction() };
-
-
-
     function myFunction() {
+        // var winScroll = document.getElementById('ourStory').scrollTop || document.documentElement.scrollTop;
         var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
         var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         var scrolled = (winScroll / height) * 100;
         document.getElementById("myBar").style.width = scrolled + "%";
     }
-
     return (
         <div className="pb-5">
             <Container>
@@ -53,7 +49,7 @@ const OurStory = () => {
             <div className="ourStory">
                 <div class="scrollHeader">
                     <div class="progress-container">
-                        <div class="progress-bar" id="myBar"></div>
+                        <div id="myBar" class="progress-bar"></div>
                     </div>
                 </div>
                 <Container>
@@ -105,7 +101,6 @@ const OurStory = () => {
                         </Row>
                     </Container>
                 </div>
-
                 <ContactUs />
                 <Footer />
             </div>

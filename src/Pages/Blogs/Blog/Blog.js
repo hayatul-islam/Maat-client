@@ -1,9 +1,10 @@
 import React from 'react';
-import { Button, Col, Image } from 'react-bootstrap';
-import { Link, useNavigate } from 'react-router-dom';
+import { Col, Image } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 const Blog = ({ blog }) => {
 
+    console.log(blog);
     const navigate = useNavigate();
     const handleBlog = blogId => {
         console.log(blogId);
@@ -22,7 +23,12 @@ const Blog = ({ blog }) => {
                     </div>
                 </div>
                 <div className='blogBgImage'>
-                    <img src={blog?.image} alt="" />
+                    {
+                        blog?.image.slice(0, 4) === 'http' ?
+                            <img src={blog?.image} alt="" />
+                            :
+                            <img src={`data:image/png;base64,${blog?.image}`} alt="" />
+                    }
                 </div>
             </div>
         </Col>
