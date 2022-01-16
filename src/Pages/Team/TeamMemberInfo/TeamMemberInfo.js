@@ -27,7 +27,13 @@ const TeamMemberInfo = () => {
                     </div>
                     <Row>
                         <div className='singleImage1'>
-                            <Image className='img-fluid memberImg' src={findMember?.image} />
+                            {
+                                findMember?.image.slice(0, 4) === 'http' ?
+                                    <Image className='img-fluid memberImg' src={findMember?.image} />
+                                    :
+                                    <Image className='img-fluid memberImg' src={`data:image/png;base64,${findMember?.image}`} />
+                            }
+
                         </div>
                         <Col xs={12} md={8}>
                             <div>

@@ -26,7 +26,7 @@ const Dashboard = () => {
                         <Col xs={12} md={3}>
                             <div>
                                 <h5 onClick={() => handleSelectItem('team')}>Add Team member</h5>
-                                <h5 onClick={() => handleSelectItem('expertise')}>Add Expertise</h5>
+                                {/* <h5 onClick={() => handleSelectItem('expertise')}>Add Expertise</h5> */}
                                 <h5 onClick={() => handleSelectItem('story')}>Add Story</h5>
                                 <h5 onClick={() => handleSelectItem('blog')}>Add Blog</h5>
                                 <h5 onClick={() => handleSelectItem('figure')}>Add Figures</h5>
@@ -38,9 +38,9 @@ const Dashboard = () => {
                                 {
                                     selectItems === 'team' ? <AddTeam /> : ''
                                 }
-                                {
+                                {/* {
                                     selectItems === 'expertise' ? <AddExpertise /> : ''
-                                }
+                                } */}
                                 {
                                     selectItems === 'blog' ? <AddBlog /> : ''
                                 }
