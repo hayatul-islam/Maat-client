@@ -72,20 +72,17 @@ const AddTeam = () => {
             data.append("name", fileName);
             data.append("file", file);
             newTeam.image = fileName;
+
+            console.log(newTeam);
             try {
-                // await axios.post("http://localhost:4040/api/upload", data);
                 await axios.post(`${apiLink}/api/upload`, data);
             } catch (err) { }
         }
         try {
-            // await axios.post("http://localhost:4040/teams", newTeam);
             await axios.post(`${apiLink}/teams`, newTeam);
             window.location.reload();
         } catch (err) { }
     };
-
-
-
 
     return (
         <div>
@@ -112,7 +109,7 @@ const AddTeam = () => {
                     <input
                         ref={email}
                         placeholder='Enter Email'
-                        type='text' required />
+                        type='email' required />
                     <input
                         ref={linkedin}
                         placeholder='Enter Linkedin url'

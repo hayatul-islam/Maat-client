@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import AddBlog from '../AddBlog/AddBlog';
-import AddExpertise from '../AddExpertise/AddExpertise';
-import AddFigures from '../AddFigures/AddFigures';
 import AddStory from '../AddStory/AddStory';
 import AddOffice from '../AddOffice/AddOffice';
 import AddTeam from '../AddTeam/AddTeam';
@@ -26,10 +24,8 @@ const Dashboard = () => {
                         <Col xs={12} md={3}>
                             <div>
                                 <h5 onClick={() => handleSelectItem('team')}>Add Team member</h5>
-                                {/* <h5 onClick={() => handleSelectItem('expertise')}>Add Expertise</h5> */}
                                 <h5 onClick={() => handleSelectItem('story')}>Add Story</h5>
                                 <h5 onClick={() => handleSelectItem('blog')}>Add Blog</h5>
-                                <h5 onClick={() => handleSelectItem('figure')}>Add Figures</h5>
                                 <h5 onClick={() => handleSelectItem('office')}>Add Office</h5>
                             </div>
                         </Col>
@@ -38,18 +34,13 @@ const Dashboard = () => {
                                 {
                                     selectItems === 'team' ? <AddTeam /> : ''
                                 }
-                                {/* {
-                                    selectItems === 'expertise' ? <AddExpertise /> : ''
-                                } */}
                                 {
                                     selectItems === 'blog' ? <AddBlog /> : ''
                                 }
                                 {
                                     selectItems === 'story' ? <AddStory /> : ''
                                 }
-                                {
-                                    selectItems === 'figure' ? <AddFigures /> : ''
-                                }
+
                                 {
                                     selectItems === 'office' ? <AddOffice /> : ''
                                 }

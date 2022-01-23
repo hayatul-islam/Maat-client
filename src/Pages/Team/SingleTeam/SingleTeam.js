@@ -15,7 +15,7 @@ const SingleTeam = ({ team }) => {
         <Col xs={12} md={3}>
             <Card data-aos="fade-up" data-aos-duration="1000" onClick={() => handleTeamMemberInfo(team?._id)} className='mb-5 bg-dark text-light border-0'>
                 {
-                    team?.image.slice(0, 4) === 'http' ?
+                    team?.image?.slice(0, 4) === 'http' ?
                         <Card.Img className='team-img img-fluid' variant="top" src={team?.image} />
                         :
                         <Card.Img className='team-img img-fluid' variant="top" src={`${apiLink}/images/${team?.image}`} />
