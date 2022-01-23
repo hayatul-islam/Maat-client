@@ -21,6 +21,7 @@ const OurStory = () => {
         var scrolled = (winScroll / height) * 100;
         document.getElementById("myBar").style.width = scrolled + "%";
     }
+
     return (
         <div className="pb-5">
             <Container>
@@ -57,6 +58,9 @@ const OurStory = () => {
                         {
                             story.map((story, index) => <div key={story?._id}>
                                 <div id={story?._id} className='py-5'>
+                                    {/* <Story story={story} /> */}
+
+
                                     <Row>
                                         <Col xs={12} lg={6}>
                                             <div className="big-font singleStory">
@@ -80,6 +84,8 @@ const OurStory = () => {
                                             </div>
                                         </Col>
                                     </Row>
+
+
                                 </div>
                                 <div className='mt-5 pt-5'>
                                     <hr className='bg-white' />

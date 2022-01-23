@@ -1,0 +1,46 @@
+.progress{
+    height: 40px;
+    background-color: red;
+    width: 100%;
+    position: absolute;;
+    left: 0;
+    z-index: 70;
+    transform: translate(-100%);
+}
+.navigation {
+    position: fixed;
+    top: 14%;
+    left: 0;
+    height: 40px;
+    width: 100%;
+    background: blue;
+    display: flex ;
+    justify-content: center;
+}
+
+.navigation ul{
+    z-index: 70;
+    max-width: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    list-style: none;
+}
+.navigation ul li{
+    align-self: center;
+}
+.navigation ul li.active a{
+    color: yellow;
+}
+.navigation ul li a {
+    align-self: center;
+    color: #fff;;
+}
+.section{
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}

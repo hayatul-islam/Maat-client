@@ -86,7 +86,7 @@ const Header = () => {
 
                                 </NavDropdown>
                                 <NavLink to="/expertises">Expertise</NavLink>
-                                <NavLink to="/Sustainibility">Sustainibility</NavLink>
+                                <NavLink to="/sustainibility">Sustainibility</NavLink>
                                 <NavLink to="/blogs">Blog</NavLink>
                                 <NavLink to="/contact">Contact</NavLink>
                             </Nav>

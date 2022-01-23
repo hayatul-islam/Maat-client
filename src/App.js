@@ -27,6 +27,7 @@ import 'aos/dist/aos.css';
 import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
 import { useEffect, useState } from 'react';
 import ScrollToTop from "react-scroll-to-top";
+import Story from './Pages/Maat/Story/Story';
 AOS.init();
 
 
@@ -73,7 +74,7 @@ function App() {
                 <Route path="/expertises/expertiseDetails/:expertiseId" element={<ExpertiseDetails />} />
                 <Route path="/expertiseDetails/:expertiseId" element={<ExpertiseDetails />} />
                 <Route path="/dashboard" element={<Dashboard />} />
-                {/* <Route path="login" element={<Login />} /> */}
+                <Route path="story" element={<Story />} />
               </Routes>
             </BrowserRouter>
           </div>
