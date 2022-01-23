@@ -3,15 +3,17 @@ import { Col, Container, Row } from 'react-bootstrap';
 import Footer from '../../Shered/Footer/Footer';
 import './Contact.css';
 import emailjs from 'emailjs-com';
+import useMaat from '../../../Hooks/useMaat';
 
 const Contact = () => {
 
+    const { apiLink } = useMaat();
     const form = useRef();
     const [offices, setOffices] = useState([]);
     const [message, setMessage] = useState('');
 
     useEffect(() => {
-        fetch('https://pure-refuge-33072.herokuapp.com/offices')
+        fetch(`${apiLink}/offices`)
             .then(res => res.json())
             .then(data => setOffices(data))
     }, []);

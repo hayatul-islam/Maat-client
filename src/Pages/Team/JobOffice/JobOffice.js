@@ -2,15 +2,17 @@ import React, { useEffect, useState } from 'react';
 import { Container, Image } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import Office from '../Office/Office';
+import useMaat from '../../../Hooks/useMaat';
 import './JobOffice.css';
 
 const JoinUs = () => {
 
+    const { apiLink } = useMaat();
     const [teams, setTeams] = useState([]);
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch('https://pure-refuge-33072.herokuapp.com/teams')
+        fetch(`${apiLink}/teams`)
             .then(res => res.json())
             .then(data => setTeams(data.slice(0, 5)))
     }, []);

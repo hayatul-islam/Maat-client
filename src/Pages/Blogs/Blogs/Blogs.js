@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Container, Row } from 'react-bootstrap';
+import useMaat from '../../../Hooks/useMaat';
 import ContactUs from '../../Shered/ContactUs/ContactUs';
 import Footer from '../../Shered/Footer/Footer';
 import Blog from '../Blog/Blog';
@@ -7,11 +8,12 @@ import './Blogs.css';
 
 const Blogs = () => {
 
+    const { apiLink } = useMaat();
     const [blogs, setBlogs] = useState([]);
     const [category, setCategory] = useState('');
 
     useEffect(() => {
-        fetch('https://pure-refuge-33072.herokuapp.com/blogs')
+        fetch(`${apiLink}/blogs`)
             .then(res => res.json())
             .then(data => setBlogs(data))
     }, []);

@@ -1,13 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Container, Image, Row } from 'react-bootstrap';
+import useMaat from '../../../Hooks/useMaat';
 import ContactUs from '../../Shered/ContactUs/ContactUs';
 import Footer from '../../Shered/Footer/Footer';
 import './OurStory.css';
 
 const OurStory = () => {
+
+    const { apiLink } = useMaat();
     const [story, setStory] = useState([]);
     useEffect(() => {
-        fetch('https://pure-refuge-33072.herokuapp.com/story')
+        fetch(`${apiLink}/story`)
             .then(res => res.json())
             .then(data => setStory(data))
     }, []);
@@ -59,8 +62,6 @@ const OurStory = () => {
                             story.map((story, index) => <div key={story?._id}>
                                 <div id={story?._id} className='py-5'>
                                     {/* <Story story={story} /> */}
-
-
                                     <Row>
                                         <Col xs={12} lg={6}>
                                             <div className="big-font singleStory">
@@ -77,7 +78,7 @@ const OurStory = () => {
                                                         story?.image.slice(0, 4) === 'http' ?
                                                             <Image className='w-100' src={story?.image} />
                                                             :
-                                                            <Image className='w-100' src={`data:image/png;base64,${story?.image}`} alt="" />
+                                                            <Image className='w-100' src={`${apiLink}/images/${story?.image}`} alt="" />
                                                     }
 
                                                 </div>

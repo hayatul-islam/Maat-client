@@ -1,16 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Container, Image, Row } from 'react-bootstrap';
 import { Link, useParams } from 'react-router-dom';
+import useMaat from '../../../Hooks/useMaat';
 import ContactUs from '../../Shered/ContactUs/ContactUs';
 import Footer from '../../Shered/Footer/Footer';
 import './ExpertiseDetails.css';
 
 const ExpertiseDetails = () => {
 
+    const { apiLink } = useMaat();
     const { expertiseId } = useParams();
     const [expertises, setExpertises] = useState([]);
     useEffect(() => {
-        fetch('https://pure-refuge-33072.herokuapp.com/expertise')
+        fetch(`${apiLink}/expertise`)
             .then(res => res.json())
             .then(data => setExpertises(data))
     }, []);

@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { useForm } from "react-hook-form";
 import axios from 'axios';
+import useMaat from '../../../Hooks/useMaat';
 
 const AddBlog = () => {
 
@@ -21,7 +22,7 @@ const AddBlog = () => {
     //     formData.append("sub_description", data.sub_description);
     //     formData.append("image", data.image[0]);
 
-    //     axios.post("https://pure-refuge-33072.herokuapp.com/addblog", formData)
+    //     axios.post("/addblog", formData)
     //         .then(res => {
     //             if (res.data.insertedId) {
     //                 alert('successfully')
@@ -30,6 +31,7 @@ const AddBlog = () => {
     //         })
     // }
 
+    const { apiLink } = useMaat();
     const [file, setFile] = useState(null);
     const title = useRef();
     const sub_title = useRef();
@@ -55,19 +57,15 @@ const AddBlog = () => {
             data.append("file", file);
             newBlog.image = fileName;
             try {
-                await axios.post("http://localhost:4040/api/upload", data);
-                // await axios.post(`${apiLink}/api/upload`, data);
+                await axios.post(`${apiLink}/api/upload`, data);
             } catch (err) { }
         }
+        console.log(newBlog);
         try {
-            await axios.post("http://localhost:4040/blog", newBlog);
-            // await axios.post(`${apiLink}/category`, newBlog);
+            await axios.post(`${apiLink}/blogs`, newBlog);
             window.location.reload();
         } catch (err) { }
     };
-
-
-
 
     return (
         <div>

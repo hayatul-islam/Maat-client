@@ -1,15 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import './About.css';
 
 const About = () => {
-
-    const [figures, setFigures] = useState([]);
-    useEffect(() => {
-        fetch('https://pure-refuge-33072.herokuapp.com/figures')
-            .then(res => res.json())
-            .then(data => setFigures(data))
-    }, [])
 
     return (
         <div id='about' className='mainSection'>
@@ -44,14 +37,36 @@ const About = () => {
                             <Col xs={12} md={6}>
                                 <div data-aos="fade-up" data-aos-duration="1000">
                                     <Row>
-                                        {
-                                            figures.map(figure => <Col key={figure?._id} xs={6}>
-                                                <div className='pb-5 big-font'>
-                                                    <h2>{figure?.title}</h2>
-                                                    <p>{figure?.description}</p>
-                                                </div>
-                                            </Col>)
-                                        }
+                                        <Col xs={6}>
+                                            <div className='pb-5 big-font'>
+                                                <h2>2B+</h2>
+                                                <p>Turnover</p>
+                                            </div>
+                                        </Col>
+                                        <Col xs={6}>
+                                            <div className='pb-5 big-font'>
+                                                <h2>150</h2>
+                                                <p>Employees</p>
+                                            </div>
+                                        </Col>
+                                        <Col xs={6}>
+                                            <div className='pb-5 big-font'>
+                                                <h2>44</h2>
+                                                <p>Forum Participants</p>
+                                            </div>
+                                        </Col>
+                                        <Col xs={6}>
+                                            <div className='pb-5 big-font'>
+                                                <h2>72</h2>
+                                                <p>Conference Participants</p>
+                                            </div>
+                                        </Col>
+                                        <Col xs={6}>
+                                            <div className='pb-5 big-font'>
+                                                <h2>+200</h2>
+                                                <p>Of renewables production</p>
+                                            </div>
+                                        </Col>
 
                                     </Row>
                                 </div>

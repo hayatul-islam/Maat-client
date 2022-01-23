@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from 'react';
-import { Button, Container, Image } from 'react-bootstrap';
+import { Container, Image } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 
 import Slider from "react-slick";
+import useMaat from '../../../Hooks/useMaat';
 
 const BlogSlider = () => {
 
+    const { apiLink } = useMaat();
     const [blogs, setBlogs] = useState([]);
 
     useEffect(() => {
-        fetch('https://pure-refuge-33072.herokuapp.com/blogs')
+        fetch(`${apiLink}/blogs`)
             .then(res => res.json())
             .then(data => setBlogs(data))
     }, []);
@@ -79,7 +81,12 @@ const BlogSlider = () => {
                                         <a onClick={() => handleBlog(blog?._id)} className='linkBtn d-flex align-items-center' >READ ARTICLE <Image src="https://uploads-ssl.webflow.com/6160407763f5cd74b27c2405/6160407763f5cd70b77c241f_icon-arrow-white-diag.svg" /></a>
                                     </div>
                                     <div className='blogBgImage'>
-                                        <img src={blog?.image} alt="" />
+                                        {/* <img src={`${apiLink}/images/${blog?.image}`} alt="" /> */}
+                                        {
+                                            blog?.image.slice(0, 4) === 'http' ?
+                                                <img src={blog?.image} alt="" /> :
+                                                <img src={`${apiLink}/images/${blog?.image}`} alt="" />
+                                        }
                                     </div>
                                 </div>
                             </div>

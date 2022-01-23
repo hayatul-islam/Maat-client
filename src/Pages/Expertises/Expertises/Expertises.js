@@ -1,16 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import useMaat from '../../../Hooks/useMaat';
 import ContactUs from '../../Shered/ContactUs/ContactUs';
 import Footer from '../../Shered/Footer/Footer';
 import './Expertises.css';
 
 const Expertises = () => {
 
+    const { apiLink } = useMaat();
     const [expertises, setExpertises] = useState([]);
     const navigate = useNavigate();
     useEffect(() => {
-        fetch('https://pure-refuge-33072.herokuapp.com/expertise')
+        fetch(`${apiLink}/expertise`)
             .then(res => res.json())
             .then(data => setExpertises(data))
     }, []);

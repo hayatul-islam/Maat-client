@@ -1,17 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Container } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import useMaat from '../../../Hooks/useMaat';
 import ContactUs from '../../Shered/ContactUs/ContactUs';
 import Footer from '../../Shered/Footer/Footer';
 import Office from '../Office/Office';
 
 const AllJobOffice = () => {
 
+    const { apiLink } = useMaat();
     const [teams, setTeams] = useState([]);
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch('https://pure-refuge-33072.herokuapp.com/teams')
+        fetch(`${apiLink}/teams`)
             .then(res => res.json())
             .then(data => setTeams(data))
     }, []);

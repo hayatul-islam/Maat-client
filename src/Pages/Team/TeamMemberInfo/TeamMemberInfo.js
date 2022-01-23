@@ -3,13 +3,15 @@ import { Col, Container, Image, Row } from 'react-bootstrap';
 import { Link, useParams } from 'react-router-dom';
 import './TeamMemberInfo.css';
 import Footer from '../../Shered/Footer/Footer';
+import useMaat from '../../../Hooks/useMaat';
 
 const TeamMemberInfo = () => {
 
+    const { apiLink } = useMaat();
     const { memberId } = useParams();
     const [teams, setTeams] = useState([]);
     useEffect(() => {
-        fetch('https://pure-refuge-33072.herokuapp.com/teams')
+        fetch(`${apiLink}/teams`)
             .then(res => res.json())
             .then(data => {
                 setTeams(data)
@@ -31,7 +33,7 @@ const TeamMemberInfo = () => {
                                 findMember?.image.slice(0, 4) === 'http' ?
                                     <Image className='img-fluid memberImg' src={findMember?.image} />
                                     :
-                                    <Image className='img-fluid memberImg' src={`data:image/png;base64,${findMember?.image}`} />
+                                    <Image className='img-fluid memberImg' src={`${apiLink}/images/${findMember?.image}`} />
                             }
 
                         </div>
@@ -71,7 +73,11 @@ const TeamMemberInfo = () => {
                         </Col>
                         <Col xs={12} md={4}>
                             <div className='singleImage2 sticky-top'>
-                                <Image className='img-fluid memberImg' src={findMember?.image} />
+                                {
+                                    findMember?.image.slice(0, 4) === 'http' ?
+                                        <Image className='img-fluid memberImg' src={findMember?.image} /> :
+                                        <Image className='img-fluid memberImg' src={`${apiLink}/images/${findMember?.image}`} />
+                                }
                             </div>
                         </Col>
                     </Row>

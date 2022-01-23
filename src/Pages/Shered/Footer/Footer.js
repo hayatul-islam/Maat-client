@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Container, Image, NavDropdown, NavLink, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import useMaat from '../../../Hooks/useMaat';
 import './Footer.css';
 
 const Footer = () => {
 
+    const { apiLink } = useMaat();
     const [offices, setOffices] = useState([]);
     useEffect(() => {
-        fetch('https://pure-refuge-33072.herokuapp.com/offices')
+        fetch(`${apiLink}/offices`)
             .then(res => res.json())
             .then(data => setOffices(data))
     }, []);

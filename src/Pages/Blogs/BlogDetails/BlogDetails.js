@@ -1,16 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
+import useMaat from '../../../Hooks/useMaat';
 import ContactUs from '../../Shered/ContactUs/ContactUs';
 import Footer from '../../Shered/Footer/Footer';
 import Blog from '../Blog/Blog';
 
 const BlogDetails = () => {
 
+    const { apiLink } = useMaat();
     const { blogId } = useParams();
     const [blogs, setBlogs] = useState([]);
     useEffect(() => {
-        fetch('https://pure-refuge-33072.herokuapp.com/blogs')
+        fetch(`${apiLink}/blogs`)
             .then(res => res.json())
             .then(data => setBlogs(data))
     }, []);
@@ -29,7 +31,7 @@ const BlogDetails = () => {
                                 blogFind?.image.slice(0, 4) === 'http' ?
                                     <img className='w-100' src={blogFind?.image} alt="" />
                                     :
-                                    <img className='w-100' src={`data:image/png;base64,${blogFind?.image}`} alt="" />
+                                    <img className='w-100' src={`${apiLink}/images/${blogFind?.image}`} alt="" />
                             }
 
                             <div className="big-font">

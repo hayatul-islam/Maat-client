@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { useForm } from "react-hook-form";
 import axios from 'axios';
+import useMaat from '../../../Hooks/useMaat';
 
 const AddTeam = () => {
 
@@ -26,7 +27,7 @@ const AddTeam = () => {
     //     formData.append("benefit", data.requirements);
     //     formData.append("image", data.image[0]);
 
-    //     axios.post("https://pure-refuge-33072.herokuapp.com/addTeam", formData)
+    //     axios.post("/addTeam", formData)
     //         .then(res => {
     //             if (res.data.insertedId) {
     //                 alert('successfully')
@@ -36,6 +37,7 @@ const AddTeam = () => {
     // }
 
 
+    const { apiLink } = useMaat();
     const [file, setFile] = useState(null);
     const name = useRef();
     const job = useRef();
@@ -71,13 +73,13 @@ const AddTeam = () => {
             data.append("file", file);
             newTeam.image = fileName;
             try {
-                await axios.post("http://localhost:4040/api/upload", data);
-                // await axios.post(`${apiLink}/api/upload`, data);
+                // await axios.post("http://localhost:4040/api/upload", data);
+                await axios.post(`${apiLink}/api/upload`, data);
             } catch (err) { }
         }
         try {
-            await axios.post("http://localhost:4040/team", newTeam);
-            // await axios.post(`${apiLink}/category`, newBlog);
+            // await axios.post("http://localhost:4040/teams", newTeam);
+            await axios.post(`${apiLink}/teams`, newTeam);
             window.location.reload();
         } catch (err) { }
     };

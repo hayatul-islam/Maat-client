@@ -2,13 +2,15 @@ import React, { useEffect, useState } from 'react';
 import { Col, Container, Image, Row } from 'react-bootstrap';
 import './OurExpertise.css';
 import { useNavigate } from 'react-router-dom';
+import useMaat from '../../../Hooks/useMaat';
 
 const OurExpertise = () => {
 
+    const { apiLink } = useMaat();
     const [expertises, setExpertises] = useState([]);
     const navigate = useNavigate();
     useEffect(() => {
-        fetch('https://pure-refuge-33072.herokuapp.com/expertise')
+        fetch(`${apiLink}/expertise`)
             .then(res => res.json())
             .then(data => setExpertises(data))
     }, []);

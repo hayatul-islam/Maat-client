@@ -6,15 +6,17 @@ import Office from '../Office/Office';
 import './FilterTeamMate.css';
 import ContactUs from '../../Shered/ContactUs/ContactUs';
 import Footer from '../../Shered/Footer/Footer';
+import useMaat from '../../../Hooks/useMaat';
 
 const FilterTeamMate = () => {
 
+    const { apiLink } = useMaat();
     const { city } = useParams();
     const [teams, setTeams] = useState([]);
     const [findTeam, setFindTeam] = useState('offers');
 
     useEffect(() => {
-        fetch('https://pure-refuge-33072.herokuapp.com/teams')
+        fetch(`${apiLink}/teams`)
             .then(res => res.json())
             .then(data => {
                 setTeams(data)

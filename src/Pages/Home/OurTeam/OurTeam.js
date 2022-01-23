@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Container, Image, Row } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import useMaat from '../../../Hooks/useMaat';
 import './OurTeam.css';
 
 const OurTeam = () => {
 
+    const { apiLink } = useMaat();
     const [teams, setTeams] = useState([]);
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch('https://pure-refuge-33072.herokuapp.com/teams')
+        fetch(`${apiLink}/teams`)
             .then(res => res.json())
             .then(data => setTeams(data.slice(0, 5)))
     }, []);
@@ -38,15 +40,14 @@ const OurTeam = () => {
                                         <h5 className='fw-normal'>{team?.job}</h5>
                                     </div>
                                 </Col>
-                                <Col xs={12} lg={4}>
-                                    {/* <div className='teamImg'>
-                                        <img className='img-fluid' src={team?.image} alt="" />
-                                    </div> */}
-                                </Col>
 
                                 <div className='teamImg'>
                                     <div className='d-flex align-items-center'>
-                                        <img className='img-fluid' src={team?.image} alt="" />
+                                        {
+                                            team?.image.slice(0, 4) === 'http' ?
+                                                <img className='img-fluid' src={team?.image} alt="" /> :
+                                                <img className='img-fluid' src={`${apiLink}/images/${team?.image}`} alt="" />
+                                        }
                                         <div className='contactInfo'>
                                             <h6>{team?.name}</h6>
                                             <span>{team?.job}</span>

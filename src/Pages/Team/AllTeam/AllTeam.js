@@ -1,16 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Container, Row } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import useMaat from '../../../Hooks/useMaat';
 import SingleTeam from '../SingleTeam/SingleTeam';
 import './AllTeam.css';
 
 const AllTeam = () => {
 
+    const { apiLink } = useMaat();
     const [teams, setTeams] = useState([]);
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch('https://pure-refuge-33072.herokuapp.com/teams')
+        fetch(`${apiLink}/teams`)
             .then(res => res.json())
             .then(data => {
                 setTeams(data)

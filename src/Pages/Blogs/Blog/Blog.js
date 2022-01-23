@@ -1,10 +1,11 @@
 import React from 'react';
 import { Col, Image } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import useMaat from '../../../Hooks/useMaat';
 
 const Blog = ({ blog }) => {
 
-    console.log(blog);
+    const { apiLink } = useMaat();
     const navigate = useNavigate();
     const handleBlog = blogId => {
         console.log(blogId);
@@ -27,7 +28,7 @@ const Blog = ({ blog }) => {
                         blog?.image.slice(0, 4) === 'http' ?
                             <img src={blog?.image} alt="" />
                             :
-                            <img src={`data:image/png;base64,${blog?.image}`} alt="" />
+                            <img src={`${apiLink}/images/${blog?.image}`} alt="" />
                     }
                 </div>
             </div>

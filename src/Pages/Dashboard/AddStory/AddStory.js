@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { useForm } from "react-hook-form";
 import axios from 'axios';
+import useMaat from '../../../Hooks/useMaat';
 
 const AddStory = () => {
 
@@ -21,7 +22,7 @@ const AddStory = () => {
     //     formData.append("year", data.year);
     //     formData.append("image", data.image[0]);
 
-    //     axios.post("https://pure-refuge-33072.herokuapp.com/addStory", formData)
+    //     axios.post("/addStory", formData)
     //         .then(res => {
     //             if (res.data.insertedId) {
     //                 alert('successfully')
@@ -30,6 +31,7 @@ const AddStory = () => {
     //         })
     // }
 
+    const { apiLink } = useMaat();
     const [file, setFile] = useState(null);
     const title = useRef();
     const sub_title = useRef();
@@ -53,13 +55,13 @@ const AddStory = () => {
             data.append("file", file);
             newStory.image = fileName;
             try {
-                await axios.post("http://localhost:4040/api/upload", data);
-                // await axios.post(`${apiLink}/api/upload`, data);
+                // await axios.post("http://localhost:4040/api/upload", data);
+                await axios.post(`${apiLink}/api/upload`, data);
             } catch (err) { }
         }
         try {
-            await axios.post("http://localhost:4040/story", newStory);
-            // await axios.post(`${apiLink}/category`, newStory);
+            // await axios.post("http://localhost:4040/story", newStory);
+            await axios.post(`${apiLink}/story`, newStory);
             window.location.reload();
         } catch (err) { }
     };

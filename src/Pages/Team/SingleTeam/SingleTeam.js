@@ -1,9 +1,11 @@
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import useMaat from '../../../Hooks/useMaat';
 
 const SingleTeam = ({ team }) => {
 
+    const { apiLink } = useMaat();
     const navigate = useNavigate();
     const handleTeamMemberInfo = memberId => {
         navigate(`/teamMemberInfo/${memberId}`)
@@ -16,7 +18,7 @@ const SingleTeam = ({ team }) => {
                     team?.image.slice(0, 4) === 'http' ?
                         <Card.Img className='team-img img-fluid' variant="top" src={team?.image} />
                         :
-                        <Card.Img className='team-img img-fluid' variant="top" src={`data:image/png;base64,${team?.image}`} />
+                        <Card.Img className='team-img img-fluid' variant="top" src={`${apiLink}/images/${team?.image}`} />
                 }
 
                 <Card.Body>

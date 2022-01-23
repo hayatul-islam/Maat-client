@@ -1,18 +1,24 @@
-import React from 'react';
-import { useForm } from "react-hook-form";
+import React, { useRef } from 'react';
 import axios from 'axios';
 
 const AddOffice = () => {
 
-    const { register, handleSubmit, reset } = useForm();
-    const onSubmit = data => {
-        axios.post('https://pure-refuge-33072.herokuapp.com/addOffice', data)
-            .then(result => {
-                console.log(result);
-                if (result.data.insertedId) {
-                    reset()
-                }
-            })
+    const name = useRef();
+    const location = useRef();
+    const phone = useRef();
+
+    const submitHandler = async (e) => {
+        e.preventDefault();
+        const newOffice = {
+            name: name.current.value,
+            location: location.current.value,
+            phone: phone.current.value,
+        };
+        try {
+            await axios.post("http://localhost:4040/office", newOffice);
+            // await axios.post(`${apiLink}/category`, newBlog);
+            window.location.reload();
+        } catch (err) { }
     };
 
     return (
@@ -20,12 +26,17 @@ const AddOffice = () => {
             <div className="big-font py-5">
                 <h2>Add new Office</h2>
             </div>
-            <form onSubmit={handleSubmit(onSubmit)}>
+            <form onSubmit={submitHandler}>
                 <div className='inputField addInput'>
-                    <input {...register("name")} placeholder='Office Name' type='text' required />
-                    <input {...register("location")} placeholder='Location' type='text' required />
-                    <input {...register("phone")} placeholder='Phone' type='number' required />
-
+                    <input
+                        ref={name}
+                        placeholder='Office Name' type='text' required />
+                    <input
+                        ref={location}
+                        placeholder='Location' type='text' required />
+                    <input
+                        ref={phone}
+                        placeholder='Phone' type='number' required />
                 </div>
                 <div className='pt-4'>
                     <input className='px-5 py-3 fs-5' type="submit" value='Add Office' />
