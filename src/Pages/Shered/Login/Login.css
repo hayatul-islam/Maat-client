@@ -1,0 +1,28 @@
+.userForm{
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 10px;
+}
+.loginBtn{
+    background: #338e9d !important;
+    color: white;
+    margin-top: 20px;
+}
+.loginBtn:hover{
+    background: #338e9d !important;
+    color: white;
+}
+.userForm input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: none;
+    padding: 8px 0;
+    color: white;
+}
+.handlerBtn h5{
+    color: #338e9d;
+    cursor: pointer;
+    text-decoration: underline;
+}

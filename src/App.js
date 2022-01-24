@@ -29,6 +29,8 @@ import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
 import { useEffect, useState } from 'react';
 import ScrollToTop from "react-scroll-to-top";
 import Story from './Pages/Maat/Story/Story';
+import PrivateRoute from './Pages/Shered/Login/PrivateRoute';
+import Login from './Pages/Shered/Login/Login';
 AOS.init();
 
 
@@ -85,8 +87,11 @@ function App() {
                   <Route path="/offersInfo/:offersId" element={<OffersInfo />} />
                   <Route path="/expertises/expertiseDetails/:expertiseId" element={<ExpertiseDetails />} />
                   <Route path="/expertiseDetails/:expertiseId" element={<ExpertiseDetails />} />
-                  <Route path="/dashboard" element={<Dashboard />} />
-                  <Route path="story" element={<Story />} />
+                  <Route path="/dashboard" element={<PrivateRoute>
+                    <Dashboard />
+                  </PrivateRoute>}></Route>
+                  <Route path="/story" element={<Story />} />
+                  <Route path="/login" element={<Login />} />
                 </Routes>
               </RouteScrollTop>
             </BrowserRouter>

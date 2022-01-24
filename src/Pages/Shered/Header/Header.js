@@ -1,10 +1,12 @@
 import React from 'react';
-import { Container, Dropdown, Image, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Container, Image, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { NavLink, useNavigate } from 'react-router-dom';
+import useFirebase from '../../../Hooks/useFirebase';
 import './Header.css';
 
 const Header = () => {
 
+    const { user, logOut } = useFirebase();
     const navigate = useNavigate();
     const handleHome = () => {
         navigate('/')
@@ -19,6 +21,11 @@ const Header = () => {
             document.getElementById("navbar").style.top = "-150px";
         }
         prevScrollpos = currentScrollPos;
+    }
+
+    // logout
+    const handLogOut = () => {
+        logOut()
     }
 
     return (
@@ -90,6 +97,13 @@ const Header = () => {
                                 <NavLink to="/blogs">Blog</NavLink>
                                 <NavLink to="/contact">Contact</NavLink>
                             </Nav>
+                            {
+                                user?.email ?
+                                    <div>
+                                        <button className='logOutBtn' onClick={handLogOut}>logout</button>
+                                    </div> : ''
+                            }
+
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
