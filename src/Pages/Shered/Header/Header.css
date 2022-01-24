@@ -101,7 +101,7 @@ nav .nav-link{
 
 
 #navbarMenu{
-    animation: navbarMenu .5s ease-in-out 1;
+    animation: navbarMenu .8s ease-in-out 1;
 }
 @keyframes navbarMenu {
     0% {

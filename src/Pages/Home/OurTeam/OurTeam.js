@@ -57,10 +57,10 @@ const OurTeam = () => {
                                     </div>
                                 </div>
 
-                                <div className="pb-4">
-                                    <hr className='teamHr' />
-                                </div>
                             </Row>
+                            <div className="">
+                                <hr className='teamHr' />
+                            </div>
 
                         </div>)
                     }

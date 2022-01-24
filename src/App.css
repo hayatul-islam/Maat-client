@@ -68,7 +68,7 @@ hr{
 
 /* loading animation  */
 .rootFileAnimation{
-  animation: rootFileAnimation .5s ease-in-out 1;
+  animation: rootFileAnimation .8s ease-in-out 1;
 }
 .loadingPicture{
   width: 250px;
@@ -80,7 +80,7 @@ hr{
 }
 
 h1,h2,h3,h4,h5,img,a{
-  animation: allHidden .5s ease-in-out 1;
+  animation: allHidden .8s ease-in-out 1;
 }
 
 @keyframes rootFileAnimation {

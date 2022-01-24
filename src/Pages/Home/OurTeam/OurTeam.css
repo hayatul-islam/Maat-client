@@ -7,6 +7,7 @@
 }
 .teamContainer{
     position: relative;
+    padding: 18px 0;
 }
 .teamImg{
     position: absolute;
@@ -17,8 +18,8 @@
 }
 
 .teamImg img{
-    width: 200px;
-    height: 300px;
+    width: 190px;
+    height: 280px;
 }
 .contactInfo{
     margin-left: 10px;
@@ -44,7 +45,7 @@
     display: block;
 }
 .teamHr{
-    z-index: -1;
+    z-index: -00001;
 }
 
 
