@@ -1,8 +1,11 @@
 import React, { useRef } from 'react';
 import axios from 'axios';
+import useMaat from '../../../Hooks/useMaat';
+const Swal = require('sweetalert2');
 
 const AddOffice = () => {
 
+    const { apiLink } = useMaat();
     const name = useRef();
     const location = useRef();
     const phone = useRef();
@@ -15,9 +18,17 @@ const AddOffice = () => {
             phone: phone.current.value,
         };
         try {
-            await axios.post("http://localhost:4040/office", newOffice);
-            // await axios.post(`${apiLink}/category`, newBlog);
-            window.location.reload();
+            await axios.post(`${apiLink}/offices`, newOffice)
+                .then(result => {
+                    if (result.status) {
+                        Swal.fire(
+                            'Successfully!',
+                            'Added new Office!',
+                            'success'
+                        )
+                        e.target.reset();
+                    }
+                })
         } catch (err) { }
     };
 

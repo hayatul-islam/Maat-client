@@ -6,6 +6,8 @@ import AddOffice from '../AddOffice/AddOffice';
 import AddTeam from '../AddTeam/AddTeam';
 import useFirebase from '../../../Hooks/useFirebase';
 import useMaat from '../../../Hooks/useMaat';
+import './Dashboard.css';
+import MakeAdmin from '../MakeAdmin/MakeAdmin';
 
 const Dashboard = () => {
 
@@ -35,6 +37,7 @@ const Dashboard = () => {
                                         <h5 onClick={() => handleSelectItem('story')}>Add Story</h5>
                                         <h5 onClick={() => handleSelectItem('blog')}>Add Blog</h5>
                                         <h5 onClick={() => handleSelectItem('office')}>Add Office</h5>
+                                        <h5 onClick={() => handleSelectItem('admin')}>Make an Admin</h5>
                                     </div>
                                 </Col>
                                 <Col xs={12} md={9}>
@@ -51,6 +54,9 @@ const Dashboard = () => {
 
                                         {
                                             selectItems === 'office' ? <AddOffice /> : ''
+                                        }
+                                        {
+                                            selectItems === 'admin' ? <MakeAdmin /> : ''
                                         }
                                     </div>
                                 </Col>

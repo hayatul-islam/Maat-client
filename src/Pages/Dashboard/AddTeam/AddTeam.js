@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import axios from 'axios';
 import useMaat from '../../../Hooks/useMaat';
+const Swal = require('sweetalert2');
 
 const AddTeam = () => {
 
@@ -71,15 +72,22 @@ const AddTeam = () => {
             data.append("name", fileName);
             data.append("file", file);
             newTeam.image = fileName;
-
-            console.log(newTeam);
             try {
                 await axios.post(`${apiLink}/api/upload`, data);
             } catch (err) { }
         }
         try {
-            await axios.post(`${apiLink}/teams`, newTeam);
-            window.location.reload();
+            await axios.post(`${apiLink}/teams`, newTeam)
+                .then(result => {
+                    if (result.status) {
+                        Swal.fire(
+                            'Successfully!',
+                            'Added new Team member!',
+                            'success'
+                        )
+                        e.target.reset();
+                    }
+                })
         } catch (err) { }
     };
 

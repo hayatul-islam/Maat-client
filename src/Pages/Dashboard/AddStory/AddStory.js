@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import { useForm } from "react-hook-form";
 import axios from 'axios';
 import useMaat from '../../../Hooks/useMaat';
+const Swal = require('sweetalert2');
 
 const AddStory = () => {
 
@@ -55,14 +56,21 @@ const AddStory = () => {
             data.append("file", file);
             newStory.image = fileName;
             try {
-                // await axios.post("http://localhost:4040/api/upload", data);
                 await axios.post(`${apiLink}/api/upload`, data);
             } catch (err) { }
         }
         try {
-            // await axios.post("http://localhost:4040/story", newStory);
-            await axios.post(`${apiLink}/story`, newStory);
-            window.location.reload();
+            await axios.post(`${apiLink}/story`, newStory)
+                .then(result => {
+                    if (result.status) {
+                        Swal.fire(
+                            'Successfully!',
+                            'Added new Story!',
+                            'success'
+                        )
+                        e.target.reset();
+                    }
+                })
         } catch (err) { }
     };
 
