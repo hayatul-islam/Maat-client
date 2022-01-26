@@ -15,8 +15,9 @@ const OurStory = () => {
             .then(data => setStory(data))
     }, []);
 
-    // window.onscroll = function () { myFunction() };
+
     window.onscroll = function () { myFunction() };
+    // window.onscroll = function () { myFunction() };
     function myFunction() {
         // var winScroll = document.getElementById('ourStory').scrollTop || document.documentElement.scrollTop;
         var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
@@ -24,6 +25,8 @@ const OurStory = () => {
         var scrolled = (winScroll / height) * 100;
         document.getElementById("myBar").style.width = scrolled + "%";
     }
+
+
 
     return (
         <div className="pb-5">
@@ -52,9 +55,13 @@ const OurStory = () => {
             </Container>
             <div className="ourStory">
                 <div class="scrollHeader">
-                    <div class="progress-container">
-                        <div id="myBar" class="progress-bar"></div>
-                    </div>
+                    {
+                        story ?
+
+                            <div class="progress-container">
+                                <div id="myBar" class="progress-bar"></div>
+                            </div> : ''
+                    }
                 </div>
                 <Container>
                     <div id='ourStory' className='mainSection'>

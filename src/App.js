@@ -31,6 +31,7 @@ import ScrollToTop from "react-scroll-to-top";
 import Story from './Pages/Maat/Story/Story';
 import PrivateRoute from './Pages/Shered/Login/PrivateRoute';
 import Login from './Pages/Shered/Login/Login';
+import Favicon from 'react-favicon'
 AOS.init();
 
 
@@ -58,6 +59,7 @@ function App() {
 
   return (
     <div>
+      <Favicon url='' />
       {
         loading ?
           <div style={{ height: '100vh' }} className="d-flex align-items-center justify-content-center">
@@ -67,6 +69,7 @@ function App() {
           </div>
           :
           <div className='rootFileAnimation' style={{ background: '#212426' }}>
+
             <BrowserRouter>
               <div className='bottomToTopBtn'>
                 <ScrollToTop smooth />
