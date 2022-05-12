@@ -1,5 +1,6 @@
-# Maat front end project
+# Maat 
+* Front end project
 
-[Live site](https://maata.netlify.app/).
+Maat [Live site](https://maata.netlify.app/).
 
 
