@@ -42,7 +42,7 @@ const Header = () => {
                         <Navbar.Collapse id="navbarScroll">
                             <Nav className="ms-auto header-menu">
                                 <NavDropdown className='clarexDropdown' id='dropdownMenu'
-                                    id="nav-dropdown-dark-example"
+                                    // id="nav-dropdown-dark-example"
                                     title="Maat"
                                     menuVariant="dark"
                                 >
