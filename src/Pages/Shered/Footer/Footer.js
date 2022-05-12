@@ -19,7 +19,8 @@ const Footer = () => {
             <Container>
                 <hr className='bg-white' />
                 <div className='py-3'>
-                    <Image className='footer-logo mb-3' src='https://i.ibb.co/gFKx1Z4/Clarex-final-White.png' />
+                    {/* <Image className='footer-logo mb-3' src='https://i.ibb.co/gFKx1Z4/Clarex-final-White.png' /> */}
+                    <Image className='footer-logo mb-3' src='https://uploads-ssl.webflow.com/6160407763f5cd74b27c2405/6160407763f5cd04d07c241b_logo-white.png' />
                     <p>Delivering distinction, leading change</p>
                 </div>
 

@@ -23,12 +23,12 @@ const OurTeam = () => {
     return (
         <div className='mainSection'>
             <Container>
-                <div data-aos="fade-up" data-aos-duration="1000" className='big-font'>
+                <div className='big-font'>
                     <h1 className='ourTeamTitle'>OUR INTERNATIONAL TEAM</h1>
                 </div>
                 <div className='teamsContainer'>
                     {
-                        teams.map(team => <div data-aos="fade-up" data-aos-duration="1000" key={team?._id}>
+                        teams.map(team => <div key={team?._id}>
                             <Row className='teamContainer'>
                                 <Col xs={12} lg={4}>
                                     <div className='text-light'>

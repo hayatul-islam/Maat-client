@@ -34,15 +34,16 @@ const Header = () => {
                 <Navbar id='navbar' className='sticky-top' variant="dark" expand="md">
                     <Container>
                         <Navbar.Brand className='logoContainer' href="">
-                            <Image onClick={handleHome} className='header-logo' src='https://i.ibb.co/gFKx1Z4/Clarex-final-White.png' />
-                            <span className='betaLive'>Beta live</span>
+                            {/* <Image onClick={handleHome} className='header-logo' src='https://i.ibb.co/gFKx1Z4/Clarex-final-White.png' /> */}
+                            <Image onClick={handleHome} className='header-logo' src='https://uploads-ssl.webflow.com/6160407763f5cd74b27c2405/6160407763f5cd04d07c241b_logo-white.png' />
+                            {/* <span className='betaLive'>Beta live</span> */}
                         </Navbar.Brand>
                         <Navbar.Toggle aria-controls="navbarScroll" />
                         <Navbar.Collapse id="navbarScroll">
                             <Nav className="ms-auto header-menu">
                                 <NavDropdown className='clarexDropdown' id='dropdownMenu'
                                     id="nav-dropdown-dark-example"
-                                    title="Clarex"
+                                    title="Maat"
                                     menuVariant="dark"
                                 >
                                     <NavDropdown.Item href="#action/3.3">
@@ -93,7 +94,6 @@ const Header = () => {
 
                                 </NavDropdown>
                                 <NavLink to="/expertises">Expertise</NavLink>
-                                <NavLink to="/sustainibility">Sustainibility</NavLink>
                                 <NavLink to="/blogs">Blog</NavLink>
                                 <NavLink to="/contact">Contact</NavLink>
                             </Nav>

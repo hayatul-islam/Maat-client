@@ -7,7 +7,7 @@ const About = () => {
     return (
         <div id='about' className='mainSection'>
             <Container>
-                <div data-aos="fade-up" data-aos-duration="1000">
+                <div>
                     <div className='big-font about-title'>
                         <h1 className="who">WHO</h1>
                         <h1 className="weAre">WE ARE</h1>
@@ -30,12 +30,12 @@ const About = () => {
                             </div>
 
                             {/* key figures */}
-                            <div data-aos="fade-up" data-aos-duration="1000" className='keyFigure big-font'>
+                            <div className='keyFigure big-font'>
                                 <h1>KEY</h1>
                                 <h1>FIGURES</h1>
                             </div>
                             <Col xs={12} md={6}>
-                                <div data-aos="fade-up" data-aos-duration="1000">
+                                <div>
                                     <Row>
                                         <Col xs={6}>
                                             <div className='pb-5 big-font'>
@@ -73,7 +73,7 @@ const About = () => {
 
                             </Col>
                             <Col xs={12} md={6}>
-                                <div data-aos="fade-up" data-aos-duration="1000">
+                                <div>
                                     <div className='key-figures big-font'>
                                         <h1>KEY</h1>
                                         <h1>FIGURES</h1>

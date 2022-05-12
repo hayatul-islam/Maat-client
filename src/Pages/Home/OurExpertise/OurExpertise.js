@@ -22,7 +22,7 @@ const OurExpertise = () => {
     return (
         <div className='mainSection'>
             <Container>
-                <div data-aos="fade-up" data-aos-duration="1000" className='big-font pb-5'>
+                <div className='big-font pb-5'>
                     <h1>OUR</h1>
                     <h1>EXPERTISES</h1>
                 </div>
@@ -32,7 +32,7 @@ const OurExpertise = () => {
                             key={expertise?._id}
                             xs={12} lg={6}
                         >
-                            <div data-aos="fade-up" data-aos-duration="1000" id={`cardIndex${index + 1}`} className='expertise-card'>
+                            <div id={`cardIndex${index + 1}`} className='expertise-card'>
                                 {
                                     index + 1 <= 9 ? <h1 className='text-end text-muted fw-normal cardIndex'>0{index + 1}</h1> : <h1 className='text-end text-muted fw-normal cardIndex'>{index + 1}</h1>
                                 }
