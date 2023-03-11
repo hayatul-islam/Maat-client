@@ -37,7 +37,7 @@ function App() {
       setLoading(false);
     }, 2000);
   }, []);
-  const { blogs } = useMaat();
+  const { blogs, teams, expertises } = useMaat();
 
   // route change scroll top
   const RouteScrollTop = (props) => {
@@ -78,23 +78,26 @@ function App() {
                   path="/blogs/:blogId"
                   element={<BlogDetails blogs={blogs} />}
                 />
-                <Route path="/allJobOffice" element={<AllJobOffice />} />
+                <Route
+                  path="/allJobOffice"
+                  element={<AllJobOffice teams={teams} />}
+                />
                 <Route
                   path="/filterTeamMate/:city"
-                  element={<FilterTeamMate />}
+                  element={<FilterTeamMate teams={teams} />}
                 />
                 <Route
                   path="/teamMemberInfo/:memberId"
-                  element={<TeamMemberInfo />}
+                  element={<TeamMemberInfo teams={teams} />}
                 />
                 <Route path="/offersInfo/:offersId" element={<OffersInfo />} />
                 <Route
                   path="/expertises/expertiseDetails/:expertiseId"
-                  element={<ExpertiseDetails />}
+                  element={<ExpertiseDetails expertises={expertises} />}
                 />
                 <Route
                   path="/expertiseDetails/:expertiseId"
-                  element={<ExpertiseDetails />}
+                  element={<ExpertiseDetails expertises={expertises} />}
                 />
                 <Route
                   path="/dashboard"

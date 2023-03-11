@@ -1,5 +1,6 @@
 [
     {
+        "_id": "1",
         "title": "Domino Disrupter",
         "image": "https://uploads-ssl.webflow.com/6160407763f5cd74b27c2405/6160407763f5cd63147c242b_img-office-maat.jpg",
         "year": "1997",
@@ -8,6 +9,7 @@
         "description": "A way to change the way we change—a way to rethink how we think. Creating a pathway of limelight that brings disruptions into notion is our drive. Let us be the disrupter of change for a better future, bright tomorrow."
     },
     {
+        "_id": "2",
         "title": "Sustainable integrity",
         "image": "https://uploads-ssl.webflow.com/6160407763f5cd74b27c2405/6160407763f5cd63147c242b_img-office-maat.jpg",
         "year": "2004",
@@ -16,6 +18,7 @@
         "description": "A future where we can reimagine, rethink and recreate services that beam out waves of sustainable integrity. A future fit for everyone-a more versatile place."
     },
     {
+        "_id": "3",
         "title": "Your Comrade",
         "image": "https://uploads-ssl.webflow.com/6160407763f5cd74b27c2405/6160407763f5cd63147c242b_img-office-maat.jpg",
         "year": "2008",
@@ -24,6 +27,7 @@
         "description": "A comrade in arms, someone you can depend your life on. While you focus on the critical processes, we drive your growth and change your game's tides."
     },
     {
+        "_id": "4",
         "title": "Our Story",
         "image": "https://uploads-ssl.webflow.com/6160407763f5cd74b27c2405/6160407763f5cd63147c242b_img-office-maat.jpg",
         "year": "2010",
@@ -32,6 +36,7 @@
         "description": "Everything changes when you fix a goal and put a time stamp on it. It's an urge to create impact, to make a change. When ClareX was founded, we wanted to help businesses succeed in their core business processes while taking care of the rest work. It was a modest goal of moving forward impact and transformation. Today, after more than five years, we have grown from our sister concern, Lever & Gear, to offer a broader range of services from BPO, ITES, FInancing solutions to DIgital Marketing."
     },
     {
+        "_id": "5",
         "title": "To take the future",
         "image": "https://uploads-ssl.webflow.com/6160407763f5cd74b27c2405/6160407763f5cd63147c242b_img-office-maat.jpg",
         "year": "2018",

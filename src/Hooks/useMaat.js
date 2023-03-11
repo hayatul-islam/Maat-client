@@ -9,6 +9,7 @@ const useMaat = () => {
   const [expertises, setExpertises] = useState([]);
   const [blogs, setBlogs] = useState([]);
   const [teams, setTeams] = useState([]);
+  const [story, setStory] = useState([]);
 
   useEffect(() => {
     fetch(`${apiLink}/users`)
@@ -30,6 +31,11 @@ const useMaat = () => {
       .then((res) => res.json())
       .then((data) => setTeams(data));
   }, []);
+  useEffect(() => {
+    fetch("./story.json")
+      .then((res) => res.json())
+      .then((data) => setStory(data));
+  }, []);
 
   return {
     apiLink,
@@ -37,6 +43,7 @@ const useMaat = () => {
     expertises,
     blogs,
     teams,
+    story,
   };
 };
 
