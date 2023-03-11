@@ -36,12 +36,12 @@ const AllJobOffice = ({ teams }) => {
                 </div>
               </div>
             </div>
-            <div className="mt-5">
+            {/* <div className="mt-5">
               <a className="downBtn" href="#allJobOffers">
                 <i className="fas fa-arrow-down"></i>
               </a>
-            </div>
-            <div className="bannerImg storyImg">
+            </div> */}
+            <div className="bannerImg storyImg pt-4">
               <img src="https://i.ibb.co/fX1z144/story.jpg" alt="" />
             </div>
           </div>

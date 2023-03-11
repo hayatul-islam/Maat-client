@@ -8,18 +8,19 @@
 .teamContainer{
     position: relative;
     padding: 18px 0;
+    border-bottom: 1px solid #393737;
 }
 .teamImg{
     position: absolute;
     display: none;
-    top: -100px;
+    top: -80px;
     z-index: 99 !important;
-    right: -55%;
+    right: -60%;
 }
 
 .teamImg img{
-    width: 190px;
-    height: 280px;
+    width: 150px;
+    height: 200px;
 }
 .contactInfo{
     margin-left: 10px;

@@ -32,11 +32,11 @@ const Expertises = () => {
             <h1 className="text-end">SERVICES</h1>
             <h1>WE MASTER</h1>
           </div>
-          <div className="py-5">
+          {/* <div className="py-5">
             <a className="downBtn downLinkBtn" href="#expertise">
               <i className="fas fa-arrow-down"></i>
             </a>
-          </div>
+          </div> */}
         </div>
         <div id="expertise" className="mainSection">
           {expertises?.map((expertise) => (

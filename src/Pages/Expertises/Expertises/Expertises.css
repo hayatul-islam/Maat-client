@@ -6,7 +6,7 @@
     position: relative;
     z-index: 1;
 }
-.expertiseImg{
+.expertises .expertiseImg{
     width: 210px;
     height: 230px;
     position: absolute;
@@ -17,13 +17,31 @@
     display: none;
 }
 .expertiseBtn{
-    display: none;
+    display: none; 
 }
 .expertises:hover .expertiseImg{
     display: block;
 }
 .expertises:hover .expertiseBtn{
     display: block;
+}
+.downBtn{
+    font-size: 24px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e65711;
+    color: white;
+    text-decoration: none;
+   margin-top: 30px;
+   cursor: pointer;
+}
+
+.downBtn:hover{
+    color: whitesmoke;
 }
 
 @media (min-width: 0px) and (max-width: 600px){

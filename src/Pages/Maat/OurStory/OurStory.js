@@ -33,11 +33,11 @@ const OurStory = () => {
               </div>
             </div>
           </div>
-          <div className="mt-5">
+          {/* <div className="mt-5">
             <a className="downBtn" href="#ourStory">
               <i className="fas fa-arrow-down"></i>
             </a>
-          </div>
+          </div> */}
           <div className="bannerImg storyImg">
             <img src="https://i.ibb.co/fX1z144/story.jpg" alt="" />
           </div>
